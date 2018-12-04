@@ -1,0 +1,24 @@
+PODS:
+  - SQLCipher (3.4.2):
+    - SQLCipher/standard (= 3.4.2)
+  - SQLCipher/common (3.4.2)
+  - SQLCipher/standard (3.4.2):
+    - SQLCipher/common
+  - SQLite.swift/SQLCipher (0.11.5):
+    - SQLCipher (>= 3.4.0)
+
+DEPENDENCIES:
+  - SQLite.swift/SQLCipher (~> 0.11.5)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SQLCipher
+    - SQLite.swift
+
+SPEC CHECKSUMS:
+  SQLCipher: f9fcf29b2e59ced7defc2a2bdd0ebe79b40d4990
+  SQLite.swift: 6e5356850bb1791459f8c16d6ee9195b28714a2e
+
+PODFILE CHECKSUM: 71643e368b291b2822840e25f2d574d722de00dc
+
+COCOAPODS: 1.5.3

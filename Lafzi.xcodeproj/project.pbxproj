@@ -7,12 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		110332BB21B370010093F729 /* lafzi.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 110332BA21B370010093F729 /* lafzi.sqlite */; };
+		110332BD21B384220093F729 /* QueryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110332BC21B384220093F729 /* QueryHelper.swift */; };
+		110332BF21B403120093F729 /* SearchHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110332BE21B403120093F729 /* SearchHelper.swift */; };
+		110332C121B407D40093F729 /* FoundDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110332C021B407D40093F729 /* FoundDocument.swift */; };
+		110332C321B409270093F729 /* HighlightPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110332C221B409270093F729 /* HighlightPosition.swift */; };
+		110332C521B4D4110093F729 /* FreqAndPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110332C421B4D4110093F729 /* FreqAndPosition.swift */; };
+		113AAC4C21B5693600AA025C /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113AAC4B21B5693600AA025C /* Index.swift */; };
 		11C26F5621AE031900F6AF58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C26F5521AE031900F6AF58 /* AppDelegate.swift */; };
 		11C26F5821AE031900F6AF58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C26F5721AE031900F6AF58 /* ViewController.swift */; };
 		11C26F5B21AE031900F6AF58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11C26F5921AE031900F6AF58 /* Main.storyboard */; };
 		11C26F5D21AE031A00F6AF58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11C26F5C21AE031A00F6AF58 /* Assets.xcassets */; };
 		11C26F6021AE031A00F6AF58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11C26F5E21AE031A00F6AF58 /* LaunchScreen.storyboard */; };
 		11C26F6B21AE031A00F6AF58 /* LafziTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C26F6A21AE031A00F6AF58 /* LafziTests.swift */; };
+		11DED52121B09C4400367545 /* AyatQuran.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DED52021B09C4400367545 /* AyatQuran.swift */; };
+		11DED52421B0A08E00367545 /* AyatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DED52321B0A08E00367545 /* AyatTableViewCell.swift */; };
+		11DED52721B36BCD00367545 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DED52621B36BCD00367545 /* DBHelper.swift */; };
+		3F128D5A0057B00248E6D20A /* Pods_Lafzi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35908B65540607C38A0424E0 /* Pods_Lafzi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		110332BA21B370010093F729 /* lafzi.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = lafzi.sqlite; sourceTree = "<group>"; };
+		110332BC21B384220093F729 /* QueryHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryHelper.swift; sourceTree = "<group>"; };
+		110332BE21B403120093F729 /* SearchHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHelper.swift; sourceTree = "<group>"; };
+		110332C021B407D40093F729 /* FoundDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundDocument.swift; sourceTree = "<group>"; };
+		110332C221B409270093F729 /* HighlightPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightPosition.swift; sourceTree = "<group>"; };
+		110332C421B4D4110093F729 /* FreqAndPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreqAndPosition.swift; sourceTree = "<group>"; };
+		113AAC4B21B5693600AA025C /* Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Index.swift; sourceTree = "<group>"; };
 		11C26F5221AE031900F6AF58 /* Lafzi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lafzi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11C26F5521AE031900F6AF58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11C26F5721AE031900F6AF58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +54,12 @@
 		11C26F6621AE031A00F6AF58 /* LafziTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LafziTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11C26F6A21AE031A00F6AF58 /* LafziTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LafziTests.swift; sourceTree = "<group>"; };
 		11C26F6C21AE031A00F6AF58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11DED52021B09C4400367545 /* AyatQuran.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyatQuran.swift; sourceTree = "<group>"; };
+		11DED52321B0A08E00367545 /* AyatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyatTableViewCell.swift; sourceTree = "<group>"; };
+		11DED52621B36BCD00367545 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		35908B65540607C38A0424E0 /* Pods_Lafzi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lafzi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		418FDFC25B6B28459A91820F /* Pods-Lafzi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lafzi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lafzi/Pods-Lafzi.release.xcconfig"; sourceTree = "<group>"; };
+		DCEC429AC9A43CA731CFE3A8 /* Pods-Lafzi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lafzi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lafzi/Pods-Lafzi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F128D5A0057B00248E6D20A /* Pods_Lafzi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +87,8 @@
 				11C26F5421AE031900F6AF58 /* Lafzi */,
 				11C26F6921AE031A00F6AF58 /* LafziTests */,
 				11C26F5321AE031900F6AF58 /* Products */,
+				64A5E53EE1BF8CCE8E6C004E /* Pods */,
+				B27823A8AB040A78097ECADC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,8 +104,12 @@
 		11C26F5421AE031900F6AF58 /* Lafzi */ = {
 			isa = PBXGroup;
 			children = (
+				110332BA21B370010093F729 /* lafzi.sqlite */,
+				11DED52521B36BAD00367545 /* Helper */,
+				11DED51F21B09C2800367545 /* Model */,
 				11C26F5521AE031900F6AF58 /* AppDelegate.swift */,
 				11C26F5721AE031900F6AF58 /* ViewController.swift */,
+				11DED52321B0A08E00367545 /* AyatTableViewCell.swift */,
 				11C26F5921AE031900F6AF58 /* Main.storyboard */,
 				11C26F5C21AE031A00F6AF58 /* Assets.xcassets */,
 				11C26F5E21AE031A00F6AF58 /* LaunchScreen.storyboard */,
@@ -96,6 +127,45 @@
 			path = LafziTests;
 			sourceTree = "<group>";
 		};
+		11DED51F21B09C2800367545 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11DED52021B09C4400367545 /* AyatQuran.swift */,
+				110332C021B407D40093F729 /* FoundDocument.swift */,
+				110332C221B409270093F729 /* HighlightPosition.swift */,
+				110332C421B4D4110093F729 /* FreqAndPosition.swift */,
+				113AAC4B21B5693600AA025C /* Index.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		11DED52521B36BAD00367545 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				11DED52621B36BCD00367545 /* DBHelper.swift */,
+				110332BC21B384220093F729 /* QueryHelper.swift */,
+				110332BE21B403120093F729 /* SearchHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		64A5E53EE1BF8CCE8E6C004E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCEC429AC9A43CA731CFE3A8 /* Pods-Lafzi.debug.xcconfig */,
+				418FDFC25B6B28459A91820F /* Pods-Lafzi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B27823A8AB040A78097ECADC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35908B65540607C38A0424E0 /* Pods_Lafzi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +173,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11C26F6F21AE031A00F6AF58 /* Build configuration list for PBXNativeTarget "Lafzi" */;
 			buildPhases = (
+				CF6312E602ADA831BB9FB571 /* [CP] Check Pods Manifest.lock */,
 				11C26F4E21AE031900F6AF58 /* Sources */,
 				11C26F4F21AE031900F6AF58 /* Frameworks */,
 				11C26F5021AE031900F6AF58 /* Resources */,
+				038452A1307B33BE8C4C820E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,6 +251,7 @@
 			files = (
 				11C26F6021AE031A00F6AF58 /* LaunchScreen.storyboard in Resources */,
 				11C26F5D21AE031A00F6AF58 /* Assets.xcassets in Resources */,
+				110332BB21B370010093F729 /* lafzi.sqlite in Resources */,
 				11C26F5B21AE031900F6AF58 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,13 +265,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		038452A1307B33BE8C4C820E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Lafzi/Pods-Lafzi-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SQLCipher/SQLCipher.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLCipher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lafzi/Pods-Lafzi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF6312E602ADA831BB9FB571 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lafzi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		11C26F4E21AE031900F6AF58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11DED52421B0A08E00367545 /* AyatTableViewCell.swift in Sources */,
+				110332C121B407D40093F729 /* FoundDocument.swift in Sources */,
+				110332C321B409270093F729 /* HighlightPosition.swift in Sources */,
+				113AAC4C21B5693600AA025C /* Index.swift in Sources */,
 				11C26F5821AE031900F6AF58 /* ViewController.swift in Sources */,
+				11DED52721B36BCD00367545 /* DBHelper.swift in Sources */,
+				110332C521B4D4110093F729 /* FreqAndPosition.swift in Sources */,
+				11DED52121B09C4400367545 /* AyatQuran.swift in Sources */,
 				11C26F5621AE031900F6AF58 /* AppDelegate.swift in Sources */,
+				110332BD21B384220093F729 /* QueryHelper.swift in Sources */,
+				110332BF21B403120093F729 /* SearchHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +489,7 @@
 		};
 		11C26F7021AE031A00F6AF58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCEC429AC9A43CA731CFE3A8 /* Pods-Lafzi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -375,6 +507,7 @@
 		};
 		11C26F7121AE031A00F6AF58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 418FDFC25B6B28459A91820F /* Pods-Lafzi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

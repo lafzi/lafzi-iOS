@@ -26,7 +26,7 @@
                                 <subviews>
                                     <searchBar contentMode="redraw" text="" placeholder="Ketikkan lafadz yang dicari" translatesAutoresizingMaskIntoConstraints="NO" id="lhe-a9-hZo">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
-                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
                                         <scopeButtonTitles>
                                             <string>Title</string>
                                             <string>Title</string>
@@ -47,6 +47,52 @@
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PbU-8w-v2N">
                                         <rect key="frame" x="0.0" y="92.5" width="375" height="510.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ayatTableViewCell" id="efr-g7-fq5" customClass="AyatTableViewCell" customModule="Lafzi" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="efr-g7-fq5" id="aW6-d6-rnD">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9AB-U6-OuP">
+                                                            <rect key="frame" x="15" y="11" width="345" height="22"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="myc-VD-OdF">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="345" height="0.0"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIU-o3-ebR">
+                                                                    <rect key="frame" x="0.0" y="10" width="345" height="0.0"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9m-6X-TD5">
+                                                                    <rect key="frame" x="0.0" y="20" width="345" height="2"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="9AB-U6-OuP" secondAttribute="bottom" id="ANn-Du-67t"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="9AB-U6-OuP" secondAttribute="trailing" id="M2C-xc-anG"/>
+                                                        <constraint firstItem="9AB-U6-OuP" firstAttribute="leading" secondItem="aW6-d6-rnD" secondAttribute="leadingMargin" id="aRp-bD-7Fc"/>
+                                                        <constraint firstItem="9AB-U6-OuP" firstAttribute="top" secondItem="aW6-d6-rnD" secondAttribute="topMargin" id="zYc-lb-WCA"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="ayatArabic" destination="uIU-o3-ebR" id="Hor-P0-Bmg"/>
+                                                    <outlet property="ayatIndonesia" destination="y9m-6X-TD5" id="FxA-SD-gpz"/>
+                                                    <outlet property="noSuratAyat" destination="myc-VD-OdF" id="GUr-uW-leP"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
                                     </tableView>
                                 </subviews>
                             </stackView>
@@ -60,6 +106,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Lafzi" id="6sw-CJ-KQm"/>
+                    <connections>
+                        <outlet property="ayatTable" destination="PbU-8w-v2N" id="6gQ-gK-toP"/>
+                        <outlet property="searchBar" destination="lhe-a9-hZo" id="xeE-rO-GgL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
