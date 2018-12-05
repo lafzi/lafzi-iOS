@@ -36,7 +36,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         var src = QueryHelper.normalizeQuery(src: searchBar.text!)
-        SearchHelper.doSearch(query: src)
+        var matchedDocs = [Int : FoundDocument]()
+        var threshold = Float(0.9)
+        repeat {
+            matchedDocs = SearchHelper.doSearch(query: src, threshold: threshold)
+            threshold -= 0.1
+        } while (matchedDocs.count < 1) && (threshold >= 0.7)
+        
+        var matchedDocsValue = [FoundDocument]()
+        var ayatQurans = [AyatQuran]()
+        print(matchedDocs)
+        /*if matchedDocs.count > 0 {
+            matchedDocs = SearchHelper.highlighting(matchedDocs)
+        }*/
     }
     
     override func viewWillAppear(_ animated: Bool) {

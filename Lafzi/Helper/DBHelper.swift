@@ -53,20 +53,37 @@ class DBHelper {
         return arr
     }
     
+    func getAyatQuran(ayatId: Int) -> AyatQuran {
+        let ayatQurans = Table("ayat_quran")
+        let query = ayatQurans.filter(id == ayatId)
+        
+        var ayatQuran = try! db.pluck(query)!
+        return AyatQuran(
+            id: ayatQuran[id],
+            surahNo: ayatQuran[surahNo],
+            surahName: ayatQuran[surahName],
+            ayatNo: ayatQuran[ayatNo],
+            ayatArabic: ayatQuran[ayatArabic],
+            ayatIndonesia: ayatQuran[ayatIndonesian],
+            ayatMuqathaat: ayatQuran[ayatMuqathaat],
+            mappingPos: ""
+        )
+    }
+    
     func getIndexByTrigram(trigram: String, isVocal: Bool) -> Index? {
         let indices = isVocal ? Table("vocal_index") : Table("nonvocal_index")
         let query = indices.filter(termTrigram.like(trigram))
         
-        var term: String
-        var post: [Int : [Int]]
+        var post = [Int : [Int]]()
         for row in try! db.prepare(query) {
-            let data = Data(base64Encoded: row[postTrigram])
+            let data = row[postTrigram].data(using: .utf8)
             let json = try? JSONSerialization.jsonObject(with: data!, options: [])
-            post = json as! [Int : [Int]]
-            print(post)
+            let parsed = json as! [String : [Int]]
+            for (k, v) in parsed {
+                post[Int(k)!] = v
+            }
             
-            term = row[termTrigram]
-            return Index(term: term, post: post)
+            return Index(term: row[termTrigram], post: post)
         }
         return nil
     }

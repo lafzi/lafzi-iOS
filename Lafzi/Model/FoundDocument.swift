@@ -6,15 +6,15 @@
 //  Copyright © 2018 Alfat Saputra Harun. All rights reserved.
 //
 
-struct FoundDocument {
-    var ayatQuranId: Int
-    var matchedTrigramsCount: Int
-    var matchedTermsOrderScore: Int
-    var matchedTermsCountScore: Int
-    var matchedTermsContiguityScore: Float
-    var score: Float
-    var matchedTerms: [String : [Int]]
-    var lis: [Int]
-    var highlightPosition: [HighlightPosition]
-    var ayatQuran: AyatQuran
+class FoundDocument {
+    var ayatQuranId: Int = 0
+    var matchedTrigramsCount: Int = 0
+    var matchedTermsOrderScore: Int = 0
+    var matchedTermsCountScore: Int = 0
+    var matchedTermsContiguityScore: Float = 0
+    var score: Float = 0
+    var matchedTerms: [String : [Int]] = [String:[Int]]()
+    var lis: [Int] = [Int]()
+    var highlightPosition: [HighlightPosition] = [HighlightPosition]()
+    var ayatQuran: AyatQuran = AyatQuran()
 }

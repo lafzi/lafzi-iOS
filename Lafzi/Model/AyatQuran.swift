@@ -7,14 +7,16 @@
 //
 
 class AyatQuran {
-    var id: Int
-    var surahNo: Int
-    var surahName: String
-    var ayatNo: Int
-    var ayatArabic: String
-    var ayatIndonesia: String
-    var ayatMuqathaat: String
-    var mappingPos: [Int]
+    var id: Int = 0
+    var surahNo: Int = 0
+    var surahName: String = ""
+    var ayatNo: Int = 0
+    var ayatArabic: String = ""
+    var ayatIndonesia: String = ""
+    var ayatMuqathaat: String = ""
+    var mappingPos: [Int] = [Int]()
+    
+    init() {}
     
     init(id: Int, surahNo: Int, surahName: String, ayatNo: Int, ayatArabic: String, ayatIndonesia: String, ayatMuqathaat: String, mappingPos: String) {
         self.id = id
