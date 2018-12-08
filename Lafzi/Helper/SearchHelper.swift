@@ -43,10 +43,10 @@ class SearchHelper {
         if orderedByScore {
             for (key,fd) in matchedDocs {
                 fd.matchedTermsCountScore = fd.matchedTrigramsCount
-                var flattened = fd.matchedTerms.flatMap{_,v in
+                let flattened = fd.matchedTerms.flatMap{_,v in
                     return v
                 }
-                var lis = longestContiguousSubsequence(sqc: flattened, maxGap: 7)
+                let lis = longestContiguousSubsequence(sqc: flattened, maxGap: 7)
                 fd.matchedTermsOrderScore = lis.count
                 fd.lis = lis
                 
@@ -84,7 +84,7 @@ class SearchHelper {
             return results
         }
         
-        for i in 0...text.count-3 {
+        for i in 0..<text.count-2 {
             let indexStart = text.index(text.startIndex, offsetBy: i)
             let indexEnd = text.index(text.startIndex, offsetBy: i + 3)
             let trigram = text[indexStart..<indexEnd]
@@ -124,18 +124,19 @@ class SearchHelper {
                 posisiReal.append(ayatQuran.mappingPos[s - 1])
             }
             
-            doc.highlightPosition = longestHighlightLookforward(hsq: posisiReal, minLength: 6)
+            doc.highlightPosition = longestHighlightLookforward(hsq: posisiReal, minLength: 3)
             let hps = doc.highlightPosition
             let endPos = hps[hps.count - 1].end
+            let chars = Array(docText.unicodeScalars)
             
-            if docText[docText.index(docText.startIndex, offsetBy: endPos + 1)] == " " ||
-                docText.count - 1 <= endPos + 1 {
+            if chars[endPos + 1] == " " ||
+                chars.count - 1 <= endPos + 1 {
                 doc.score += 0.001
-            } else if docText[docText.index(docText.startIndex, offsetBy: endPos + 2)] == " " ||
-                docText.count - 1 <= endPos + 2 {
+            } else if chars[endPos + 2] == " " ||
+                chars.count - 1 <= endPos + 2 {
                 doc.score += 0.001
-            } else if docText[docText.index(docText.startIndex, offsetBy: endPos + 3)] == " " ||
-                docText.count - 1 <= endPos + 3 {
+            } else if chars[endPos + 3] == " " ||
+                chars.count - 1 <= endPos + 3 {
                 doc.score += 0.001
             }
             

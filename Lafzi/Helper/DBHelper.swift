@@ -53,7 +53,7 @@ class DBHelper {
         return arr
     }
     
-    func getAyatQuran(ayatId: Int) -> AyatQuran {
+    func getAyatQuran(ayatId: Int, isVocal: Bool = true) -> AyatQuran {
         let ayatQurans = Table("ayat_quran")
         let query = ayatQurans.filter(id == ayatId)
         
@@ -66,7 +66,7 @@ class DBHelper {
             ayatArabic: ayatQuran[ayatArabic],
             ayatIndonesia: ayatQuran[ayatIndonesian],
             ayatMuqathaat: ayatQuran[ayatMuqathaat],
-            mappingPos: ""
+            mappingPos: isVocal ? ayatQuran[vocalPos] : ayatQuran[nonvocalPos]
         )
     }
     

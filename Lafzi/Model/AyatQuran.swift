@@ -16,6 +16,9 @@ class AyatQuran {
     var ayatMuqathaat: String = ""
     var mappingPos: [Int] = [Int]()
     
+    var highlightPos = [HighlightPosition]()
+    var relevance = Float(0)
+    
     init() {}
     
     init(id: Int, surahNo: Int, surahName: String, ayatNo: Int, ayatArabic: String, ayatIndonesia: String, ayatMuqathaat: String, mappingPos: String) {
