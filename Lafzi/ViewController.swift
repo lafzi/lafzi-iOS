@@ -8,79 +8,52 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
+class ViewController:  UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     //MARK: Properties
     var ayatGlobalQurans = [AyatQuran]()
+    var emptySearchView = EmptySearchView()
+    var grayStripeColor = Util.hexStringToUIColor(hex: "#f4f4f4")
+    
     @IBInspectable var rowHeight = 70 {
         didSet {
-            self.ayatTable.estimatedRowHeight = 70
             self.ayatTable.rowHeight = UITableView.automaticDimension
             self.ayatTable.separatorInset = UIEdgeInsets.zero
         }
     }
     @IBOutlet weak var ayatTable: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var labelCounterContainer: UIStackView!
     @IBOutlet weak var labelCounter: UILabel!
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.resignFirstResponder()
-    }
+    // MARK: handle lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.ayatTable.delegate = self
-        self.ayatTable.dataSource = self
+        ayatTable.delegate = self
+        ayatTable.dataSource = self
         
-        self.searchBar.delegate = self
-    }
-    
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        let src = QueryHelper.normalizeQuery(src: searchBar.text!)
-        let maxScore = src.count - 2
-        
-        var matchedDocs = [Int : FoundDocument]()
-        var threshold = Float(0.9)
-        repeat {
-            print(threshold)
-            matchedDocs = SearchHelper.doSearch(query: src, threshold: threshold)
-            threshold -= 0.1
-        } while (matchedDocs.count < 1) && (threshold >= 0.7)
-        
-        var matchedDocsValue = [FoundDocument]()
-        var ayatQurans = [AyatQuran]()
-        if matchedDocs.count > 0 {
-            matchedDocs = SearchHelper.highlighting(matchedDocs: matchedDocs)
-            matchedDocsValue = matchedDocs.map{ _, v in
-                return v
-            }
-            matchedDocsValue.sort {left,right  in
-                if (left.score - right.score) < 0.01 {
-                    return left.ayatQuranId < right.ayatQuranId ? true : false
-                }
-                return left.score < right.score ? true : false
-            }
-            
-            for doc in matchedDocsValue {
-                let relevance = min(floor(doc.score / Float(maxScore * 100)), 100)
-                let ayatQuran = doc.ayatQuran
-                ayatQuran.relevance = relevance
-                ayatQuran.highlightPos = doc.highlightPosition
-                ayatQurans.append(ayatQuran)
-            }
-        }
-        
-        labelCounter.text = "Ditemukan \(ayatQurans.count) hasil."
-        ayatGlobalQurans = ayatQurans
-        self.view.endEditing(true)
-        ayatTable.reloadData()
+        searchBar.delegate = self
+        ayatTable.separatorStyle = .none
+        setupOptionsMenu()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.ayatTable.estimatedRowHeight = 70
-        self.ayatTable.rowHeight = UITableView.automaticDimension
-        self.ayatTable.separatorInset = UIEdgeInsets.zero
+        showEmptyMessage()
     }
     
+    // MARK: Searchbar delegate method
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        search()
+        if ayatGlobalQurans.count < 1 {
+            showEmptyMessage()
+        } else {
+            hideEmptyMessage()
+        }
+        ayatTable.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: false)
+    }
+    
+    // MARK: Table View Delegate method
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return ayatGlobalQurans.count
@@ -114,9 +87,74 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.ayatIndonesia.numberOfLines = 0
         cell.ayatIndonesia.lineBreakMode = .byWordWrapping
         cell.ayatIndonesia.text = ayatQuran.ayatIndonesia
-        cell.noSuratAyat.text = "\(ayatQuran.id). Surat \(ayatQuran.surahName) (\(ayatQuran.surahNo)) Ayat \(ayatQuran.ayatNo)"
+        cell.noSuratAyat.text = "\(indexPath.row + 1). Surat \(ayatQuran.surahName) (\(ayatQuran.surahNo)) Ayat \(ayatQuran.ayatNo)"
+        if indexPath.row % 2 == 0 {
+            cell.backgroundColor = grayStripeColor
+        }
         
         return cell
+    }
+    
+    // MARK: Private functions
+    
+    private func showEmptyMessage() {
+        ayatTable.backgroundView = emptySearchView
+        ayatTable.separatorStyle = .none
+        labelCounterContainer.isHidden = true
+    }
+    
+    private func hideEmptyMessage() {
+        ayatTable.backgroundView = nil
+        ayatTable.estimatedRowHeight = 70
+        ayatTable.rowHeight = UITableView.automaticDimension
+        labelCounterContainer.isHidden = false
+    }
+    
+    private func search() {
+        let src = QueryHelper.normalizeQuery(src: searchBar.text!)
+        let maxScore = src.count - 2
+        
+        var matchedDocs = [Int : FoundDocument]()
+        var threshold = Float(0.9)
+        repeat {
+            matchedDocs = SearchHelper.doSearch(query: src, threshold: threshold)
+            threshold -= 0.1
+        } while (matchedDocs.count < 1) && (threshold >= 0.7)
+        
+        var matchedDocsValue = [FoundDocument]()
+        var ayatQurans = [AyatQuran]()
+        if matchedDocs.count > 0 {
+            matchedDocs = SearchHelper.highlighting(matchedDocs: matchedDocs)
+            matchedDocsValue = matchedDocs.map{ _, v in
+                return v
+            }
+            
+            matchedDocsValue.sort {left,right  in
+                if abs(left.score - right.score) < 0.001 {
+                    return left.ayatQuranId < right.ayatQuranId
+                }
+                return left.score > right.score
+            }
+            
+            for doc in matchedDocsValue {
+                let relevance = min(floor(doc.score / Float(maxScore * 100)), 100)
+                let ayatQuran = doc.ayatQuran
+                ayatQuran.relevance = relevance
+                ayatQuran.highlightPos = doc.highlightPosition
+                ayatQurans.append(ayatQuran)
+            }
+        }
+        
+        labelCounter.text = "Ditemukan \(ayatQurans.count) hasil."
+        ayatGlobalQurans = ayatQurans
+        self.view.endEditing(true)
+        ayatTable.reloadData()
+    }
+    
+    private func setupOptionsMenu() {
+        let share = UIBarButtonItem(barButtonSystemItem: , target: self, action: nil)
+        let add = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: nil)
+        self.navigationItem.rightBarButtonItems = [share, add]
     }
 }
 

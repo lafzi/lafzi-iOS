@@ -14,8 +14,12 @@ class SearchHelper {
         var matchedDocs = [Int : FoundDocument]()
         let trigrams = extractTrigramFP(text: query)
         for (key, fp) in  trigrams {
-            let indices = DBHelper.getInstance().getIndexByTrigram(trigram: key, isVocal: isVocal)
-            for (ayatId, positions) in (indices?.post)! {
+            let index = DBHelper.getInstance().getIndexByTrigram(trigram: key, isVocal: isVocal)
+            if index == nil {
+                continue
+            }
+            
+            for (ayatId, positions) in (index?.post)! {
                 var document = FoundDocument()
                 if matchedDocs[ayatId] != nil {
                     document = matchedDocs[ayatId]!
@@ -53,7 +57,7 @@ class SearchHelper {
                 fd.matchedTermsContiguityScore = reciprocalDiffAverage(lis: lis)
                 fd.score = Float(fd.matchedTermsOrderScore) * fd.matchedTermsContiguityScore
                 
-                if filtered && (fd.matchedTrigramsCount >= Int(minScore)) {
+                if filtered && (Float(fd.matchedTrigramsCount) >= minScore) {
                     filteredDocs[key] = fd
                 }
             }
@@ -61,7 +65,7 @@ class SearchHelper {
             for (key, fd) in matchedDocs {
                 fd.matchedTermsCountScore = fd.matchedTrigramsCount
                 fd.score = Float(fd.matchedTermsCountScore)
-                if filtered && (fd.matchedTrigramsCount >= Int(minScore)) {
+                if filtered && (Float(fd.matchedTrigramsCount) >= minScore) {
                     filteredDocs[key] = fd
                 }
             }
@@ -124,7 +128,7 @@ class SearchHelper {
                 posisiReal.append(ayatQuran.mappingPos[s - 1])
             }
             
-            doc.highlightPosition = longestHighlightLookforward(hsq: posisiReal, minLength: 3)
+            doc.highlightPosition = longestHighlightLookforward(hsq: posisiReal, minLength: 6)
             let hps = doc.highlightPosition
             let endPos = hps[hps.count - 1].end
             let chars = Array(docText.unicodeScalars)
@@ -193,7 +197,7 @@ class SearchHelper {
     private static func longestHighlightLookforward(hsq: [Int], minLength: Int) -> [HighlightPosition] {
         let len = hsq.count
         if len == 1 {
-            var hp = HighlightPosition(start: hsq[0], end: hsq[0] + minLength)
+            let hp = HighlightPosition(start: hsq[0], end: hsq[0] + minLength)
             return [hp]
         }
         

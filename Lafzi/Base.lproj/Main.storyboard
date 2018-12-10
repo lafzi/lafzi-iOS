@@ -38,7 +38,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAC-4W-Sw7">
                                                 <rect key="frame" x="8" y="8" width="359" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="0.50196078431372548" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -109,6 +109,7 @@
                     <connections>
                         <outlet property="ayatTable" destination="PbU-8w-v2N" id="6gQ-gK-toP"/>
                         <outlet property="labelCounter" destination="VAC-4W-Sw7" id="8h6-kQ-7w5"/>
+                        <outlet property="labelCounterContainer" destination="DI1-gJ-K1a" id="NUW-4p-zGi"/>
                         <outlet property="searchBar" destination="lhe-a9-hZo" id="xeE-rO-GgL"/>
                     </connections>
                 </viewController>
