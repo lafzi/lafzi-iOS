@@ -152,9 +152,22 @@ class ViewController:  UIViewController, UITableViewDelegate, UITableViewDataSou
     }
     
     private func setupOptionsMenu() {
-        let share = UIBarButtonItem(barButtonSystemItem: , target: self, action: nil)
-        let add = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: nil)
-        self.navigationItem.rightBarButtonItems = [share, add]
+        let button = UIBarButtonItem(image: UIImage(named: "three-dots"), style: .plain, target: self, action: #selector(openPopover(sender:)))
+        self.navigationItem.rightBarButtonItem = button
+    }
+    
+    @objc func openPopover(sender: UIBarButtonItem) {
+        let startPoint = CGPoint(x: self.view.frame.width - 30, y: self.navigationController?.navigationBar.frame.size.height ?? 55)
+        let popover = Popover(options: [.type(.auto)])
+        let handler = {(tableView: UITableView, indexPath: IndexPath) in
+            if indexPath.row == 1 {
+                let bantuanViewController = self.storyboard?.instantiateViewController(withIdentifier: "bantuanViewController") as! BantuanViewController
+                self.navigationController?.pushViewController(bantuanViewController, animated: true)
+                popover.dismiss()
+            }
+        }
+        let popoverOptions = PopoverOptions(frame: CGRect(x: 100, y: 0, width: 135, height: 135), style: UITableView.Style.plain, popover: popover, handler: handler)
+        popover.show(popoverOptions, point: startPoint)
     }
 }
 

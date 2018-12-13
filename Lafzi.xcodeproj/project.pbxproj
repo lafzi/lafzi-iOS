@@ -14,16 +14,16 @@
 		110332C321B409270093F729 /* HighlightPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110332C221B409270093F729 /* HighlightPosition.swift */; };
 		110332C521B4D4110093F729 /* FreqAndPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110332C421B4D4110093F729 /* FreqAndPosition.swift */; };
 		113AAC4C21B5693600AA025C /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113AAC4B21B5693600AA025C /* Index.swift */; };
-		1180873921BCC555006AC3DD /* CAPSOptionsMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1180873621BCC553006AC3DD /* CAPSOptionsMenu.swift */; };
-		1180873A21BCC555006AC3DD /* CAPSOptionsMenuAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1180873721BCC554006AC3DD /* CAPSOptionsMenuAction.swift */; };
-		1180873B21BCC555006AC3DD /* CAPSOptionsMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1180873821BCC554006AC3DD /* CAPSOptionsMenuButton.swift */; };
+		117CC31721C13C7C00EE594D /* Popover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117CC31621C13C7C00EE594D /* Popover.swift */; };
+		117CC31921C1424500EE594D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 117CC31821C1424500EE594D /* Assets.xcassets */; };
+		117CC31B21C1496F00EE594D /* PopoverOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117CC31A21C1496F00EE594D /* PopoverOptions.swift */; };
+		117CC31E21C1E96500EE594D /* BantuanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117CC31D21C1E96500EE594D /* BantuanViewController.swift */; };
 		11BCE28B21BB5D3A007CD641 /* EmptySearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11BCE28A21BB5D3A007CD641 /* EmptySearchView.xib */; };
 		11BCE28D21BB5D57007CD641 /* EmptySearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BCE28C21BB5D57007CD641 /* EmptySearchView.swift */; };
 		11BCE29021BB7E24007CD641 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BCE28F21BB7E24007CD641 /* Util.swift */; };
 		11C26F5621AE031900F6AF58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C26F5521AE031900F6AF58 /* AppDelegate.swift */; };
 		11C26F5821AE031900F6AF58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C26F5721AE031900F6AF58 /* ViewController.swift */; };
 		11C26F5B21AE031900F6AF58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11C26F5921AE031900F6AF58 /* Main.storyboard */; };
-		11C26F5D21AE031A00F6AF58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11C26F5C21AE031A00F6AF58 /* Assets.xcassets */; };
 		11C26F6021AE031A00F6AF58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11C26F5E21AE031A00F6AF58 /* LaunchScreen.storyboard */; };
 		11C26F6B21AE031A00F6AF58 /* LafziTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C26F6A21AE031A00F6AF58 /* LafziTests.swift */; };
 		11DED52121B09C4400367545 /* AyatQuran.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DED52021B09C4400367545 /* AyatQuran.swift */; };
@@ -50,9 +50,10 @@
 		110332C221B409270093F729 /* HighlightPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightPosition.swift; sourceTree = "<group>"; };
 		110332C421B4D4110093F729 /* FreqAndPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreqAndPosition.swift; sourceTree = "<group>"; };
 		113AAC4B21B5693600AA025C /* Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Index.swift; sourceTree = "<group>"; };
-		1180873621BCC553006AC3DD /* CAPSOptionsMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAPSOptionsMenu.swift; sourceTree = "<group>"; };
-		1180873721BCC554006AC3DD /* CAPSOptionsMenuAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAPSOptionsMenuAction.swift; sourceTree = "<group>"; };
-		1180873821BCC554006AC3DD /* CAPSOptionsMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAPSOptionsMenuButton.swift; sourceTree = "<group>"; };
+		117CC31621C13C7C00EE594D /* Popover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popover.swift; sourceTree = "<group>"; };
+		117CC31821C1424500EE594D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		117CC31A21C1496F00EE594D /* PopoverOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverOptions.swift; sourceTree = "<group>"; };
+		117CC31D21C1E96500EE594D /* BantuanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BantuanViewController.swift; sourceTree = "<group>"; };
 		11BCE28A21BB5D3A007CD641 /* EmptySearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptySearchView.xib; sourceTree = "<group>"; };
 		11BCE28C21BB5D57007CD641 /* EmptySearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySearchView.swift; sourceTree = "<group>"; };
 		11BCE28F21BB7E24007CD641 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
@@ -60,7 +61,6 @@
 		11C26F5521AE031900F6AF58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11C26F5721AE031900F6AF58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		11C26F5A21AE031900F6AF58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		11C26F5C21AE031A00F6AF58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11C26F5F21AE031A00F6AF58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11C26F6121AE031A00F6AF58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11C26F6621AE031A00F6AF58 /* LafziTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LafziTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,14 +93,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		117CC31521C13C5B00EE594D /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				117CC31621C13C7C00EE594D /* Popover.swift */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		117CC31C21C1E93300EE594D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11C26F5721AE031900F6AF58 /* ViewController.swift */,
+				117CC31D21C1E96500EE594D /* BantuanViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		11BCE28921BB5D0F007CD641 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1180873621BCC553006AC3DD /* CAPSOptionsMenu.swift */,
-				1180873721BCC554006AC3DD /* CAPSOptionsMenuAction.swift */,
-				1180873821BCC554006AC3DD /* CAPSOptionsMenuButton.swift */,
 				11BCE28A21BB5D3A007CD641 /* EmptySearchView.xib */,
 				11BCE28C21BB5D57007CD641 /* EmptySearchView.swift */,
+				117CC31A21C1496F00EE594D /* PopoverOptions.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -128,15 +143,16 @@
 		11C26F5421AE031900F6AF58 /* Lafzi */ = {
 			isa = PBXGroup;
 			children = (
+				117CC31C21C1E93300EE594D /* Controller */,
+				117CC31521C13C5B00EE594D /* Libs */,
 				11BCE28921BB5D0F007CD641 /* View */,
 				110332BA21B370010093F729 /* lafzi.sqlite */,
 				11DED52521B36BAD00367545 /* Helper */,
 				11DED51F21B09C2800367545 /* Model */,
+				117CC31821C1424500EE594D /* Assets.xcassets */,
 				11C26F5521AE031900F6AF58 /* AppDelegate.swift */,
-				11C26F5721AE031900F6AF58 /* ViewController.swift */,
 				11DED52321B0A08E00367545 /* AyatTableViewCell.swift */,
 				11C26F5921AE031900F6AF58 /* Main.storyboard */,
-				11C26F5C21AE031A00F6AF58 /* Assets.xcassets */,
 				11C26F5E21AE031A00F6AF58 /* LaunchScreen.storyboard */,
 				11C26F6121AE031A00F6AF58 /* Info.plist */,
 			);
@@ -276,10 +292,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				11C26F6021AE031A00F6AF58 /* LaunchScreen.storyboard in Resources */,
-				11C26F5D21AE031A00F6AF58 /* Assets.xcassets in Resources */,
 				110332BB21B370010093F729 /* lafzi.sqlite in Resources */,
 				11C26F5B21AE031900F6AF58 /* Main.storyboard in Resources */,
 				11BCE28B21BB5D3A007CD641 /* EmptySearchView.xib in Resources */,
+				117CC31921C1424500EE594D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,20 +364,20 @@
 			files = (
 				11BCE28D21BB5D57007CD641 /* EmptySearchView.swift in Sources */,
 				11DED52421B0A08E00367545 /* AyatTableViewCell.swift in Sources */,
-				1180873921BCC555006AC3DD /* CAPSOptionsMenu.swift in Sources */,
 				110332C121B407D40093F729 /* FoundDocument.swift in Sources */,
 				110332C321B409270093F729 /* HighlightPosition.swift in Sources */,
 				113AAC4C21B5693600AA025C /* Index.swift in Sources */,
 				11C26F5821AE031900F6AF58 /* ViewController.swift in Sources */,
-				1180873A21BCC555006AC3DD /* CAPSOptionsMenuAction.swift in Sources */,
+				117CC31B21C1496F00EE594D /* PopoverOptions.swift in Sources */,
 				11DED52721B36BCD00367545 /* DBHelper.swift in Sources */,
 				11BCE29021BB7E24007CD641 /* Util.swift in Sources */,
-				1180873B21BCC555006AC3DD /* CAPSOptionsMenuButton.swift in Sources */,
 				110332C521B4D4110093F729 /* FreqAndPosition.swift in Sources */,
 				11DED52121B09C4400367545 /* AyatQuran.swift in Sources */,
 				11C26F5621AE031900F6AF58 /* AppDelegate.swift in Sources */,
 				110332BD21B384220093F729 /* QueryHelper.swift in Sources */,
 				110332BF21B403120093F729 /* SearchHelper.swift in Sources */,
+				117CC31E21C1E96500EE594D /* BantuanViewController.swift in Sources */,
+				117CC31721C13C7C00EE594D /* Popover.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
