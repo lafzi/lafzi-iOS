@@ -13,6 +13,8 @@ class ViewController:  UIViewController, UITableViewDelegate, UITableViewDataSou
     var ayatGlobalQurans = [AyatQuran]()
     var emptySearchView = EmptySearchView()
     var grayStripeColor = Util.hexStringToUIColor(hex: "#f4f4f4")
+    var reloadData = false
+    let defaults = UserDefaults.standard
     
     @IBInspectable var rowHeight = 70 {
         didSet {
@@ -28,6 +30,14 @@ class ViewController:  UIViewController, UITableViewDelegate, UITableViewDataSou
     // MARK: handle lifecycle
     
     override func viewDidLoad() {
+        for family: String in UIFont.familyNames
+        {
+            print("\(family)")
+            for names: String in UIFont.fontNames(forFamilyName: family)
+            {
+                print("== \(names)")
+            }
+        }
         super.viewDidLoad()
         ayatTable.delegate = self
         ayatTable.dataSource = self
@@ -38,7 +48,15 @@ class ViewController:  UIViewController, UITableViewDelegate, UITableViewDataSou
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        showEmptyMessage()
+        if reloadData {
+            searchBarSearchButtonClicked(searchBar)
+            self.reloadData = false
+        }
+        if ayatGlobalQurans.count < 1 {
+            showEmptyMessage()
+        } else {
+            hideEmptyMessage()
+        }
     }
     
     // MARK: Searchbar delegate method
@@ -48,9 +66,9 @@ class ViewController:  UIViewController, UITableViewDelegate, UITableViewDataSou
         if ayatGlobalQurans.count < 1 {
             showEmptyMessage()
         } else {
+            ayatTable.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: false)
             hideEmptyMessage()
         }
-        ayatTable.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: false)
     }
     
     // MARK: Table View Delegate method
@@ -61,6 +79,7 @@ class ViewController:  UIViewController, UITableViewDelegate, UITableViewDataSou
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellId = "ayatTableViewCell"
+        let showTrans = defaults.bool(forKey: SettingsViewController.SHOW_TRANSLATION)
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? AyatTableViewCell else {
             fatalError("The dequeued cell is not an instance of MealTableViewCell.")
         }
@@ -83,13 +102,20 @@ class ViewController:  UIViewController, UITableViewDelegate, UITableViewDataSou
             arabic.addAttribute(NSAttributedString.Key.backgroundColor, value: UIColor.yellow, range: range)
         }
         cell.ayatArabic.attributedText = arabic
-        
-        cell.ayatIndonesia.numberOfLines = 0
-        cell.ayatIndonesia.lineBreakMode = .byWordWrapping
-        cell.ayatIndonesia.text = ayatQuran.ayatIndonesia
+        cell.ayatArabic.font = UIFont(name: "me_quran", size: 22)
+        if showTrans {
+            cell.ayatIndonesia.numberOfLines = 0
+            cell.ayatIndonesia.lineBreakMode = .byWordWrapping
+            cell.ayatIndonesia.text = ayatQuran.ayatIndonesia
+            cell.ayatIndonesia.isHidden = false
+        } else {
+            cell.ayatIndonesia.isHidden = true
+        }
         cell.noSuratAyat.text = "\(indexPath.row + 1). Surat \(ayatQuran.surahName) (\(ayatQuran.surahNo)) Ayat \(ayatQuran.ayatNo)"
-        if indexPath.row % 2 == 0 {
+        if indexPath.row % 2 != 0 {
             cell.backgroundColor = grayStripeColor
+        } else {
+            cell.backgroundColor = UIColor.white
         }
         
         return cell
@@ -111,13 +137,14 @@ class ViewController:  UIViewController, UITableViewDelegate, UITableViewDataSou
     }
     
     private func search() {
-        let src = QueryHelper.normalizeQuery(src: searchBar.text!)
+        let isVocal = defaults.bool(forKey: SettingsViewController.IS_VOCAL)
+        let src = QueryHelper.normalizeQuery(src: searchBar.text!, isVocal: isVocal)
         let maxScore = src.count - 2
         
         var matchedDocs = [Int : FoundDocument]()
         var threshold = Float(0.9)
         repeat {
-            matchedDocs = SearchHelper.doSearch(query: src, threshold: threshold)
+            matchedDocs = SearchHelper.doSearch(query: src, isVocal: isVocal, threshold: threshold)
             threshold -= 0.1
         } while (matchedDocs.count < 1) && (threshold >= 0.7)
         
@@ -159,14 +186,7 @@ class ViewController:  UIViewController, UITableViewDelegate, UITableViewDataSou
     @objc func openPopover(sender: UIBarButtonItem) {
         let startPoint = CGPoint(x: self.view.frame.width - 30, y: self.navigationController?.navigationBar.frame.size.height ?? 55)
         let popover = Popover(options: [.type(.auto)])
-        let handler = {(tableView: UITableView, indexPath: IndexPath) in
-            if indexPath.row == 1 {
-                let bantuanViewController = self.storyboard?.instantiateViewController(withIdentifier: "bantuanViewController") as! BantuanViewController
-                self.navigationController?.pushViewController(bantuanViewController, animated: true)
-                popover.dismiss()
-            }
-        }
-        let popoverOptions = PopoverOptions(frame: CGRect(x: 100, y: 0, width: 135, height: 135), style: UITableView.Style.plain, popover: popover, handler: handler)
+        let popoverOptions = PopoverOptions(frame: CGRect(x: 100, y: 0, width: 135, height: 150), style: UITableView.Style.plain, popover: popover, controller: self)
         popover.show(popoverOptions, point: startPoint)
     }
 }

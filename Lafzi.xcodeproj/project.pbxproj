@@ -29,6 +29,9 @@
 		11DED52121B09C4400367545 /* AyatQuran.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DED52021B09C4400367545 /* AyatQuran.swift */; };
 		11DED52421B0A08E00367545 /* AyatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DED52321B0A08E00367545 /* AyatTableViewCell.swift */; };
 		11DED52721B36BCD00367545 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DED52621B36BCD00367545 /* DBHelper.swift */; };
+		11F92FB021C28B7700B3C59A /* me_quran.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11F92FAE21C288B200B3C59A /* me_quran.ttf */; };
+		11F92FB321C2918D00B3C59A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11F92FB521C2918D00B3C59A /* Localizable.strings */; };
+		11F92FB921C3430B00B3C59A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F92FB821C3430B00B3C59A /* SettingsViewController.swift */; };
 		2585AA529FB6BE87D052F448 /* Pods_Lafzi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28AE09DA018D36025632E51D /* Pods_Lafzi.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +72,9 @@
 		11DED52021B09C4400367545 /* AyatQuran.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyatQuran.swift; sourceTree = "<group>"; };
 		11DED52321B0A08E00367545 /* AyatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyatTableViewCell.swift; sourceTree = "<group>"; };
 		11DED52621B36BCD00367545 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		11F92FAE21C288B200B3C59A /* me_quran.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = me_quran.ttf; sourceTree = "<group>"; };
+		11F92FB421C2918D00B3C59A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		11F92FB821C3430B00B3C59A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		28AE09DA018D36025632E51D /* Pods_Lafzi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lafzi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B990E632DCA4BB4F5A49F0CF /* Pods-Lafzi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lafzi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lafzi/Pods-Lafzi.debug.xcconfig"; sourceTree = "<group>"; };
 		CBFDC852D45C8D49DF764156 /* Pods-Lafzi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lafzi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lafzi/Pods-Lafzi.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +112,7 @@
 			children = (
 				11C26F5721AE031900F6AF58 /* ViewController.swift */,
 				117CC31D21C1E96500EE594D /* BantuanViewController.swift */,
+				11F92FB821C3430B00B3C59A /* SettingsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -143,6 +150,7 @@
 		11C26F5421AE031900F6AF58 /* Lafzi */ = {
 			isa = PBXGroup;
 			children = (
+				11F92FAF21C288C900B3C59A /* Font */,
 				117CC31C21C1E93300EE594D /* Controller */,
 				117CC31521C13C5B00EE594D /* Libs */,
 				11BCE28921BB5D0F007CD641 /* View */,
@@ -155,6 +163,7 @@
 				11C26F5921AE031900F6AF58 /* Main.storyboard */,
 				11C26F5E21AE031A00F6AF58 /* LaunchScreen.storyboard */,
 				11C26F6121AE031A00F6AF58 /* Info.plist */,
+				11F92FB521C2918D00B3C59A /* Localizable.strings */,
 			);
 			path = Lafzi;
 			sourceTree = "<group>";
@@ -189,6 +198,14 @@
 				11BCE28F21BB7E24007CD641 /* Util.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		11F92FAF21C288C900B3C59A /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				11F92FAE21C288B200B3C59A /* me_quran.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		762D5207AFCA0B16222A6E52 /* Pods */ = {
@@ -291,8 +308,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11F92FB021C28B7700B3C59A /* me_quran.ttf in Resources */,
 				11C26F6021AE031A00F6AF58 /* LaunchScreen.storyboard in Resources */,
 				110332BB21B370010093F729 /* lafzi.sqlite in Resources */,
+				11F92FB321C2918D00B3C59A /* Localizable.strings in Resources */,
 				11C26F5B21AE031900F6AF58 /* Main.storyboard in Resources */,
 				11BCE28B21BB5D3A007CD641 /* EmptySearchView.xib in Resources */,
 				117CC31921C1424500EE594D /* Assets.xcassets in Resources */,
@@ -318,6 +337,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Lafzi/Pods-Lafzi-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/QuickTableViewController/QuickTableViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/SQLCipher/SQLCipher.framework",
 				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 			);
@@ -325,6 +345,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QuickTableViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLCipher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 			);
@@ -374,6 +395,7 @@
 				110332C521B4D4110093F729 /* FreqAndPosition.swift in Sources */,
 				11DED52121B09C4400367545 /* AyatQuran.swift in Sources */,
 				11C26F5621AE031900F6AF58 /* AppDelegate.swift in Sources */,
+				11F92FB921C3430B00B3C59A /* SettingsViewController.swift in Sources */,
 				110332BD21B384220093F729 /* QueryHelper.swift in Sources */,
 				110332BF21B403120093F729 /* SearchHelper.swift in Sources */,
 				117CC31E21C1E96500EE594D /* BantuanViewController.swift in Sources */,
@@ -414,6 +436,14 @@
 				11C26F5F21AE031A00F6AF58 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		11F92FB521C2918D00B3C59A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11F92FB421C2918D00B3C59A /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -12,11 +12,11 @@ class PopoverOptions: UITableView, UITableViewDelegate, UITableViewDataSource {
     
     var popover: Popover
     let options = ["Bantuan", "Pengaturan", "Tentang Lafzi"]
-    var handler: (_: UITableView, _: IndexPath) -> Void
+    var controller = ViewController(nibName: nil, bundle: nil)
     
-    init(frame: CGRect, style: UITableView.Style, popover: Popover, handler: @escaping (_ tableView: UITableView, _ indexPath: IndexPath) -> Void) {
+    init(frame: CGRect, style: UITableView.Style, popover: Popover, controller: ViewController) {
         self.popover = popover
-        self.handler = handler
+        self.controller = controller
         super.init(frame: frame, style: style)
         self.delegate = self
         self.dataSource = self
@@ -26,9 +26,6 @@ class PopoverOptions: UITableView, UITableViewDelegate, UITableViewDataSource {
     
     required init?(coder aDecoder: NSCoder) {
         self.popover = Popover(options: nil)
-        self.handler = {(tableView: UITableView, didSelectRowAt: IndexPath) in
-            
-        }
         super.init(coder: aDecoder)
     }
     
@@ -36,8 +33,27 @@ class PopoverOptions: UITableView, UITableViewDelegate, UITableViewDataSource {
         return 3
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 55
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        handler(tableView, indexPath)
+        popover.dismiss()
+        switch indexPath.row {
+        case 0:
+            let bantuanViewController = controller.storyboard?.instantiateViewController(withIdentifier: "bantuanViewController") as! BantuanViewController
+            bantuanViewController.html = NSLocalizedString("HELP NOTE", comment: "")
+            controller.navigationController?.pushViewController(bantuanViewController, animated: true)
+        case 1:
+            let settingController = SettingsViewController(style: .grouped)
+            controller.reloadData = true
+            controller.navigationController?.pushViewController(settingController, animated: true)
+        case 2:
+            let bantuanViewController = controller.storyboard?.instantiateViewController(withIdentifier: "bantuanViewController") as! BantuanViewController
+            bantuanViewController.html = NSLocalizedString("ABOUT NOTE", comment: "")
+            controller.navigationController?.pushViewController(bantuanViewController, animated: true)
+        default: break
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

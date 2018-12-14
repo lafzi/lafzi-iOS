@@ -120,7 +120,6 @@
         <!--Bantuan View Controller-->
         <scene sceneID="xdb-wo-9Rk">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rEA-1O-Hc8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="bantuanViewController" id="0zD-sb-iFQ" customClass="BantuanViewController" customModule="Lafzi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ewc-86-gMq"/>
@@ -151,6 +150,7 @@
                         <outlet property="webView" destination="GZJ-Pw-PCG" id="G1b-SC-Pq5"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rEA-1O-Hc8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1997" y="484"/>
         </scene>
