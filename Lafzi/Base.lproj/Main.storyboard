@@ -111,6 +111,7 @@
                         <outlet property="labelCounter" destination="VAC-4W-Sw7" id="8h6-kQ-7w5"/>
                         <outlet property="labelCounterContainer" destination="DI1-gJ-K1a" id="NUW-4p-zGi"/>
                         <outlet property="searchBar" destination="lhe-a9-hZo" id="xeE-rO-GgL"/>
+                        <outlet property="stackView" destination="ppo-wm-tvG" id="et6-iV-Cib"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

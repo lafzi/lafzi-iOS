@@ -18,6 +18,8 @@
 		117CC31921C1424500EE594D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 117CC31821C1424500EE594D /* Assets.xcassets */; };
 		117CC31B21C1496F00EE594D /* PopoverOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117CC31A21C1496F00EE594D /* PopoverOptions.swift */; };
 		117CC31E21C1E96500EE594D /* BantuanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117CC31D21C1E96500EE594D /* BantuanViewController.swift */; };
+		119A01E421C3D91F00A93259 /* SearchHelperView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 119A01E321C3D91F00A93259 /* SearchHelperView.xib */; };
+		119A01E621C3D93E00A93259 /* SearchHelperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119A01E521C3D93E00A93259 /* SearchHelperView.swift */; };
 		11BCE28B21BB5D3A007CD641 /* EmptySearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11BCE28A21BB5D3A007CD641 /* EmptySearchView.xib */; };
 		11BCE28D21BB5D57007CD641 /* EmptySearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BCE28C21BB5D57007CD641 /* EmptySearchView.swift */; };
 		11BCE29021BB7E24007CD641 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BCE28F21BB7E24007CD641 /* Util.swift */; };
@@ -57,6 +59,8 @@
 		117CC31821C1424500EE594D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		117CC31A21C1496F00EE594D /* PopoverOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverOptions.swift; sourceTree = "<group>"; };
 		117CC31D21C1E96500EE594D /* BantuanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BantuanViewController.swift; sourceTree = "<group>"; };
+		119A01E321C3D91F00A93259 /* SearchHelperView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchHelperView.xib; sourceTree = "<group>"; };
+		119A01E521C3D93E00A93259 /* SearchHelperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHelperView.swift; sourceTree = "<group>"; };
 		11BCE28A21BB5D3A007CD641 /* EmptySearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptySearchView.xib; sourceTree = "<group>"; };
 		11BCE28C21BB5D57007CD641 /* EmptySearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySearchView.swift; sourceTree = "<group>"; };
 		11BCE28F21BB7E24007CD641 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 				11BCE28A21BB5D3A007CD641 /* EmptySearchView.xib */,
 				11BCE28C21BB5D57007CD641 /* EmptySearchView.swift */,
 				117CC31A21C1496F00EE594D /* PopoverOptions.swift */,
+				119A01E321C3D91F00A93259 /* SearchHelperView.xib */,
+				119A01E521C3D93E00A93259 /* SearchHelperView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -314,6 +320,7 @@
 				11F92FB321C2918D00B3C59A /* Localizable.strings in Resources */,
 				11C26F5B21AE031900F6AF58 /* Main.storyboard in Resources */,
 				11BCE28B21BB5D3A007CD641 /* EmptySearchView.xib in Resources */,
+				119A01E421C3D91F00A93259 /* SearchHelperView.xib in Resources */,
 				117CC31921C1424500EE594D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +344,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Lafzi/Pods-Lafzi-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/QuickTableViewController/QuickTableViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/SQLCipher/SQLCipher.framework",
 				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
@@ -345,6 +353,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QuickTableViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLCipher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
@@ -391,6 +400,7 @@
 				11C26F5821AE031900F6AF58 /* ViewController.swift in Sources */,
 				117CC31B21C1496F00EE594D /* PopoverOptions.swift in Sources */,
 				11DED52721B36BCD00367545 /* DBHelper.swift in Sources */,
+				119A01E621C3D93E00A93259 /* SearchHelperView.swift in Sources */,
 				11BCE29021BB7E24007CD641 /* Util.swift in Sources */,
 				110332C521B4D4110093F729 /* FreqAndPosition.swift in Sources */,
 				11DED52121B09C4400367545 /* AyatQuran.swift in Sources */,

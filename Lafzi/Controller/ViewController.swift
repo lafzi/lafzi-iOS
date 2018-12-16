@@ -11,7 +11,6 @@ import UIKit
 class ViewController:  UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     //MARK: Properties
     var ayatGlobalQurans = [AyatQuran]()
-    var emptySearchView = EmptySearchView()
     var grayStripeColor = Util.hexStringToUIColor(hex: "#f4f4f4")
     var reloadData = false
     let defaults = UserDefaults.standard
@@ -22,6 +21,7 @@ class ViewController:  UIViewController, UITableViewDelegate, UITableViewDataSou
             self.ayatTable.separatorInset = UIEdgeInsets.zero
         }
     }
+    @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var ayatTable: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var labelCounterContainer: UIStackView!
@@ -30,32 +30,23 @@ class ViewController:  UIViewController, UITableViewDelegate, UITableViewDataSou
     // MARK: handle lifecycle
     
     override func viewDidLoad() {
-        for family: String in UIFont.familyNames
-        {
-            print("\(family)")
-            for names: String in UIFont.fontNames(forFamilyName: family)
-            {
-                print("== \(names)")
-            }
-        }
         super.viewDidLoad()
         ayatTable.delegate = self
         ayatTable.dataSource = self
         
         searchBar.delegate = self
         ayatTable.separatorStyle = .none
+        
+        let searchHelperView = SearchHelperView(controller: self)
+        ayatTable.backgroundView = searchHelperView
         setupOptionsMenu()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         if reloadData {
             searchBarSearchButtonClicked(searchBar)
             self.reloadData = false
-        }
-        if ayatGlobalQurans.count < 1 {
-            showEmptyMessage()
-        } else {
-            hideEmptyMessage()
         }
     }
     
@@ -70,6 +61,7 @@ class ViewController:  UIViewController, UITableViewDelegate, UITableViewDataSou
             hideEmptyMessage()
         }
     }
+
     
     // MARK: Table View Delegate method
     
@@ -124,7 +116,7 @@ class ViewController:  UIViewController, UITableViewDelegate, UITableViewDataSou
     // MARK: Private functions
     
     private func showEmptyMessage() {
-        ayatTable.backgroundView = emptySearchView
+        ayatTable.backgroundView = EmptySearchView()
         ayatTable.separatorStyle = .none
         labelCounterContainer.isHidden = true
     }
