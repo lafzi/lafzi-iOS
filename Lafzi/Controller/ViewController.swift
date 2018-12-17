@@ -31,6 +31,8 @@ class ViewController:  UIViewController, UITableViewDelegate, UITableViewDataSou
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        UserDefaults.standard.register(defaults: [SettingsViewController.IS_VOCAL : true, SettingsViewController.SHOW_TRANSLATION : true])
+        
         ayatTable.delegate = self
         ayatTable.dataSource = self
         
@@ -40,11 +42,10 @@ class ViewController:  UIViewController, UITableViewDelegate, UITableViewDataSou
         let searchHelperView = SearchHelperView(controller: self)
         ayatTable.backgroundView = searchHelperView
         setupOptionsMenu()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if reloadData {
+        if reloadData && !searchBar.text!.isEmpty {
             searchBarSearchButtonClicked(searchBar)
             self.reloadData = false
         }
@@ -53,12 +54,22 @@ class ViewController:  UIViewController, UITableViewDelegate, UITableViewDataSou
     // MARK: Searchbar delegate method
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        search()
-        if ayatGlobalQurans.count < 1 {
-            showEmptyMessage()
-        } else {
-            ayatTable.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: false)
-            hideEmptyMessage()
+        let text = searchBar.text
+        self.view.endEditing(true)
+        let sv = ViewController.displaySpinner(onView: self.ayatTable)
+        DispatchQueue.global(qos: .background).async {
+            self.search(txt: text!)
+            DispatchQueue.main.async {
+                self.labelCounter.text = "Ditemukan \(self.ayatGlobalQurans.count) hasil."
+                self.ayatTable.reloadData()
+                if self.ayatGlobalQurans.count < 1 {
+                    self.showEmptyMessage()
+                } else {
+                    self.ayatTable.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: false)
+                    self.hideEmptyMessage()
+                }
+            }
+            ViewController.removeSpinner(spinner: sv)
         }
     }
 
@@ -67,6 +78,11 @@ class ViewController:  UIViewController, UITableViewDelegate, UITableViewDataSou
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return ayatGlobalQurans.count
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "PageViewControllerSegue", sender: nil)
+        tableView.deselectRow(at: indexPath, animated: false)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -128,9 +144,9 @@ class ViewController:  UIViewController, UITableViewDelegate, UITableViewDataSou
         labelCounterContainer.isHidden = false
     }
     
-    private func search() {
+    private func search(txt: String) {
         let isVocal = defaults.bool(forKey: SettingsViewController.IS_VOCAL)
-        let src = QueryHelper.normalizeQuery(src: searchBar.text!, isVocal: isVocal)
+        let src = QueryHelper.normalizeQuery(src: txt, isVocal: isVocal)
         let maxScore = src.count - 2
         
         var matchedDocs = [Int : FoundDocument]()
@@ -163,11 +179,7 @@ class ViewController:  UIViewController, UITableViewDelegate, UITableViewDataSou
                 ayatQurans.append(ayatQuran)
             }
         }
-        
-        labelCounter.text = "Ditemukan \(ayatQurans.count) hasil."
         ayatGlobalQurans = ayatQurans
-        self.view.endEditing(true)
-        ayatTable.reloadData()
     }
     
     private func setupOptionsMenu() {
@@ -180,6 +192,36 @@ class ViewController:  UIViewController, UITableViewDelegate, UITableViewDataSou
         let popover = Popover(options: [.type(.auto)])
         let popoverOptions = PopoverOptions(frame: CGRect(x: 100, y: 0, width: 135, height: 150), style: UITableView.Style.plain, popover: popover, controller: self)
         popover.show(popoverOptions, point: startPoint)
+    }
+    
+    class func displaySpinner(onView : UIView) -> UIView {
+        let spinnerView = UIView.init(frame: onView.bounds)
+        DispatchQueue.main.async {
+            spinnerView.backgroundColor = UIColor.init(red: 1, green: 1, blue: 1, alpha: 0.5)
+            let ai = UIActivityIndicatorView.init(style: .whiteLarge)
+            ai.color = UIColor.black
+            ai.startAnimating()
+            ai.center = spinnerView.center
+            spinnerView.addSubview(ai)
+            onView.addSubview(spinnerView)
+        }
+        
+        return spinnerView
+    }
+    
+    class func removeSpinner(spinner :UIView) {
+        DispatchQueue.main.async {
+            spinner.removeFromSuperview()
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "PageViewControllerSegue" {
+            let slideController = segue.destination as! SlideController
+            let ayatId = self.ayatGlobalQurans[(self.ayatTable.indexPathForSelectedRow?.row)!].id
+            print("Ayat \(ayatId)")
+            slideController.currentAyatId = ayatId
+        }
     }
 }
 

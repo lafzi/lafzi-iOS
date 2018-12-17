@@ -130,9 +130,12 @@ class SearchHelper {
             
             doc.highlightPosition = longestHighlightLookforward(hsq: posisiReal, minLength: 6)
             let hps = doc.highlightPosition
-            let endPos = hps[hps.count - 1].end
+            var endPos = hps[hps.count - 1].end
             let chars = Array(docText.unicodeScalars)
-            
+
+            if endPos > chars.count - 3 {
+                endPos = chars.count - 3
+            }
             if chars[endPos + 1] == " " ||
                 chars.count - 1 <= endPos + 1 {
                 doc.score += 0.001

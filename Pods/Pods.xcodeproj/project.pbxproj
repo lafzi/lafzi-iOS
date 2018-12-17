@@ -7,337 +7,226 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		022F0C3E10E3629E6766A7CC59A3FD5E /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE27B986BB1038FF459831FE3A0084C /* CustomFunctions.swift */; };
-		03C16216A83BF82B1F70DC6D44B68E34 /* SQLCipher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E125C2DEE7F909FA8893A881FC1795B /* SQLCipher-dummy.m */; };
-		08ECAD36654C12607BF3C7AECE6BF8D9 /* RadioSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9ABF63AF216A458BC8C750D48D3919 /* RadioSection.swift */; };
-		08F190C6F757FEC825C52FA73545D18F /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F5AD7359316E536D6C5895051B4C80 /* SQLite-Bridging.m */; };
-		09202DD6207FFD4A3911A731A0FDF466 /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C03BD68321449D822957693AF7D041D /* FTS4.swift */; };
-		0A139D4D427C48C794556CAC29B383A4 /* NVActivityIndicatorAnimationLineScaleParty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0773432FEDFF1864EACFD3FE53767236 /* NVActivityIndicatorAnimationLineScaleParty.swift */; };
-		0C5B11F6BECFF59F608F205D2DCC4D6C /* RowStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DA784DDFA35CBF227DA0853EA5C632 /* RowStyle.swift */; };
-		0D7CB42FCFC469171329527B5087FFF9 /* TapActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06938B1BCEFEBD34B2A33E88B76C952 /* TapActionCell.swift */; };
-		0E5D53D9B25F06D67C66AFC249217167 /* NVActivityIndicatorAnimationCircleStrokeSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A6B0FD87684619C71EB3FACA67921D /* NVActivityIndicatorAnimationCircleStrokeSpin.swift */; };
-		1022A0475E3861B45701C82F3AD1C261 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C71733C12E49A0474D3700CE127616 /* Statement.swift */; };
-		1A2D4602E0597C8470B11921A31C9967 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6920DF0EB9C6B865C641D62ABD0EDE8B /* QuartzCore.framework */; };
-		1D3EFD7461E1E1971DEF846A978A471F /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B94B398B903770AB05F1F22707761C /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */; };
-		1DF1E30A4692124856D09A72364D128B /* NVActivityIndicatorAnimationPacman.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEECFDAAAD45DA80A1E143A98A73A012 /* NVActivityIndicatorAnimationPacman.swift */; };
-		1F1EAC1F28B6D3DE580E493B7BAB6400 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2692B8FBAAC52F52BD2281ABE4598A3E /* Schema.swift */; };
-		1FE208F00C26A4029AE661E62271F565 /* NVActivityIndicatorAnimationBallTrianglePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C320AA6F43D1433CB2EE388E304ABB /* NVActivityIndicatorAnimationBallTrianglePath.swift */; };
-		21165B0491B77C139618997C9104846B /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897DD5CE52E5DA173B3F895768A71980 /* SwitchCell.swift */; };
-		21B5097249B5E7DB0CAD434DC79E94D8 /* Subtitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A7A6B3239905B7028BEAAFF5F6F738 /* Subtitle.swift */; };
-		21DBD31E5E4D20CB5BC7EF7C58F37F07 /* NVActivityIndicatorAnimationBallScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF44CF4D2910A8AF6DF4971B558EEDB /* NVActivityIndicatorAnimationBallScale.swift */; };
-		2714F1844B3141365A4AEA36799A4728 /* SQLCipher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8512361B4FC463324D08A554DC72B96F /* SQLCipher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2FB9E083FDBEC11ABBA21A7CE566D1F1 /* NVActivityIndicatorAnimationBallScaleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BCE2BA1700322537C9AC87E4C0FEE5 /* NVActivityIndicatorAnimationBallScaleMultiple.swift */; };
-		34235B434FCEF109B5F1962B6F9C35FE /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95017F76E35188810B3732B0BEA1B3F0 /* Configurable.swift */; };
-		3522BC7C69F00F10342841DF0CDAEA1E /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3A5523069F6E117CF4D3C5B4D29F9 /* Blob.swift */; };
-		3B2E8C456190C7A4D5300C84F6772952 /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7350C482A980A88595204C83DD46D722 /* FTS5.swift */; };
-		413C67DCC7C16CD3752647D9509E5E10 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B496AD8A5A5A7E3D9DA1EFF3F03FCB1 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */; };
-		452F8C79F4B72A53D1ADB433D9ECF898 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED20AA107E59D32A1C5E92558FE1380E /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift */; };
-		473A6101766BE4386A82F1CC8CE22830 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51540B7BA46300F609AF0DCDC42D12DC /* Foundation.framework */; };
-		4B56C8BCF59D41ACFA09CBA3D1508678 /* NVActivityIndicatorAnimationBallBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3C8CAC4976AF218F34CE708121436 /* NVActivityIndicatorAnimationBallBeat.swift */; };
-		4D1152EBA45C12D8B6D34BB76468331F /* NVActivityIndicatorAnimationSquareSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1628D12955D3F560D0955F79DD5FC311 /* NVActivityIndicatorAnimationSquareSpin.swift */; };
-		4E22F2F1F4DD7F0EFB2CD093FBCAA884 /* NVActivityIndicatorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAEAA59D10029BF569A1F39F865075 /* NVActivityIndicatorPresenter.swift */; };
-		5217FAFF464404FAAF285C57420453CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51540B7BA46300F609AF0DCDC42D12DC /* Foundation.framework */; };
-		57576563140BA1551FB009A758B44B2A /* NVActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F63F221E483530A0747DF4A041EA56 /* NVActivityIndicatorShape.swift */; };
-		58AA79434C2ECF3D0CFC6EBB59204A84 /* QuickTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0723F6B4FD6867861C9BE9D4C8A38F25 /* QuickTableViewController.swift */; };
-		5CD958C6565A19083410A4C29FF32321 /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E086F13451EB6828B725E8EB22407581 /* Collation.swift */; };
-		5F9421A709A1D187E53E758C9677AC36 /* NVActivityIndicatorAnimationBallGridPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E586EFFB5D6AB13276F1FEBD4CF28022 /* NVActivityIndicatorAnimationBallGridPulse.swift */; };
-		60C69896A299BF6AC8EC3D9168F2C345 /* SQLite.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67552B4D579D2B65C1D326EBD8435AC6 /* SQLite.swift-dummy.m */; };
-		636FD788D3E070D369CB125EC82F5468 /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428F8A048C532A7944C66506D2AADC87 /* Setter.swift */; };
-		6E50E42F7D3D0A40EB84A184EE89CAE5 /* NVActivityIndicatorView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0D43F04814240E3F29208FBD8E2452 /* NVActivityIndicatorView-dummy.m */; };
-		6E5C49B95E2F6717F9171A86B1A4F4C0 /* sqlite3.h in Headers */ = {isa = PBXBuildFile; fileRef = D783C550AE0368D5E47BD8C0852DF91E /* sqlite3.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		76F10269ADEC41D420B047F727216846 /* NVActivityIndicatorAnimationBallPulseRise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60BA9C530D880BD92603E63676ED7FF /* NVActivityIndicatorAnimationBallPulseRise.swift */; };
-		78DF41BFEEAA91E34A68468590318F94 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 814EECD439DD846DE7C9229F2630C6C0 /* sqlite3.c */; settings = {COMPILER_FLAGS = "-DNDEBUG -DSQLITE_HAS_CODEC -DSQLITE_TEMP_STORE=2 -DSQLITE_SOUNDEX -DSQLITE_THREADSAFE -DSQLITE_ENABLE_RTREE -DSQLITE_ENABLE_STAT3 -DSQLITE_ENABLE_STAT4 -DSQLITE_ENABLE_COLUMN_METADATA -DSQLITE_ENABLE_MEMORY_MANAGEMENT -DSQLITE_ENABLE_LOAD_EXTENSION -DSQLITE_ENABLE_FTS4 -DSQLITE_ENABLE_FTS4_UNICODE61 -DSQLITE_ENABLE_FTS3_PARENTHESIS -DSQLITE_ENABLE_UNLOCK_NOTIFY -DSQLITE_ENABLE_JSON1 -DSQLITE_ENABLE_FTS5 -DSQLCIPHER_CRYPTO_CC -DHAVE_USLEEP=1 -DSQLITE_MAX_VARIABLE_NUMBER=99999 -fno-objc-arc"; }; };
-		790BCC8760FCD846DFEF2EC66EC85E75 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857F18E26F1AF103DF349754B0B53749 /* Helpers.swift */; };
-		7BE07E1ADAE87C3EEB4C50B2F248C237 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF60FDBC5F2424A2B930F1501D7FA7 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift */; };
-		7D54F09FEC261EB342B55C728FC25ED9 /* Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36F9344FDCFFDFCACA77AFE5A95A345 /* Cipher.swift */; };
-		7FDC64860FB6713E2983E827DB29F252 /* NVActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426967A54FC9703E3955EBC69D8D2A4F /* NVActivityIndicatorView.swift */; };
-		84A1AA5DCEA5ADFC1B069F06EA8CB87A /* SwitchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA76FDAC702F93EAF3CE362ED7ED87A /* SwitchRow.swift */; };
-		84ED63C5A1DC2064BACCE6F212E1C77F /* NVActivityIndicatorAnimationLineScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = E374A097F4E7B7276797857F951022F2 /* NVActivityIndicatorAnimationLineScale.swift */; };
-		85B9B06515A80E0EAEA674A9F39DDD97 /* NVActivityIndicatorAnimationBallClipRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACAE9D1C8EE5FAD720CA78ECE581C68 /* NVActivityIndicatorAnimationBallClipRotate.swift */; };
-		8643F6AD011DC4E855D7A0E7E08124F1 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0D2CFF1464C4F94169C43509E21564 /* Icon.swift */; };
-		865A28104453FBC6B46A470CBFDE67B7 /* NVActivityIndicatorAnimationSemiCircleSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79654ABAC970FC154EC972E48950A690 /* NVActivityIndicatorAnimationSemiCircleSpin.swift */; };
-		8BD3F67CE8B30EA434AF244A26CFE94B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51540B7BA46300F609AF0DCDC42D12DC /* Foundation.framework */; };
-		90DCA80E65CC4932599407747565C3AF /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE0DC5B6D66D15AC2E6BCC19CD66D8 /* Row.swift */; };
-		9549080EB739C01C23427A435316259C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC32B5B75945385132D819165DC7851 /* Security.framework */; };
-		983CAAF570E3B3A115AD9AB707EE2FF1 /* TapActionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A181C20C0433B2CD870E154A9F17AAC /* TapActionRow.swift */; };
-		9CB8DCDF79110D54F47803718BFFBF36 /* NVActivityIndicatorAnimationBallRotateChase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F016F95E1E8BDFEC1B75D62BA083DC /* NVActivityIndicatorAnimationBallRotateChase.swift */; };
-		9CCBE42FC66A51836A60A67A6014F014 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3021410275062B2E6AA8513E81AE24 /* Expression.swift */; };
-		9E8B683192D4428C9A572974FF08BFBD /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B10439714294A69C5CE91DB5107A8 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift */; };
-		9FC2CF984680C0C89CBBB9D1210A1AD5 /* NVActivityIndicatorAnimationBallScaleRipple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87308FC00B380CA029ED2F6803FE2ECD /* NVActivityIndicatorAnimationBallScaleRipple.swift */; };
-		A1B60D804A5489F0C29ADC3326CA9BDB /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90D7C0028DA2BACAAC300F7529D550C /* AggregateFunctions.swift */; };
-		A2360DFC37F514B6D10D401188EE7E83 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F0946180131F6FD3B9469063C30A19 /* Section.swift */; };
-		A380FC0C9D163E7F9EDB4679D7609837 /* SQLite-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = 169673C6209523B592AC41DAB902DC97 /* SQLite-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A5016561EEA4FAC6671BDD1AB3CDAE7D /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CFD96DD6A8A224743E78EE7C496D6A /* Operators.swift */; };
-		A56294690555BFBE6A3DDDC18F11C492 /* SQLCipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 773E80CB208BB1FB2A3CE765B8732E89 /* SQLCipher.framework */; };
-		A7041B76E0DCCF5CBD8A0689E90B4124 /* OptionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7605044110852A607AD8FD11F94FC0CE /* OptionRow.swift */; };
-		A83589BB743A9EF404E24654E492047E /* QuickTableViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C4BDD87CCC73A856B3CEC4876F4FAA /* QuickTableViewController-dummy.m */; };
-		A9CDC49BCA042677979B128247F3DE11 /* NVActivityIndicatorAnimationBallPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCD5384D1790530542725F04E4D65CC /* NVActivityIndicatorAnimationBallPulse.swift */; };
-		AA6E19FC964E3A8165409E4942DE5C8F /* NVActivityIndicatorAnimationCubeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F390A718743C75FCA2E7461FE8994F07 /* NVActivityIndicatorAnimationCubeTransition.swift */; };
-		AABF3BCE05B262749DC13C63BA01E735 /* NVActivityIndicatorAnimationOrbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0261975D85DD92F398F1A72C946832 /* NVActivityIndicatorAnimationOrbit.swift */; };
-		ADE58A9D48E9575808D085DD1BBCF489 /* NVActivityIndicatorAnimationAudioEqualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B312B8D495E17BF5215F77F16C1D93D9 /* NVActivityIndicatorAnimationAudioEqualizer.swift */; };
-		AE93265B07C7219AD96DDFE48492C24B /* NVActivityIndicatorAnimationTriangleSkewSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2981D6C4355043EFAE19CA751556E4A8 /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */; };
-		AEDB26A5D2DE553D54D57CA188BE3B2D /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D1F333A2EDFF94A89B2E211965BDC /* Connection.swift */; };
-		BFF195916DC851D5A802701F952A21FA /* NVActivityIndicatorAnimationBallZigZag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917D423B877A8DCE774C0FC5F7047DD5 /* NVActivityIndicatorAnimationBallZigZag.swift */; };
-		C2CC15EA28E494FD37CD5BDD831AEA02 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E26DF7178827585BC3345E8A0926027 /* UIKit.framework */; };
-		C2D9CBD9B2BDA29A9334FA36DC02B38D /* RowCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2814C9692C2E5C6F7ACC746D35743E4A /* RowCompatible.swift */; };
-		C3BC2CB5B7842193B816CA6AC1ED8FA7 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43B64777A731CE5FEC7E714CB964771 /* Errors.swift */; };
-		C43B055ECE5EF3F3151EFEFB4A1E5C27 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B164881764FE54D01447C43691971D0 /* Value.swift */; };
-		C54C63FCC02266210C0DF64CBAF95BB2 /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = A2F13450AD6B0F38DE96FD345DE0F842 /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		C8E6629A04034F35C6F01284FA0C5D55 /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD5D235C45A6AA35168FAB6B1CE271C /* Coding.swift */; };
-		CADD3B9635076B07A7BF621E3CA992C7 /* NVActivityIndicatorAnimationBallPulseSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D648CB6C504411960A6094607C0BC9E /* NVActivityIndicatorAnimationBallPulseSync.swift */; };
-		CB2E3544F9A73558E44D3B4B646C3696 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0119C95B75F89E0B96BC3B9261E012 /* Foundation.swift */; };
-		CF4532A6ADF8ACC2E8095BA4805CE268 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4E757B01CBF143F46C65EF1F24DEA6 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift */; };
-		D39EB548E56ECBEE2BA05C2BB3BC3CB6 /* SQLite.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 04E2D082D3D8EE89DFF24433BB3F18CE /* SQLite.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D742C55C59B227B11AEC89B82FE52C6D /* Pods-Lafzi-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2DA2F5C8066F1D25D00A0C73F6DD244 /* Pods-Lafzi-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D8252AB1F0D1794AE9BC435240A5DF74 /* DateAndTimeFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866AA199AE1062B7055EF067DCEF0584 /* DateAndTimeFunctions.swift */; };
-		D85550BAAB58FBD185C96C50B88D4A3B /* QuickTableViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05F3B9420E73FAF2F8708BFE44D74091 /* QuickTableViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD0F562EA8949F58F131013AD86C3288 /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9ABE8435D5B2C1B5E42AC4FB28ED64 /* CoreFunctions.swift */; };
-		DDA00B6AB4E1C59251B98A712FC1FC39 /* NVActivityIndicatorAnimationBallRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0AB8DA020F70A6CCDAD6FDCA5A163B /* NVActivityIndicatorAnimationBallRotate.swift */; };
-		DE2F08C01A67FE0A8FD4FBD93B74AA0D /* NVActivityIndicatorAnimationBlank.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2646E408D045931DBAD046BD46B482 /* NVActivityIndicatorAnimationBlank.swift */; };
-		DFCA37589015B5A5F6A11E61360ED39A /* NVActivityIndicatorAnimationBallGridBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E79795531F75AAB41685594AB7174 /* NVActivityIndicatorAnimationBallGridBeat.swift */; };
-		E9CB67B5AD88C75DBE5A8715AF6B3724 /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E41CE63450A97B8A6FB790464E33B15 /* RTree.swift */; };
-		EAA6C09B1CEE5A5FA225571BFE3571FB /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EDB48918468E416D61AD07A630977F /* Reusable.swift */; };
-		EAC15F2BBFA279A2D318FB4902713C23 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481FA344657C81F34DE5E5AE3AF1473D /* Query.swift */; };
-		EB7BFFA3716D6306AEB167A4573C89FB /* NVActivityIndicatorAnimationLineScalePulseOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F5C73EE42003EC9EBC0B61D75A1AFA /* NVActivityIndicatorAnimationLineScalePulseOut.swift */; };
-		ED15EE7195B309361E1113AB3495723F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51540B7BA46300F609AF0DCDC42D12DC /* Foundation.framework */; };
-		EF558A1A772E92D1F926B2716891C0E1 /* NVActivityIndicatorAnimationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A39B600CF18EB2EA906F69623964DF0 /* NVActivityIndicatorAnimationDelegate.swift */; };
-		F3A74A34DFC45F03466AA19C7DAD7B84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51540B7BA46300F609AF0DCDC42D12DC /* Foundation.framework */; };
-		F4097C869240FEC2FC9A4DE0EFB8301B /* NavigationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D8860B9AC98C0FAF4E27EEA9BD062A /* NavigationRow.swift */; };
-		F7C0529D2A2330B61948C0D0D67E56AB /* NVActivityIndicatorViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E3A7412C86C88A590D10D0D91CD35F /* NVActivityIndicatorViewable.swift */; };
-		F89C03CB53CCFD86ED15C86C5D6543B8 /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 6821B70C4612AD9956BDED8681E3EB99 /* SQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FBCBDF9643A7D34A27F68D2632329E65 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E06796516AD7B7C780AFA7861A4342 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift */; };
-		FCA600F173A19F8FEC26002E78DF78B8 /* Pods-Lafzi-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E77DF5DB995E5D94D978ADA437AAC1 /* Pods-Lafzi-dummy.m */; };
-		FEC29D6FEB3EBDBAA11FB2FC3371A503 /* NVActivityIndicatorView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 32DDCF0B85855319DC3C724585FC8502 /* NVActivityIndicatorView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0245BC7492BED0895DB3FC35919B9565 /* RowCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05B8F100F2885F98A41656A4A3AF8C1 /* RowCompatible.swift */; };
+		0C7DD5056B1D32E33ECD18D6F0269D1E /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A8EA220DD811213F98D6BCC9306F94 /* Coding.swift */; };
+		0F7D035257B660C67A15CEABC9E6B320 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = A636177A8855A7B16438631A965F2830 /* Value.swift */; };
+		10DCB1FA939617A79A0C87C410AC7A1C /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFF11C3B9C9F57F8EC2CC586D154C1E /* AggregateFunctions.swift */; };
+		124C860D82D0FA5547A31C7E12801ABA /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5259C732327F97C46FD2043D7FA94820 /* Errors.swift */; };
+		1FFB1D9E53381FE36D61F6F8FEB0647D /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D94CFCBD4E2E7132FC72FB789C188B /* Setter.swift */; };
+		23E64C311BBA45780C09789B80673E2E /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B527438F081D5B58E9816FEF9908C84 /* Icon.swift */; };
+		24540737AB1B02906DB57980F0C3EE91 /* Pods-Lafzi-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2DA2F5C8066F1D25D00A0C73F6DD244 /* Pods-Lafzi-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C1CE3EF607383653E8EA758E6BD60D7 /* SQLCipher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD5D73DFE4F011322A1918588606FCCB /* SQLCipher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		312147362AAAFDB53114178DDBB8157F /* TapActionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679EFABDF047400EF70EA70952F12A5B /* TapActionRow.swift */; };
+		34A44227E88F4315FF7FD4CC8EF631F8 /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641B6AA23FB35BB1CA6AC2E91F37697E /* FTS5.swift */; };
+		3562F3CA8927C81CE1A45F7D098073D5 /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB173A5A0B1F2329E571058CFDDB30E /* Blob.swift */; };
+		3A76AF15CC4F2E4FBFFBF85E1E2E2877 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD75E9ED4380669C173B4B95FF5796BC /* Section.swift */; };
+		4242EE389E33DC07EF9C67AA61820B9A /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E73B979B4E03FCF745168E0C12EF78 /* Configurable.swift */; };
+		4D5C5126721CBA95251AB7DFAEDA0CBA /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FAEF7B9E412785A0AC4516A3C932C2 /* CoreFunctions.swift */; };
+		559B43E0521B6AF535104F518A813B73 /* RadioSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9D707F2F44A7C8129A40E3C8AF8313 /* RadioSection.swift */; };
+		5695FF7420F5FB6BF997B139BB49A18F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8B4F9C06A9FC116F09C672708E4AB9 /* Security.framework */; };
+		57712A2357C2BEBAB54F905024137020 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D73DC275063D34BA6E63BB456B503D /* Foundation.swift */; };
+		611FCECA3A475740F515C7A497CD7990 /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 299008382AE5A6BAFF86DC6B2A30F57A /* SQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		629D1A2F2738EA5133E0B4A540CC4126 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED3847BBC9093337698CB9201FC49E0 /* Expression.swift */; };
+		6498F584F13FFFEB2804074416B7AEFF /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B452B9B8386CA94FF3023E837D3F3858 /* Statement.swift */; };
+		666ED7677978C9BB9FAEBCC9522FB5F9 /* DateAndTimeFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE64C9696C963B8AFA94108194E2869 /* DateAndTimeFunctions.swift */; };
+		6B592EEC953116BDFD5D25428E93C99E /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FD72201B7CDEF4E49F896300F057BC /* Collation.swift */; };
+		6DCEE4956135B30080BBEEB995D6B0BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D50F42B3C4460C1B7A759B54AE46A4 /* Foundation.framework */; };
+		763E03D90172BB7E88937FC6215E4CD6 /* SQLCipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E8BCD84FF8BA759D1A931A83BD1FA0 /* SQLCipher.framework */; };
+		7A9FF8DD34F56D7ABDECF9535C32338A /* SQLite.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A64722447E67493F9980FB48DC00D606 /* SQLite.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		802B58D5039FDE764BB89166999757EB /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDA3AE109F15D078F69067614596720 /* Row.swift */; };
+		8B434A1C86AB8FAE8163B114D86C4587 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB385559E5B6976EB1A2998713CE6193 /* Connection.swift */; };
+		8EA36153704F801B98C95508D8C840BC /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3073A554A3C2BD5BB863619DD851A074 /* Query.swift */; };
+		91AB40DC55C4DA7157C85AE69662F021 /* QuickTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD4648D5C849887F8150DD7E46DCED /* QuickTableViewController.swift */; };
+		9D30D79A617AEF9E21B6895A7FEFF0C3 /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AE19208B33985271A6126E4EC32FFB /* CustomFunctions.swift */; };
+		9FDBE4366FF4463303B29DBA61FD9627 /* Pods-Lafzi-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E77DF5DB995E5D94D978ADA437AAC1 /* Pods-Lafzi-dummy.m */; };
+		A18D7020B371D1C50E9D737AA22C0269 /* OptionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9A490321AEAB40A4CEF226307233CD /* OptionRow.swift */; };
+		A312D57B016A07B4091BE1AA01766B04 /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 78D5A45877D3B858C0FA5F3A7EF75D52 /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AB11A7F502F86FDE408ECB97CD2BB61C /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D75FB0746DD72E814A4CF53AE377D54 /* Schema.swift */; };
+		AB43ECFD4B711BA9A678315DD60FB5A2 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94EBFFF2ED91BD5E955C4371CD8C15C /* Reusable.swift */; };
+		B6806D9F1AA4BC5EC3E9EE6CFDEF17A0 /* SQLite.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 190E21DC6DACECD0E14FE311B9FB5FA0 /* SQLite.swift-dummy.m */; };
+		BAF28BBE8D055D5D1C42B51A009551E2 /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EEAC42A1C8B61BDC91C1ED53F8A485 /* RTree.swift */; };
+		BB37C825396EC1CF4ECA35D205EB0E10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D50F42B3C4460C1B7A759B54AE46A4 /* Foundation.framework */; };
+		BC919FE59BC290C2F62149D8A28C38BE /* sqlite3.h in Headers */ = {isa = PBXBuildFile; fileRef = DCEB9C8998E588EDEF849D52477B0A0F /* sqlite3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE2FE5FA6686C2B1BDEB739D65C27808 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D50F42B3C4460C1B7A759B54AE46A4 /* Foundation.framework */; };
+		C5191625B0DAD6499644C02688560D76 /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05F28D421FA8090754743930D8BD716 /* FTS4.swift */; };
+		C76A5051406C96A7F2987C561B916971 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE37B0908256F612CBE6C7E87DE01369 /* Operators.swift */; };
+		C7EF3D54CDD42681C8E3DBEE06434B04 /* Subtitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65700C2ED9AF5840CBC0E36F31C00A71 /* Subtitle.swift */; };
+		C871236164D96DB190F5172613DA4183 /* QuickTableViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 725C309C8DD87679DB9681229D7BFFA3 /* QuickTableViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9BACBE4C4F7AAD9AD2060E67F5F0085 /* SQLite-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = D720278B14410A2B54CD33D7783AD366 /* SQLite-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC33C29BA1D25226F5FD9799571ECF59 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = F6E4FA2876DD7EB27037DD41DFDD4046 /* sqlite3.c */; settings = {COMPILER_FLAGS = "-DNDEBUG -DSQLITE_HAS_CODEC -DSQLITE_TEMP_STORE=2 -DSQLITE_SOUNDEX -DSQLITE_THREADSAFE -DSQLITE_ENABLE_RTREE -DSQLITE_ENABLE_STAT3 -DSQLITE_ENABLE_STAT4 -DSQLITE_ENABLE_COLUMN_METADATA -DSQLITE_ENABLE_MEMORY_MANAGEMENT -DSQLITE_ENABLE_LOAD_EXTENSION -DSQLITE_ENABLE_FTS4 -DSQLITE_ENABLE_FTS4_UNICODE61 -DSQLITE_ENABLE_FTS3_PARENTHESIS -DSQLITE_ENABLE_UNLOCK_NOTIFY -DSQLITE_ENABLE_JSON1 -DSQLITE_ENABLE_FTS5 -DSQLCIPHER_CRYPTO_CC -DHAVE_USLEEP=1 -DSQLITE_MAX_VARIABLE_NUMBER=99999 -fno-objc-arc"; }; };
+		D18CBF6EC4DF333986B946C9A500A701 /* Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E657F815F05E77FEBBFC4E6BCD8D54 /* Cipher.swift */; };
+		D218C7BA2456397C0B51BC6CB86E6204 /* TapActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AE6EE855D84F1ED762F3321ADBFFA0 /* TapActionCell.swift */; };
+		D376A9ABCAE378C97985B5FF22710DBD /* RowStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A699FFC5FE6001108297E5EB9DD041C5 /* RowStyle.swift */; };
+		D4416382216F2F9EFB52D7DD216DA8D3 /* SQLCipher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 706F17AFBC14CD051D888AB5DF2639ED /* SQLCipher-dummy.m */; };
+		DB43BDB89419E6C9AB074680424729C8 /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC3800EA73675E46780D2738034FFF8 /* SQLite-Bridging.m */; };
+		E274FB6CCEAE0889CFC259FBD22620AE /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EABE10723E9C442218B729C908FD9 /* Helpers.swift */; };
+		E33A73E18E5F332C9C388E3CB9B882F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D50F42B3C4460C1B7A759B54AE46A4 /* Foundation.framework */; };
+		E3B8152D6CBC8835A8AD21C57F0A10B1 /* QuickTableViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA08A4E788C5562B10E8C08786A4F23 /* QuickTableViewController-dummy.m */; };
+		E476E2FBF5D1CD419731F1DDFCF037FE /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE85396AA590B5EED64873198C9A322 /* SwitchCell.swift */; };
+		E856B4DB4B0A2387ADCA18AA798A07F1 /* NavigationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEC79BA6C8DF7E547FA19C17A2B91A5 /* NavigationRow.swift */; };
+		FF548EE0CCC28F7C10FB2EFA50E1EECA /* SwitchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620E559367710040FDC02B09535467E7 /* SwitchRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		08BB94B1510B160AF3682107FB6783CD /* PBXContainerItemProxy */ = {
+		0B3638C25F58E2A00ACA6A1C336EF29F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D60A14F606A4756B561ACDB1BCEB8CB6;
+			remoteGlobalIDString = CB75E14866B7830484536F61D2D6174D;
+			remoteInfo = SQLCipher;
+		};
+		481C9806219486CB219A0E436A3B9108 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB75E14866B7830484536F61D2D6174D;
+			remoteInfo = SQLCipher;
+		};
+		5A807840AD95C404183AB3E2C9D6490C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D39CE1AE2D80EA36419C4FB8EFF2DD1;
 			remoteInfo = QuickTableViewController;
 		};
-		9C0ABDA4F1433B1A9640802A39131F66 /* PBXContainerItemProxy */ = {
+		B41A4652F05FE4A7673F2916FFC16688 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E0DBCD3D2CDA383F37235D44AA431D81;
-			remoteInfo = SQLCipher;
-		};
-		B3D0172481CC42769C4AD4689EC942EC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BCF143AEBB56E7C1B40A32C885BB0EED;
+			remoteGlobalIDString = 206E531541A8E45EBB7BFA85C99FA4A5;
 			remoteInfo = SQLite.swift;
-		};
-		BD76EF77446C6043BA8E6069EBF5E49C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E0DBCD3D2CDA383F37235D44AA431D81;
-			remoteInfo = SQLCipher;
-		};
-		F49B334E3EB774BDCFC94327EF3298AA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 978D35F2E84D7D745602FFB2E17B1021;
-			remoteInfo = NVActivityIndicatorView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		033D1F333A2EDFF94A89B2E211965BDC /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SQLite/Core/Connection.swift; sourceTree = "<group>"; };
-		03BAEAA59D10029BF569A1F39F865075 /* NVActivityIndicatorPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorPresenter.swift; path = Source/NVActivityIndicatorView/Presenter/NVActivityIndicatorPresenter.swift; sourceTree = "<group>"; };
-		04E2D082D3D8EE89DFF24433BB3F18CE /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
-		05F3B9420E73FAF2F8708BFE44D74091 /* QuickTableViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QuickTableViewController-umbrella.h"; sourceTree = "<group>"; };
-		0723F6B4FD6867861C9BE9D4C8A38F25 /* QuickTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickTableViewController.swift; path = Source/QuickTableViewController.swift; sourceTree = "<group>"; };
-		0773432FEDFF1864EACFD3FE53767236 /* NVActivityIndicatorAnimationLineScaleParty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScaleParty.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScaleParty.swift; sourceTree = "<group>"; };
-		07DE0DC5B6D66D15AC2E6BCC19CD66D8 /* Row.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Row.swift; path = Source/Protocol/Row.swift; sourceTree = "<group>"; };
-		0AA76FDAC702F93EAF3CE362ED7ED87A /* SwitchRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwitchRow.swift; path = Source/Rows/SwitchRow.swift; sourceTree = "<group>"; };
-		0AD5D235C45A6AA35168FAB6B1CE271C /* Coding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coding.swift; path = Sources/SQLite/Typed/Coding.swift; sourceTree = "<group>"; };
-		0F74E07B5A87D783E910CB32E9B7ED95 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		136C3FE727FA6A33502999868BCB8551 /* SQLCipher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SQLCipher.modulemap; sourceTree = "<group>"; };
-		153A4A8EF209F87E4CFD9E5B1C3F8BE7 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLite.framework; path = SQLite.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		15BCE2BA1700322537C9AC87E4C0FEE5 /* NVActivityIndicatorAnimationBallScaleMultiple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScaleMultiple.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleMultiple.swift; sourceTree = "<group>"; };
-		1628D12955D3F560D0955F79DD5FC311 /* NVActivityIndicatorAnimationSquareSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationSquareSpin.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationSquareSpin.swift; sourceTree = "<group>"; };
-		169673C6209523B592AC41DAB902DC97 /* SQLite-Bridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SQLite-Bridging.h"; path = "Sources/SQLiteObjc/include/SQLite-Bridging.h"; sourceTree = "<group>"; };
-		1B496AD8A5A5A7E3D9DA1EFF3F03FCB1 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallClipRotateMultiple.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotateMultiple.swift; sourceTree = "<group>"; };
-		1D21F3C5A3C9BDB7901E544C7FE590E9 /* SQLCipher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLCipher.xcconfig; sourceTree = "<group>"; };
-		1D2B10439714294A69C5CE91DB5107A8 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScaleRippleMultiple.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleRippleMultiple.swift; sourceTree = "<group>"; };
-		1D4E757B01CBF143F46C65EF1F24DEA6 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallZigZagDeflect.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallZigZagDeflect.swift; sourceTree = "<group>"; };
-		1E26DF7178827585BC3345E8A0926027 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		1FF44CF4D2910A8AF6DF4971B558EEDB /* NVActivityIndicatorAnimationBallScale.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScale.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScale.swift; sourceTree = "<group>"; };
-		237E79795531F75AAB41685594AB7174 /* NVActivityIndicatorAnimationBallGridBeat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallGridBeat.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallGridBeat.swift; sourceTree = "<group>"; };
-		2692B8FBAAC52F52BD2281ABE4598A3E /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = Sources/SQLite/Typed/Schema.swift; sourceTree = "<group>"; };
-		2814C9692C2E5C6F7ACC746D35743E4A /* RowCompatible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RowCompatible.swift; path = Source/Protocol/RowCompatible.swift; sourceTree = "<group>"; };
-		2981D6C4355043EFAE19CA751556E4A8 /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationTriangleSkewSpin.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationTriangleSkewSpin.swift; sourceTree = "<group>"; };
-		2ACAE9D1C8EE5FAD720CA78ECE581C68 /* NVActivityIndicatorAnimationBallClipRotate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallClipRotate.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotate.swift; sourceTree = "<group>"; };
-		2F25AEA632E9D459822C79C57E58CB04 /* NVActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NVActivityIndicatorView.framework; path = NVActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		32DDCF0B85855319DC3C724585FC8502 /* NVActivityIndicatorView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NVActivityIndicatorView-umbrella.h"; sourceTree = "<group>"; };
-		35EBECBDF12A5409E61027BE712AF166 /* SQLCipher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLCipher.framework; path = SQLCipher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		39CB5F59EDA3D2E16A9FD4F59DBB2E39 /* SQLite.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-prefix.pch"; sourceTree = "<group>"; };
+		01E8BCD84FF8BA759D1A931A83BD1FA0 /* SQLCipher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQLCipher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D75FB0746DD72E814A4CF53AE377D54 /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = Sources/SQLite/Typed/Schema.swift; sourceTree = "<group>"; };
+		10FD72201B7CDEF4E49F896300F057BC /* Collation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collation.swift; path = Sources/SQLite/Typed/Collation.swift; sourceTree = "<group>"; };
+		113A906424440394C64C1547FFC67D7B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		174309E53606A8DE099B2CCCD9017AED /* QuickTableViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = QuickTableViewController.modulemap; sourceTree = "<group>"; };
+		190E21DC6DACECD0E14FE311B9FB5FA0 /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
+		1AE85396AA590B5EED64873198C9A322 /* SwitchCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwitchCell.swift; path = Source/Views/SwitchCell.swift; sourceTree = "<group>"; };
+		1B2A48B258C0A25267424E011C3BF567 /* QuickTableViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QuickTableViewController.xcconfig; sourceTree = "<group>"; };
+		1E08B595417AC696FD9F5D5DC644FC94 /* SQLCipher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SQLCipher.modulemap; sourceTree = "<group>"; };
+		299008382AE5A6BAFF86DC6B2A30F57A /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = Sources/SQLite/SQLite.h; sourceTree = "<group>"; };
+		2B527438F081D5B58E9816FEF9908C84 /* Icon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Icon.swift; path = Source/Model/Icon.swift; sourceTree = "<group>"; };
+		2CB173A5A0B1F2329E571058CFDDB30E /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Sources/SQLite/Core/Blob.swift; sourceTree = "<group>"; };
+		2ED3847BBC9093337698CB9201FC49E0 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/SQLite/Typed/Expression.swift; sourceTree = "<group>"; };
+		2FA08A4E788C5562B10E8C08786A4F23 /* QuickTableViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QuickTableViewController-dummy.m"; sourceTree = "<group>"; };
+		3073A554A3C2BD5BB863619DD851A074 /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/SQLite/Typed/Query.swift; sourceTree = "<group>"; };
+		36A8EA220DD811213F98D6BCC9306F94 /* Coding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coding.swift; path = Sources/SQLite/Typed/Coding.swift; sourceTree = "<group>"; };
+		372B746BBAAD47B8AE2948042A48A401 /* QuickTableViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = QuickTableViewController.framework; path = QuickTableViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37E73B979B4E03FCF745168E0C12EF78 /* Configurable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configurable.swift; path = Source/Protocol/Configurable.swift; sourceTree = "<group>"; };
 		3B3C7A1174C1E48FCB41A04DFFC04F78 /* Pods-Lafzi-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Lafzi-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3CA3FAF9ED6EF7D1A8EB7E34D7D6041C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D9ABF63AF216A458BC8C750D48D3919 /* RadioSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadioSection.swift; path = Source/Model/RadioSection.swift; sourceTree = "<group>"; };
-		3FF3A5523069F6E117CF4D3C5B4D29F9 /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Sources/SQLite/Core/Blob.swift; sourceTree = "<group>"; };
-		417137E7FF27EE543E51C5520BB0874C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		426967A54FC9703E3955EBC69D8D2A4F /* NVActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorView.swift; path = Source/NVActivityIndicatorView/NVActivityIndicatorView.swift; sourceTree = "<group>"; };
-		428F8A048C532A7944C66506D2AADC87 /* Setter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Setter.swift; path = Sources/SQLite/Typed/Setter.swift; sourceTree = "<group>"; };
-		435C5B48BD3F5F8F2A4E048D98037357 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		481FA344657C81F34DE5E5AE3AF1473D /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/SQLite/Typed/Query.swift; sourceTree = "<group>"; };
-		48F0946180131F6FD3B9469063C30A19 /* Section.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Section.swift; path = Source/Model/Section.swift; sourceTree = "<group>"; };
-		4B164881764FE54D01447C43691971D0 /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/SQLite/Core/Value.swift; sourceTree = "<group>"; };
-		4FBAEC6BAEA3637FAE662BAF31341787 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4FEB64EEA966B20898CC0DF656B614A6 /* NVActivityIndicatorView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NVActivityIndicatorView-prefix.pch"; sourceTree = "<group>"; };
-		51540B7BA46300F609AF0DCDC42D12DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		55C71733C12E49A0474D3700CE127616 /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = Sources/SQLite/Core/Statement.swift; sourceTree = "<group>"; };
-		57AF60FDBC5F2424A2B930F1501D7FA7 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallClipRotatePulse.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotatePulse.swift; sourceTree = "<group>"; };
-		5BEB7D0493B008958A997AC71CC5900F /* QuickTableViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = QuickTableViewController.modulemap; sourceTree = "<group>"; };
-		5DA3C8CAC4976AF218F34CE708121436 /* NVActivityIndicatorAnimationBallBeat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallBeat.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallBeat.swift; sourceTree = "<group>"; };
-		5E536B36ABF409A6F7A6BC9DCA56F1B2 /* SQLite.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.xcconfig; sourceTree = "<group>"; };
-		60CBF65FFEDEBE4715D83A03E14939F8 /* NVActivityIndicatorView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NVActivityIndicatorView.xcconfig; sourceTree = "<group>"; };
-		67552B4D579D2B65C1D326EBD8435AC6 /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
-		6821B70C4612AD9956BDED8681E3EB99 /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = Sources/SQLite/SQLite.h; sourceTree = "<group>"; };
-		6920DF0EB9C6B865C641D62ABD0EDE8B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		6E125C2DEE7F909FA8893A881FC1795B /* SQLCipher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLCipher-dummy.m"; sourceTree = "<group>"; };
-		6E41CE63450A97B8A6FB790464E33B15 /* RTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTree.swift; path = Sources/SQLite/Extensions/RTree.swift; sourceTree = "<group>"; };
-		7015E5FDE9BF565380F28F34C5A5CB7C /* SQLCipher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLCipher-prefix.pch"; sourceTree = "<group>"; };
-		72F5C73EE42003EC9EBC0B61D75A1AFA /* NVActivityIndicatorAnimationLineScalePulseOut.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScalePulseOut.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScalePulseOut.swift; sourceTree = "<group>"; };
-		7350C482A980A88595204C83DD46D722 /* FTS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5.swift; path = Sources/SQLite/Extensions/FTS5.swift; sourceTree = "<group>"; };
-		7605044110852A607AD8FD11F94FC0CE /* OptionRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OptionRow.swift; path = Source/Rows/OptionRow.swift; sourceTree = "<group>"; };
-		773E80CB208BB1FB2A3CE765B8732E89 /* SQLCipher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQLCipher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		79654ABAC970FC154EC972E48950A690 /* NVActivityIndicatorAnimationSemiCircleSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationSemiCircleSpin.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationSemiCircleSpin.swift; sourceTree = "<group>"; };
+		4318D6B79661F664FC93D79D188C2803 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLite.framework; path = SQLite.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43E657F815F05E77FEBBFC4E6BCD8D54 /* Cipher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cipher.swift; path = Sources/SQLite/Extensions/Cipher.swift; sourceTree = "<group>"; };
+		5259C732327F97C46FD2043D7FA94820 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Sources/SQLite/Core/Errors.swift; sourceTree = "<group>"; };
+		58606A91CED38BF37F409B4918D5E034 /* Pods_Lafzi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Lafzi.framework; path = "Pods-Lafzi.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60357C6F7FF12DE5A12B8E687FCB1938 /* SQLite.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.xcconfig; sourceTree = "<group>"; };
+		60D73DC275063D34BA6E63BB456B503D /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = Sources/SQLite/Foundation.swift; sourceTree = "<group>"; };
+		619C78825218F30A256C95496FDCA4E0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		620E559367710040FDC02B09535467E7 /* SwitchRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwitchRow.swift; path = Source/Rows/SwitchRow.swift; sourceTree = "<group>"; };
+		641B6AA23FB35BB1CA6AC2E91F37697E /* FTS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5.swift; path = Sources/SQLite/Extensions/FTS5.swift; sourceTree = "<group>"; };
+		65700C2ED9AF5840CBC0E36F31C00A71 /* Subtitle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Subtitle.swift; path = Source/Model/Subtitle.swift; sourceTree = "<group>"; };
+		679EFABDF047400EF70EA70952F12A5B /* TapActionRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TapActionRow.swift; path = Source/Rows/TapActionRow.swift; sourceTree = "<group>"; };
+		6E9D707F2F44A7C8129A40E3C8AF8313 /* RadioSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadioSection.swift; path = Source/Model/RadioSection.swift; sourceTree = "<group>"; };
+		706F17AFBC14CD051D888AB5DF2639ED /* SQLCipher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLCipher-dummy.m"; sourceTree = "<group>"; };
+		725C309C8DD87679DB9681229D7BFFA3 /* QuickTableViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QuickTableViewController-umbrella.h"; sourceTree = "<group>"; };
+		78D5A45877D3B858C0FA5F3A7EF75D52 /* fts3_tokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fts3_tokenizer.h; path = Sources/SQLiteObjc/fts3_tokenizer.h; sourceTree = "<group>"; };
+		78D94CFCBD4E2E7132FC72FB789C188B /* Setter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Setter.swift; path = Sources/SQLite/Typed/Setter.swift; sourceTree = "<group>"; };
 		7B1BC655CE876D07EC18A18378924E90 /* Pods-Lafzi-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Lafzi-frameworks.sh"; sourceTree = "<group>"; };
-		7CC692CA5354B9BB798D0098DBFD77F2 /* QuickTableViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = QuickTableViewController.framework; path = QuickTableViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FC32B5B75945385132D819165DC7851 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		80068554D62BF8DBDBE92C8190B06614 /* NVActivityIndicatorView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NVActivityIndicatorView.modulemap; sourceTree = "<group>"; };
-		814EECD439DD846DE7C9229F2630C6C0 /* sqlite3.c */ = {isa = PBXFileReference; includeInIndex = 1; path = sqlite3.c; sourceTree = "<group>"; };
-		82C4BDD87CCC73A856B3CEC4876F4FAA /* QuickTableViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QuickTableViewController-dummy.m"; sourceTree = "<group>"; };
-		8512361B4FC463324D08A554DC72B96F /* SQLCipher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLCipher-umbrella.h"; sourceTree = "<group>"; };
-		857F18E26F1AF103DF349754B0B53749 /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Sources/SQLite/Helpers.swift; sourceTree = "<group>"; };
-		866AA199AE1062B7055EF067DCEF0584 /* DateAndTimeFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateAndTimeFunctions.swift; path = Sources/SQLite/Typed/DateAndTimeFunctions.swift; sourceTree = "<group>"; };
-		86CFD96DD6A8A224743E78EE7C496D6A /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/SQLite/Typed/Operators.swift; sourceTree = "<group>"; };
-		87308FC00B380CA029ED2F6803FE2ECD /* NVActivityIndicatorAnimationBallScaleRipple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScaleRipple.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleRipple.swift; sourceTree = "<group>"; };
-		897DD5CE52E5DA173B3F895768A71980 /* SwitchCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwitchCell.swift; path = Source/Views/SwitchCell.swift; sourceTree = "<group>"; };
-		8C3021410275062B2E6AA8513E81AE24 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/SQLite/Typed/Expression.swift; sourceTree = "<group>"; };
-		8D648CB6C504411960A6094607C0BC9E /* NVActivityIndicatorAnimationBallPulseSync.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallPulseSync.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallPulseSync.swift; sourceTree = "<group>"; };
-		8E0D43F04814240E3F29208FBD8E2452 /* NVActivityIndicatorView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NVActivityIndicatorView-dummy.m"; sourceTree = "<group>"; };
-		917D423B877A8DCE774C0FC5F7047DD5 /* NVActivityIndicatorAnimationBallZigZag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallZigZag.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallZigZag.swift; sourceTree = "<group>"; };
+		7CEC79BA6C8DF7E547FA19C17A2B91A5 /* NavigationRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationRow.swift; path = Source/Rows/NavigationRow.swift; sourceTree = "<group>"; };
+		7E9A490321AEAB40A4CEF226307233CD /* OptionRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OptionRow.swift; path = Source/Rows/OptionRow.swift; sourceTree = "<group>"; };
+		7FB7116E37D928650A23270D41E73B03 /* SQLCipher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLCipher-prefix.pch"; sourceTree = "<group>"; };
+		8612F915ECC75C8B8C5F6CC9A1F3EEC2 /* SQLCipher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLCipher.framework; path = SQLCipher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86FAEF7B9E412785A0AC4516A3C932C2 /* CoreFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = Sources/SQLite/Typed/CoreFunctions.swift; sourceTree = "<group>"; };
+		8D8B4F9C06A9FC116F09C672708E4AB9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93C320AA6F43D1433CB2EE388E304ABB /* NVActivityIndicatorAnimationBallTrianglePath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallTrianglePath.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallTrianglePath.swift; sourceTree = "<group>"; };
-		95017F76E35188810B3732B0BEA1B3F0 /* Configurable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configurable.swift; path = Source/Protocol/Configurable.swift; sourceTree = "<group>"; };
-		9A181C20C0433B2CD870E154A9F17AAC /* TapActionRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TapActionRow.swift; path = Source/Rows/TapActionRow.swift; sourceTree = "<group>"; };
-		9A39B600CF18EB2EA906F69623964DF0 /* NVActivityIndicatorAnimationDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationDelegate.swift; path = Source/NVActivityIndicatorView/NVActivityIndicatorAnimationDelegate.swift; sourceTree = "<group>"; };
-		9C03BD68321449D822957693AF7D041D /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = Sources/SQLite/Extensions/FTS4.swift; sourceTree = "<group>"; };
-		9D0D2CFF1464C4F94169C43509E21564 /* Icon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Icon.swift; path = Source/Model/Icon.swift; sourceTree = "<group>"; };
+		956531053FE932DCDB4CC5FC2BBEDFEF /* SQLCipher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLCipher.xcconfig; sourceTree = "<group>"; };
+		95FA7038CCA9BC8D984BFCB6B2B6A2D6 /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
+		9BE64C9696C963B8AFA94108194E2869 /* DateAndTimeFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateAndTimeFunctions.swift; path = Sources/SQLite/Typed/DateAndTimeFunctions.swift; sourceTree = "<group>"; };
 		A1E77DF5DB995E5D94D978ADA437AAC1 /* Pods-Lafzi-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Lafzi-dummy.m"; sourceTree = "<group>"; };
 		A2DA2F5C8066F1D25D00A0C73F6DD244 /* Pods-Lafzi-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Lafzi-umbrella.h"; sourceTree = "<group>"; };
-		A2F13450AD6B0F38DE96FD345DE0F842 /* fts3_tokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fts3_tokenizer.h; path = Sources/SQLiteObjc/fts3_tokenizer.h; sourceTree = "<group>"; };
-		A36F9344FDCFFDFCACA77AFE5A95A345 /* Cipher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cipher.swift; path = Sources/SQLite/Extensions/Cipher.swift; sourceTree = "<group>"; };
-		A60BA9C530D880BD92603E63676ED7FF /* NVActivityIndicatorAnimationBallPulseRise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallPulseRise.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallPulseRise.swift; sourceTree = "<group>"; };
+		A636177A8855A7B16438631A965F2830 /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/SQLite/Core/Value.swift; sourceTree = "<group>"; };
+		A64722447E67493F9980FB48DC00D606 /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
+		A699FFC5FE6001108297E5EB9DD041C5 /* RowStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RowStyle.swift; path = Source/Protocol/RowStyle.swift; sourceTree = "<group>"; };
+		A6D50F42B3C4460C1B7A759B54AE46A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		A7D1EF60BCCC84981C0D9F2EEEDA113D /* Pods-Lafzi-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Lafzi-resources.sh"; sourceTree = "<group>"; };
-		A8DA784DDFA35CBF227DA0853EA5C632 /* RowStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RowStyle.swift; path = Source/Protocol/RowStyle.swift; sourceTree = "<group>"; };
-		A9EDB48918468E416D61AD07A630977F /* Reusable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reusable.swift; path = Source/Protocol/Reusable.swift; sourceTree = "<group>"; };
-		B312B8D495E17BF5215F77F16C1D93D9 /* NVActivityIndicatorAnimationAudioEqualizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationAudioEqualizer.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationAudioEqualizer.swift; sourceTree = "<group>"; };
-		B43B64777A731CE5FEC7E714CB964771 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Sources/SQLite/Core/Errors.swift; sourceTree = "<group>"; };
+		A94EBFFF2ED91BD5E955C4371CD8C15C /* Reusable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reusable.swift; path = Source/Protocol/Reusable.swift; sourceTree = "<group>"; };
+		A9AE19208B33985271A6126E4EC32FFB /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = Sources/SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
+		AAC3800EA73675E46780D2738034FFF8 /* SQLite-Bridging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SQLite-Bridging.m"; path = "Sources/SQLiteObjc/SQLite-Bridging.m"; sourceTree = "<group>"; };
+		B05B8F100F2885F98A41656A4A3AF8C1 /* RowCompatible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RowCompatible.swift; path = Source/Protocol/RowCompatible.swift; sourceTree = "<group>"; };
+		B05F28D421FA8090754743930D8BD716 /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = Sources/SQLite/Extensions/FTS4.swift; sourceTree = "<group>"; };
+		B452B9B8386CA94FF3023E837D3F3858 /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = Sources/SQLite/Core/Statement.swift; sourceTree = "<group>"; };
 		B4DD0CED361D51D11FA20D789CFD027A /* Pods-Lafzi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Lafzi.debug.xcconfig"; sourceTree = "<group>"; };
 		B62EAF269833C672348E3DE9C899F24F /* Pods-Lafzi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Lafzi.release.xcconfig"; sourceTree = "<group>"; };
-		B713FA989E9FAA62508CBFF83F875EB9 /* QuickTableViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QuickTableViewController-prefix.pch"; sourceTree = "<group>"; };
-		BE0AB8DA020F70A6CCDAD6FDCA5A163B /* NVActivityIndicatorAnimationBallRotate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallRotate.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallRotate.swift; sourceTree = "<group>"; };
-		BEECFDAAAD45DA80A1E143A98A73A012 /* NVActivityIndicatorAnimationPacman.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationPacman.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationPacman.swift; sourceTree = "<group>"; };
-		C1D8860B9AC98C0FAF4E27EEA9BD062A /* NavigationRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationRow.swift; path = Source/Rows/NavigationRow.swift; sourceTree = "<group>"; };
-		C1F016F95E1E8BDFEC1B75D62BA083DC /* NVActivityIndicatorAnimationBallRotateChase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallRotateChase.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallRotateChase.swift; sourceTree = "<group>"; };
-		C2A6B0FD87684619C71EB3FACA67921D /* NVActivityIndicatorAnimationCircleStrokeSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationCircleStrokeSpin.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationCircleStrokeSpin.swift; sourceTree = "<group>"; };
+		BD5D73DFE4F011322A1918588606FCCB /* SQLCipher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLCipher-umbrella.h"; sourceTree = "<group>"; };
+		BDDA3AE109F15D078F69067614596720 /* Row.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Row.swift; path = Source/Protocol/Row.swift; sourceTree = "<group>"; };
 		C438614D2BD89C92D5DF6335847104CE /* Pods-Lafzi.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Lafzi.modulemap"; sourceTree = "<group>"; };
-		C9F5AD7359316E536D6C5895051B4C80 /* SQLite-Bridging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SQLite-Bridging.m"; path = "Sources/SQLiteObjc/SQLite-Bridging.m"; sourceTree = "<group>"; };
-		CB0119C95B75F89E0B96BC3B9261E012 /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = Sources/SQLite/Foundation.swift; sourceTree = "<group>"; };
-		CBCD5384D1790530542725F04E4D65CC /* NVActivityIndicatorAnimationBallPulse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallPulse.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallPulse.swift; sourceTree = "<group>"; };
-		D06938B1BCEFEBD34B2A33E88B76C952 /* TapActionCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TapActionCell.swift; path = Source/Views/TapActionCell.swift; sourceTree = "<group>"; };
-		D3B80359346F11EE5FCD8DD60D86C490 /* QuickTableViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QuickTableViewController.xcconfig; sourceTree = "<group>"; };
-		D3F63F221E483530A0747DF4A041EA56 /* NVActivityIndicatorShape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorShape.swift; path = Source/NVActivityIndicatorView/NVActivityIndicatorShape.swift; sourceTree = "<group>"; };
-		D5E06796516AD7B7C780AFA7861A4342 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineSpinFadeLoader.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineSpinFadeLoader.swift; sourceTree = "<group>"; };
-		D783C550AE0368D5E47BD8C0852DF91E /* sqlite3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
-		D7E3A7412C86C88A590D10D0D91CD35F /* NVActivityIndicatorViewable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorViewable.swift; path = Source/NVActivityIndicatorView/Presenter/NVActivityIndicatorViewable.swift; sourceTree = "<group>"; };
-		E086F13451EB6828B725E8EB22407581 /* Collation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collation.swift; path = Sources/SQLite/Typed/Collation.swift; sourceTree = "<group>"; };
-		E374A097F4E7B7276797857F951022F2 /* NVActivityIndicatorAnimationLineScale.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScale.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScale.swift; sourceTree = "<group>"; };
-		E586EFFB5D6AB13276F1FEBD4CF28022 /* NVActivityIndicatorAnimationBallGridPulse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallGridPulse.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallGridPulse.swift; sourceTree = "<group>"; };
-		E5BC3273DEFAF36642EFCE4080F71368 /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
+		C79BA6AA62DDACE370B7B0DA68BBC12F /* SQLite.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-prefix.pch"; sourceTree = "<group>"; };
+		C7AE6EE855D84F1ED762F3321ADBFFA0 /* TapActionCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TapActionCell.swift; path = Source/Views/TapActionCell.swift; sourceTree = "<group>"; };
+		C8A5355C3FB8A7B1498C36ECD1FCBDF7 /* QuickTableViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QuickTableViewController-prefix.pch"; sourceTree = "<group>"; };
+		CFFF11C3B9C9F57F8EC2CC586D154C1E /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = Sources/SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
+		D4EEAC42A1C8B61BDC91C1ED53F8A485 /* RTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTree.swift; path = Sources/SQLite/Extensions/RTree.swift; sourceTree = "<group>"; };
+		D6EEE3694AC4AD9E0D2237897FD68CBB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D720278B14410A2B54CD33D7783AD366 /* SQLite-Bridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SQLite-Bridging.h"; path = "Sources/SQLiteObjc/include/SQLite-Bridging.h"; sourceTree = "<group>"; };
+		DB385559E5B6976EB1A2998713CE6193 /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SQLite/Core/Connection.swift; sourceTree = "<group>"; };
+		DCEB9C8998E588EDEF849D52477B0A0F /* sqlite3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
+		E84EABE10723E9C442218B729C908FD9 /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Sources/SQLite/Helpers.swift; sourceTree = "<group>"; };
 		E8B7F8FA98894CC3EC8547D4B9482CA7 /* Pods-Lafzi-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Lafzi-acknowledgements.plist"; sourceTree = "<group>"; };
-		E8B94B398B903770AB05F1F22707761C /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallSpinFadeLoader.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallSpinFadeLoader.swift; sourceTree = "<group>"; };
-		E90D7C0028DA2BACAAC300F7529D550C /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = Sources/SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
-		EB0261975D85DD92F398F1A72C946832 /* NVActivityIndicatorAnimationOrbit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationOrbit.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationOrbit.swift; sourceTree = "<group>"; };
-		EC60D5D5D720474A6C52257824201920 /* Pods_Lafzi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Lafzi.framework; path = "Pods-Lafzi.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ECE27B986BB1038FF459831FE3A0084C /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = Sources/SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
-		ED20AA107E59D32A1C5E92558FE1380E /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScalePulseOutRapid.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScalePulseOutRapid.swift; sourceTree = "<group>"; };
-		ED9ABE8435D5B2C1B5E42AC4FB28ED64 /* CoreFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = Sources/SQLite/Typed/CoreFunctions.swift; sourceTree = "<group>"; };
-		F390A718743C75FCA2E7461FE8994F07 /* NVActivityIndicatorAnimationCubeTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationCubeTransition.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationCubeTransition.swift; sourceTree = "<group>"; };
-		F7A7A6B3239905B7028BEAAFF5F6F738 /* Subtitle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Subtitle.swift; path = Source/Model/Subtitle.swift; sourceTree = "<group>"; };
-		FC2646E408D045931DBAD046BD46B482 /* NVActivityIndicatorAnimationBlank.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBlank.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBlank.swift; sourceTree = "<group>"; };
+		EE37B0908256F612CBE6C7E87DE01369 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/SQLite/Typed/Operators.swift; sourceTree = "<group>"; };
+		F6E4FA2876DD7EB27037DD41DFDD4046 /* sqlite3.c */ = {isa = PBXFileReference; includeInIndex = 1; path = sqlite3.c; sourceTree = "<group>"; };
+		F8CD4648D5C849887F8150DD7E46DCED /* QuickTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickTableViewController.swift; path = Source/QuickTableViewController.swift; sourceTree = "<group>"; };
+		FD75E9ED4380669C173B4B95FF5796BC /* Section.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Section.swift; path = Source/Model/Section.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3645C88E00DD66D1F863D8BCC5046CB5 /* Frameworks */ = {
+		040A10CE32E5A05359A82DC059EF7089 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BD3F67CE8B30EA434AF244A26CFE94B /* Foundation.framework in Frameworks */,
-				9549080EB739C01C23427A435316259C /* Security.framework in Frameworks */,
+				BB37C825396EC1CF4ECA35D205EB0E10 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		37A9315B5A4C0DDB7BAEB8C6B9CF84A3 /* Frameworks */ = {
+		1EFC5A22CCD0F7AFA071F712DD82B0DF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED15EE7195B309361E1113AB3495723F /* Foundation.framework in Frameworks */,
+				E33A73E18E5F332C9C388E3CB9B882F3 /* Foundation.framework in Frameworks */,
+				5695FF7420F5FB6BF997B139BB49A18F /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		99C6991C904B8B472B8D488163A0C14D /* Frameworks */ = {
+		6FC6814DD38D2DDE879F69146F1E67D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				473A6101766BE4386A82F1CC8CE22830 /* Foundation.framework in Frameworks */,
+				6DCEE4956135B30080BBEEB995D6B0BE /* Foundation.framework in Frameworks */,
+				763E03D90172BB7E88937FC6215E4CD6 /* SQLCipher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CCF2EE8766AB6286D08DE1F9F03DD3C9 /* Frameworks */ = {
+		B5273E6EC930254530A78F8E9DA3FA89 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5217FAFF464404FAAF285C57420453CD /* Foundation.framework in Frameworks */,
-				A56294690555BFBE6A3DDDC18F11C492 /* SQLCipher.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F8AB91AACF3AE8A55984BBABA90E0767 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F3A74A34DFC45F03466AA19C7DAD7B84 /* Foundation.framework in Frameworks */,
-				1A2D4602E0597C8470B11921A31C9967 /* QuartzCore.framework in Frameworks */,
-				C2CC15EA28E494FD37CD5BDD831AEA02 /* UIKit.framework in Frameworks */,
+				BE2FE5FA6686C2B1BDEB739D65C27808 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		063E31B77DF1554D2A7F6458964D3301 /* Support Files */ = {
+		0088CC7BEF3B42CFD14B48D382AA5430 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				435C5B48BD3F5F8F2A4E048D98037357 /* Info.plist */,
-				5BEB7D0493B008958A997AC71CC5900F /* QuickTableViewController.modulemap */,
-				D3B80359346F11EE5FCD8DD60D86C490 /* QuickTableViewController.xcconfig */,
-				82C4BDD87CCC73A856B3CEC4876F4FAA /* QuickTableViewController-dummy.m */,
-				B713FA989E9FAA62508CBFF83F875EB9 /* QuickTableViewController-prefix.pch */,
-				05F3B9420E73FAF2F8708BFE44D74091 /* QuickTableViewController-umbrella.h */,
+				7E9C1E256E82D1E1755D397C0AA7747E /* QuickTableViewController */,
+				51731DAC02EFF0485DD9820D7E668F5E /* SQLCipher */,
+				A3E6D13F615E73F38F739E08A47E8999 /* SQLite.swift */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/QuickTableViewController";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		0F963888709355702E3C39B68174C7F0 /* Pods-Lafzi */ = {
@@ -358,124 +247,87 @@
 			path = "Target Support Files/Pods-Lafzi";
 			sourceTree = "<group>";
 		};
-		1B3B6705AE71796681DC524F88A77B91 /* Support Files */ = {
+		23E515C7432B22D04936C6087A465484 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4FBAEC6BAEA3637FAE662BAF31341787 /* Info.plist */,
-				E5BC3273DEFAF36642EFCE4080F71368 /* SQLite.swift.modulemap */,
-				5E536B36ABF409A6F7A6BC9DCA56F1B2 /* SQLite.swift.xcconfig */,
-				67552B4D579D2B65C1D326EBD8435AC6 /* SQLite.swift-dummy.m */,
-				39CB5F59EDA3D2E16A9FD4F59DBB2E39 /* SQLite.swift-prefix.pch */,
-				04E2D082D3D8EE89DFF24433BB3F18CE /* SQLite.swift-umbrella.h */,
+				113A906424440394C64C1547FFC67D7B /* Info.plist */,
+				174309E53606A8DE099B2CCCD9017AED /* QuickTableViewController.modulemap */,
+				1B2A48B258C0A25267424E011C3BF567 /* QuickTableViewController.xcconfig */,
+				2FA08A4E788C5562B10E8C08786A4F23 /* QuickTableViewController-dummy.m */,
+				C8A5355C3FB8A7B1498C36ECD1FCBDF7 /* QuickTableViewController-prefix.pch */,
+				725C309C8DD87679DB9681229D7BFFA3 /* QuickTableViewController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/QuickTableViewController";
+			sourceTree = "<group>";
+		};
+		3A586376D1CFBEF53E3C8984F9F0F928 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6EEE3694AC4AD9E0D2237897FD68CBB /* Info.plist */,
+				95FA7038CCA9BC8D984BFCB6B2B6A2D6 /* SQLite.swift.modulemap */,
+				60357C6F7FF12DE5A12B8E687FCB1938 /* SQLite.swift.xcconfig */,
+				190E21DC6DACECD0E14FE311B9FB5FA0 /* SQLite.swift-dummy.m */,
+				C79BA6AA62DDACE370B7B0DA68BBC12F /* SQLite.swift-prefix.pch */,
+				A64722447E67493F9980FB48DC00D606 /* SQLite.swift-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SQLite.swift";
 			sourceTree = "<group>";
 		};
-		2280A1BD8E3A33E3BE5138EAC7D74F6B /* iOS */ = {
+		51731DAC02EFF0485DD9820D7E668F5E /* SQLCipher */ = {
 			isa = PBXGroup;
 			children = (
-				51540B7BA46300F609AF0DCDC42D12DC /* Foundation.framework */,
-				6920DF0EB9C6B865C641D62ABD0EDE8B /* QuartzCore.framework */,
-				7FC32B5B75945385132D819165DC7851 /* Security.framework */,
-				1E26DF7178827585BC3345E8A0926027 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		2C81EF8D687E0DB13875477F5C69851E /* SQLCipher */ = {
-			isa = PBXGroup;
-			children = (
-				822C6140ADAEFBE7C0D5815008A5CE12 /* common */,
-				D91337071585A93B9C5F1FF1BE7A92DE /* Support Files */,
+				A69B1D4F19052BFF42ED993B5493D526 /* common */,
+				F7CB63F279184A198407390523CA9CBE /* Support Files */,
 			);
 			name = SQLCipher;
 			path = SQLCipher;
 			sourceTree = "<group>";
 		};
-		3F9F6D0B20A051868EB8C4BBF9E1E13F /* SQLCipher */ = {
+		6AC17A50D41EE7CCB88896B3DD6E885F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E90D7C0028DA2BACAAC300F7529D550C /* AggregateFunctions.swift */,
-				3FF3A5523069F6E117CF4D3C5B4D29F9 /* Blob.swift */,
-				A36F9344FDCFFDFCACA77AFE5A95A345 /* Cipher.swift */,
-				0AD5D235C45A6AA35168FAB6B1CE271C /* Coding.swift */,
-				E086F13451EB6828B725E8EB22407581 /* Collation.swift */,
-				033D1F333A2EDFF94A89B2E211965BDC /* Connection.swift */,
-				ED9ABE8435D5B2C1B5E42AC4FB28ED64 /* CoreFunctions.swift */,
-				ECE27B986BB1038FF459831FE3A0084C /* CustomFunctions.swift */,
-				866AA199AE1062B7055EF067DCEF0584 /* DateAndTimeFunctions.swift */,
-				B43B64777A731CE5FEC7E714CB964771 /* Errors.swift */,
-				8C3021410275062B2E6AA8513E81AE24 /* Expression.swift */,
-				CB0119C95B75F89E0B96BC3B9261E012 /* Foundation.swift */,
-				A2F13450AD6B0F38DE96FD345DE0F842 /* fts3_tokenizer.h */,
-				9C03BD68321449D822957693AF7D041D /* FTS4.swift */,
-				7350C482A980A88595204C83DD46D722 /* FTS5.swift */,
-				857F18E26F1AF103DF349754B0B53749 /* Helpers.swift */,
-				86CFD96DD6A8A224743E78EE7C496D6A /* Operators.swift */,
-				481FA344657C81F34DE5E5AE3AF1473D /* Query.swift */,
-				6E41CE63450A97B8A6FB790464E33B15 /* RTree.swift */,
-				2692B8FBAAC52F52BD2281ABE4598A3E /* Schema.swift */,
-				428F8A048C532A7944C66506D2AADC87 /* Setter.swift */,
-				6821B70C4612AD9956BDED8681E3EB99 /* SQLite.h */,
-				169673C6209523B592AC41DAB902DC97 /* SQLite-Bridging.h */,
-				C9F5AD7359316E536D6C5895051B4C80 /* SQLite-Bridging.m */,
-				55C71733C12E49A0474D3700CE127616 /* Statement.swift */,
-				4B164881764FE54D01447C43691971D0 /* Value.swift */,
+				01E8BCD84FF8BA759D1A931A83BD1FA0 /* SQLCipher.framework */,
+				B064225BED56BEDE47AE49F527CD9B02 /* iOS */,
 			);
-			name = SQLCipher;
-			sourceTree = "<group>";
-		};
-		481FEFE319AB713B1EA976CCCBFBE06E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2F25AEA632E9D459822C79C57E58CB04 /* NVActivityIndicatorView.framework */,
-				EC60D5D5D720474A6C52257824201920 /* Pods_Lafzi.framework */,
-				7CC692CA5354B9BB798D0098DBFD77F2 /* QuickTableViewController.framework */,
-				35EBECBDF12A5409E61027BE712AF166 /* SQLCipher.framework */,
-				153A4A8EF209F87E4CFD9E5B1C3F8BE7 /* SQLite.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		4948B484FE1123749A61E578C8B9E165 /* SQLite.swift */ = {
-			isa = PBXGroup;
-			children = (
-				3F9F6D0B20A051868EB8C4BBF9E1E13F /* SQLCipher */,
-				1B3B6705AE71796681DC524F88A77B91 /* Support Files */,
-			);
-			name = SQLite.swift;
-			path = SQLite.swift;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				E96BBED9524D9C5F6E3DD08D5D410243 /* Frameworks */,
-				F9A777B078CD5893A2CEFA7D2A59FE61 /* Pods */,
-				481FEFE319AB713B1EA976CCCBFBE06E /* Products */,
+				6AC17A50D41EE7CCB88896B3DD6E885F /* Frameworks */,
+				0088CC7BEF3B42CFD14B48D382AA5430 /* Pods */,
+				963FD5565CAB1A7740C862A5D63507AF /* Products */,
 				935DB4FC737560834958179E3DC45B6F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		822C6140ADAEFBE7C0D5815008A5CE12 /* common */ = {
+		7E9C1E256E82D1E1755D397C0AA7747E /* QuickTableViewController */ = {
 			isa = PBXGroup;
 			children = (
-				814EECD439DD846DE7C9229F2630C6C0 /* sqlite3.c */,
-				D783C550AE0368D5E47BD8C0852DF91E /* sqlite3.h */,
+				37E73B979B4E03FCF745168E0C12EF78 /* Configurable.swift */,
+				2B527438F081D5B58E9816FEF9908C84 /* Icon.swift */,
+				7CEC79BA6C8DF7E547FA19C17A2B91A5 /* NavigationRow.swift */,
+				7E9A490321AEAB40A4CEF226307233CD /* OptionRow.swift */,
+				F8CD4648D5C849887F8150DD7E46DCED /* QuickTableViewController.swift */,
+				6E9D707F2F44A7C8129A40E3C8AF8313 /* RadioSection.swift */,
+				A94EBFFF2ED91BD5E955C4371CD8C15C /* Reusable.swift */,
+				BDDA3AE109F15D078F69067614596720 /* Row.swift */,
+				B05B8F100F2885F98A41656A4A3AF8C1 /* RowCompatible.swift */,
+				A699FFC5FE6001108297E5EB9DD041C5 /* RowStyle.swift */,
+				FD75E9ED4380669C173B4B95FF5796BC /* Section.swift */,
+				65700C2ED9AF5840CBC0E36F31C00A71 /* Subtitle.swift */,
+				1AE85396AA590B5EED64873198C9A322 /* SwitchCell.swift */,
+				620E559367710040FDC02B09535467E7 /* SwitchRow.swift */,
+				C7AE6EE855D84F1ED762F3321ADBFFA0 /* TapActionCell.swift */,
+				679EFABDF047400EF70EA70952F12A5B /* TapActionRow.swift */,
+				23E515C7432B22D04936C6087A465484 /* Support Files */,
 			);
-			name = common;
-			sourceTree = "<group>";
-		};
-		87FB23F143758F85526EF45C33AF5FE8 /* NVActivityIndicatorView */ = {
-			isa = PBXGroup;
-			children = (
-				E5794A341B2B1661597BD6CC5EAAC97D /* Presenter */,
-				E04911EB20314354F8C8924C44BCD3B6 /* Support Files */,
-			);
-			name = NVActivityIndicatorView;
-			path = NVActivityIndicatorView;
+			name = QuickTableViewController;
+			path = QuickTableViewController;
 			sourceTree = "<group>";
 		};
 		935DB4FC737560834958179E3DC45B6F /* Targets Support Files */ = {
@@ -486,241 +338,142 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		D91337071585A93B9C5F1FF1BE7A92DE /* Support Files */ = {
+		963FD5565CAB1A7740C862A5D63507AF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0F74E07B5A87D783E910CB32E9B7ED95 /* Info.plist */,
-				136C3FE727FA6A33502999868BCB8551 /* SQLCipher.modulemap */,
-				1D21F3C5A3C9BDB7901E544C7FE590E9 /* SQLCipher.xcconfig */,
-				6E125C2DEE7F909FA8893A881FC1795B /* SQLCipher-dummy.m */,
-				7015E5FDE9BF565380F28F34C5A5CB7C /* SQLCipher-prefix.pch */,
-				8512361B4FC463324D08A554DC72B96F /* SQLCipher-umbrella.h */,
+				58606A91CED38BF37F409B4918D5E034 /* Pods_Lafzi.framework */,
+				372B746BBAAD47B8AE2948042A48A401 /* QuickTableViewController.framework */,
+				8612F915ECC75C8B8C5F6CC9A1F3EEC2 /* SQLCipher.framework */,
+				4318D6B79661F664FC93D79D188C2803 /* SQLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3E6D13F615E73F38F739E08A47E8999 /* SQLite.swift */ = {
+			isa = PBXGroup;
+			children = (
+				BEFBAE1962E0C4FC0BEF9A6A9E5720E0 /* SQLCipher */,
+				3A586376D1CFBEF53E3C8984F9F0F928 /* Support Files */,
+			);
+			name = SQLite.swift;
+			path = SQLite.swift;
+			sourceTree = "<group>";
+		};
+		A69B1D4F19052BFF42ED993B5493D526 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				F6E4FA2876DD7EB27037DD41DFDD4046 /* sqlite3.c */,
+				DCEB9C8998E588EDEF849D52477B0A0F /* sqlite3.h */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		B064225BED56BEDE47AE49F527CD9B02 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A6D50F42B3C4460C1B7A759B54AE46A4 /* Foundation.framework */,
+				8D8B4F9C06A9FC116F09C672708E4AB9 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		BEFBAE1962E0C4FC0BEF9A6A9E5720E0 /* SQLCipher */ = {
+			isa = PBXGroup;
+			children = (
+				CFFF11C3B9C9F57F8EC2CC586D154C1E /* AggregateFunctions.swift */,
+				2CB173A5A0B1F2329E571058CFDDB30E /* Blob.swift */,
+				43E657F815F05E77FEBBFC4E6BCD8D54 /* Cipher.swift */,
+				36A8EA220DD811213F98D6BCC9306F94 /* Coding.swift */,
+				10FD72201B7CDEF4E49F896300F057BC /* Collation.swift */,
+				DB385559E5B6976EB1A2998713CE6193 /* Connection.swift */,
+				86FAEF7B9E412785A0AC4516A3C932C2 /* CoreFunctions.swift */,
+				A9AE19208B33985271A6126E4EC32FFB /* CustomFunctions.swift */,
+				9BE64C9696C963B8AFA94108194E2869 /* DateAndTimeFunctions.swift */,
+				5259C732327F97C46FD2043D7FA94820 /* Errors.swift */,
+				2ED3847BBC9093337698CB9201FC49E0 /* Expression.swift */,
+				60D73DC275063D34BA6E63BB456B503D /* Foundation.swift */,
+				78D5A45877D3B858C0FA5F3A7EF75D52 /* fts3_tokenizer.h */,
+				B05F28D421FA8090754743930D8BD716 /* FTS4.swift */,
+				641B6AA23FB35BB1CA6AC2E91F37697E /* FTS5.swift */,
+				E84EABE10723E9C442218B729C908FD9 /* Helpers.swift */,
+				EE37B0908256F612CBE6C7E87DE01369 /* Operators.swift */,
+				3073A554A3C2BD5BB863619DD851A074 /* Query.swift */,
+				D4EEAC42A1C8B61BDC91C1ED53F8A485 /* RTree.swift */,
+				0D75FB0746DD72E814A4CF53AE377D54 /* Schema.swift */,
+				78D94CFCBD4E2E7132FC72FB789C188B /* Setter.swift */,
+				299008382AE5A6BAFF86DC6B2A30F57A /* SQLite.h */,
+				D720278B14410A2B54CD33D7783AD366 /* SQLite-Bridging.h */,
+				AAC3800EA73675E46780D2738034FFF8 /* SQLite-Bridging.m */,
+				B452B9B8386CA94FF3023E837D3F3858 /* Statement.swift */,
+				A636177A8855A7B16438631A965F2830 /* Value.swift */,
+			);
+			name = SQLCipher;
+			sourceTree = "<group>";
+		};
+		F7CB63F279184A198407390523CA9CBE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				619C78825218F30A256C95496FDCA4E0 /* Info.plist */,
+				1E08B595417AC696FD9F5D5DC644FC94 /* SQLCipher.modulemap */,
+				956531053FE932DCDB4CC5FC2BBEDFEF /* SQLCipher.xcconfig */,
+				706F17AFBC14CD051D888AB5DF2639ED /* SQLCipher-dummy.m */,
+				7FB7116E37D928650A23270D41E73B03 /* SQLCipher-prefix.pch */,
+				BD5D73DFE4F011322A1918588606FCCB /* SQLCipher-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SQLCipher";
 			sourceTree = "<group>";
 		};
-		DFA7DC3A99A72AE9AF93D668EAE57282 /* QuickTableViewController */ = {
-			isa = PBXGroup;
-			children = (
-				95017F76E35188810B3732B0BEA1B3F0 /* Configurable.swift */,
-				9D0D2CFF1464C4F94169C43509E21564 /* Icon.swift */,
-				C1D8860B9AC98C0FAF4E27EEA9BD062A /* NavigationRow.swift */,
-				7605044110852A607AD8FD11F94FC0CE /* OptionRow.swift */,
-				0723F6B4FD6867861C9BE9D4C8A38F25 /* QuickTableViewController.swift */,
-				3D9ABF63AF216A458BC8C750D48D3919 /* RadioSection.swift */,
-				A9EDB48918468E416D61AD07A630977F /* Reusable.swift */,
-				07DE0DC5B6D66D15AC2E6BCC19CD66D8 /* Row.swift */,
-				2814C9692C2E5C6F7ACC746D35743E4A /* RowCompatible.swift */,
-				A8DA784DDFA35CBF227DA0853EA5C632 /* RowStyle.swift */,
-				48F0946180131F6FD3B9469063C30A19 /* Section.swift */,
-				F7A7A6B3239905B7028BEAAFF5F6F738 /* Subtitle.swift */,
-				897DD5CE52E5DA173B3F895768A71980 /* SwitchCell.swift */,
-				0AA76FDAC702F93EAF3CE362ED7ED87A /* SwitchRow.swift */,
-				D06938B1BCEFEBD34B2A33E88B76C952 /* TapActionCell.swift */,
-				9A181C20C0433B2CD870E154A9F17AAC /* TapActionRow.swift */,
-				063E31B77DF1554D2A7F6458964D3301 /* Support Files */,
-			);
-			name = QuickTableViewController;
-			path = QuickTableViewController;
-			sourceTree = "<group>";
-		};
-		E04911EB20314354F8C8924C44BCD3B6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				417137E7FF27EE543E51C5520BB0874C /* Info.plist */,
-				80068554D62BF8DBDBE92C8190B06614 /* NVActivityIndicatorView.modulemap */,
-				60CBF65FFEDEBE4715D83A03E14939F8 /* NVActivityIndicatorView.xcconfig */,
-				8E0D43F04814240E3F29208FBD8E2452 /* NVActivityIndicatorView-dummy.m */,
-				4FEB64EEA966B20898CC0DF656B614A6 /* NVActivityIndicatorView-prefix.pch */,
-				32DDCF0B85855319DC3C724585FC8502 /* NVActivityIndicatorView-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/NVActivityIndicatorView";
-			sourceTree = "<group>";
-		};
-		E5794A341B2B1661597BD6CC5EAAC97D /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				B312B8D495E17BF5215F77F16C1D93D9 /* NVActivityIndicatorAnimationAudioEqualizer.swift */,
-				5DA3C8CAC4976AF218F34CE708121436 /* NVActivityIndicatorAnimationBallBeat.swift */,
-				2ACAE9D1C8EE5FAD720CA78ECE581C68 /* NVActivityIndicatorAnimationBallClipRotate.swift */,
-				1B496AD8A5A5A7E3D9DA1EFF3F03FCB1 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */,
-				57AF60FDBC5F2424A2B930F1501D7FA7 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift */,
-				237E79795531F75AAB41685594AB7174 /* NVActivityIndicatorAnimationBallGridBeat.swift */,
-				E586EFFB5D6AB13276F1FEBD4CF28022 /* NVActivityIndicatorAnimationBallGridPulse.swift */,
-				CBCD5384D1790530542725F04E4D65CC /* NVActivityIndicatorAnimationBallPulse.swift */,
-				A60BA9C530D880BD92603E63676ED7FF /* NVActivityIndicatorAnimationBallPulseRise.swift */,
-				8D648CB6C504411960A6094607C0BC9E /* NVActivityIndicatorAnimationBallPulseSync.swift */,
-				BE0AB8DA020F70A6CCDAD6FDCA5A163B /* NVActivityIndicatorAnimationBallRotate.swift */,
-				C1F016F95E1E8BDFEC1B75D62BA083DC /* NVActivityIndicatorAnimationBallRotateChase.swift */,
-				1FF44CF4D2910A8AF6DF4971B558EEDB /* NVActivityIndicatorAnimationBallScale.swift */,
-				15BCE2BA1700322537C9AC87E4C0FEE5 /* NVActivityIndicatorAnimationBallScaleMultiple.swift */,
-				87308FC00B380CA029ED2F6803FE2ECD /* NVActivityIndicatorAnimationBallScaleRipple.swift */,
-				1D2B10439714294A69C5CE91DB5107A8 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift */,
-				E8B94B398B903770AB05F1F22707761C /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */,
-				93C320AA6F43D1433CB2EE388E304ABB /* NVActivityIndicatorAnimationBallTrianglePath.swift */,
-				917D423B877A8DCE774C0FC5F7047DD5 /* NVActivityIndicatorAnimationBallZigZag.swift */,
-				1D4E757B01CBF143F46C65EF1F24DEA6 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift */,
-				FC2646E408D045931DBAD046BD46B482 /* NVActivityIndicatorAnimationBlank.swift */,
-				C2A6B0FD87684619C71EB3FACA67921D /* NVActivityIndicatorAnimationCircleStrokeSpin.swift */,
-				F390A718743C75FCA2E7461FE8994F07 /* NVActivityIndicatorAnimationCubeTransition.swift */,
-				9A39B600CF18EB2EA906F69623964DF0 /* NVActivityIndicatorAnimationDelegate.swift */,
-				E374A097F4E7B7276797857F951022F2 /* NVActivityIndicatorAnimationLineScale.swift */,
-				0773432FEDFF1864EACFD3FE53767236 /* NVActivityIndicatorAnimationLineScaleParty.swift */,
-				72F5C73EE42003EC9EBC0B61D75A1AFA /* NVActivityIndicatorAnimationLineScalePulseOut.swift */,
-				ED20AA107E59D32A1C5E92558FE1380E /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift */,
-				D5E06796516AD7B7C780AFA7861A4342 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift */,
-				EB0261975D85DD92F398F1A72C946832 /* NVActivityIndicatorAnimationOrbit.swift */,
-				BEECFDAAAD45DA80A1E143A98A73A012 /* NVActivityIndicatorAnimationPacman.swift */,
-				79654ABAC970FC154EC972E48950A690 /* NVActivityIndicatorAnimationSemiCircleSpin.swift */,
-				1628D12955D3F560D0955F79DD5FC311 /* NVActivityIndicatorAnimationSquareSpin.swift */,
-				2981D6C4355043EFAE19CA751556E4A8 /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */,
-				03BAEAA59D10029BF569A1F39F865075 /* NVActivityIndicatorPresenter.swift */,
-				D3F63F221E483530A0747DF4A041EA56 /* NVActivityIndicatorShape.swift */,
-				426967A54FC9703E3955EBC69D8D2A4F /* NVActivityIndicatorView.swift */,
-				D7E3A7412C86C88A590D10D0D91CD35F /* NVActivityIndicatorViewable.swift */,
-			);
-			name = Presenter;
-			sourceTree = "<group>";
-		};
-		E96BBED9524D9C5F6E3DD08D5D410243 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				773E80CB208BB1FB2A3CE765B8732E89 /* SQLCipher.framework */,
-				2280A1BD8E3A33E3BE5138EAC7D74F6B /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F9A777B078CD5893A2CEFA7D2A59FE61 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				87FB23F143758F85526EF45C33AF5FE8 /* NVActivityIndicatorView */,
-				DFA7DC3A99A72AE9AF93D668EAE57282 /* QuickTableViewController */,
-				2C81EF8D687E0DB13875477F5C69851E /* SQLCipher */,
-				4948B484FE1123749A61E578C8B9E165 /* SQLite.swift */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		06CEE1C621616331A0DB74630FE065E7 /* Headers */ = {
+		27655956B487E2EDD80AC6AE6815411D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2714F1844B3141365A4AEA36799A4728 /* SQLCipher-umbrella.h in Headers */,
-				6E5C49B95E2F6717F9171A86B1A4F4C0 /* sqlite3.h in Headers */,
+				A312D57B016A07B4091BE1AA01766B04 /* fts3_tokenizer.h in Headers */,
+				C9BACBE4C4F7AAD9AD2060E67F5F0085 /* SQLite-Bridging.h in Headers */,
+				611FCECA3A475740F515C7A497CD7990 /* SQLite.h in Headers */,
+				7A9FF8DD34F56D7ABDECF9535C32338A /* SQLite.swift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1E22235158A3515D2C63E116156AB1F6 /* Headers */ = {
+		484C496C7B3712D350021744B8AAD87A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C54C63FCC02266210C0DF64CBAF95BB2 /* fts3_tokenizer.h in Headers */,
-				A380FC0C9D163E7F9EDB4679D7609837 /* SQLite-Bridging.h in Headers */,
-				F89C03CB53CCFD86ED15C86C5D6543B8 /* SQLite.h in Headers */,
-				D39EB548E56ECBEE2BA05C2BB3BC3CB6 /* SQLite.swift-umbrella.h in Headers */,
+				24540737AB1B02906DB57980F0C3EE91 /* Pods-Lafzi-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		28D3CE7ECAFA865445A7B52B422A2285 /* Headers */ = {
+		B8889DD858204762EFCD5FD132EA067E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D85550BAAB58FBD185C96C50B88D4A3B /* QuickTableViewController-umbrella.h in Headers */,
+				C871236164D96DB190F5172613DA4183 /* QuickTableViewController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		789526978D0565098DD8BCB0264A1329 /* Headers */ = {
+		D8BA5E093A0E966C87E6885D4BE6B279 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D742C55C59B227B11AEC89B82FE52C6D /* Pods-Lafzi-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		85457C6098C1234D908DE2D3F9D16D40 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FEC29D6FEB3EBDBAA11FB2FC3371A503 /* NVActivityIndicatorView-umbrella.h in Headers */,
+				2C1CE3EF607383653E8EA758E6BD60D7 /* SQLCipher-umbrella.h in Headers */,
+				BC919FE59BC290C2F62149D8A28C38BE /* sqlite3.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		710FEBE9EDA808264DD9886D3A32BB1B /* Pods-Lafzi */ = {
+		1D39CE1AE2D80EA36419C4FB8EFF2DD1 /* QuickTableViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7F959897DB5A799EB9303D5C3DA4121B /* Build configuration list for PBXNativeTarget "Pods-Lafzi" */;
+			buildConfigurationList = 9EC6AB4ABC69440212D3106EE595C18D /* Build configuration list for PBXNativeTarget "QuickTableViewController" */;
 			buildPhases = (
-				789526978D0565098DD8BCB0264A1329 /* Headers */,
-				60B68452A5A20BCEFED4C32429262105 /* Sources */,
-				99C6991C904B8B472B8D488163A0C14D /* Frameworks */,
-				0F53662B9CFA6869E1473B079BFEDFBD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B159DC21AF75C030253370CE9EA4EB36 /* PBXTargetDependency */,
-				C4D9BAC240A2C23E33C4D1F951BDF01B /* PBXTargetDependency */,
-				AB1DCC002B5B222E599982AF8188F7AA /* PBXTargetDependency */,
-				45A01BEEF22A4F4D6E26436A6FED5FD7 /* PBXTargetDependency */,
-			);
-			name = "Pods-Lafzi";
-			productName = "Pods-Lafzi";
-			productReference = EC60D5D5D720474A6C52257824201920 /* Pods_Lafzi.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		978D35F2E84D7D745602FFB2E17B1021 /* NVActivityIndicatorView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0220BD3B34735B647ACF5E785B137B58 /* Build configuration list for PBXNativeTarget "NVActivityIndicatorView" */;
-			buildPhases = (
-				85457C6098C1234D908DE2D3F9D16D40 /* Headers */,
-				4995B2DA81EA4E67FD3F714F0C9D9B0A /* Sources */,
-				F8AB91AACF3AE8A55984BBABA90E0767 /* Frameworks */,
-				495958717733935CF0D2C54AE19B3C0B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = NVActivityIndicatorView;
-			productName = NVActivityIndicatorView;
-			productReference = 2F25AEA632E9D459822C79C57E58CB04 /* NVActivityIndicatorView.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		BCF143AEBB56E7C1B40A32C885BB0EED /* SQLite.swift */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DAF8625820CFA891FB5CC7D2CA16BD18 /* Build configuration list for PBXNativeTarget "SQLite.swift" */;
-			buildPhases = (
-				1E22235158A3515D2C63E116156AB1F6 /* Headers */,
-				0DE529E8F8A3508582C5B5B603393596 /* Sources */,
-				CCF2EE8766AB6286D08DE1F9F03DD3C9 /* Frameworks */,
-				B909052E7D2A8F8243DDC340CF6235DD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E0EAEE9F890B2C58927D2323B356B7B8 /* PBXTargetDependency */,
-			);
-			name = SQLite.swift;
-			productName = SQLite.swift;
-			productReference = 153A4A8EF209F87E4CFD9E5B1C3F8BE7 /* SQLite.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D60A14F606A4756B561ACDB1BCEB8CB6 /* QuickTableViewController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2219EA4EA9358B3FD09B8EF377CF61F6 /* Build configuration list for PBXNativeTarget "QuickTableViewController" */;
-			buildPhases = (
-				28D3CE7ECAFA865445A7B52B422A2285 /* Headers */,
-				17F0B75D9C6AB32108A23183DAC580E6 /* Sources */,
-				37A9315B5A4C0DDB7BAEB8C6B9CF84A3 /* Frameworks */,
-				7CF383735C42B7E99271C7FC5262C163 /* Resources */,
+				B8889DD858204762EFCD5FD132EA067E /* Headers */,
+				D6411CAFFB40A894F6A88003BB4D2449 /* Sources */,
+				040A10CE32E5A05359A82DC059EF7089 /* Frameworks */,
+				03D1321601597935DA1AA9C96B775C18 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -728,17 +481,36 @@
 			);
 			name = QuickTableViewController;
 			productName = QuickTableViewController;
-			productReference = 7CC692CA5354B9BB798D0098DBFD77F2 /* QuickTableViewController.framework */;
+			productReference = 372B746BBAAD47B8AE2948042A48A401 /* QuickTableViewController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E0DBCD3D2CDA383F37235D44AA431D81 /* SQLCipher */ = {
+		206E531541A8E45EBB7BFA85C99FA4A5 /* SQLite.swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E0D94A6965FB9009899D27E5E6FE99CD /* Build configuration list for PBXNativeTarget "SQLCipher" */;
+			buildConfigurationList = 3E5722F83DC10F3CAEFD0858D2FBEE57 /* Build configuration list for PBXNativeTarget "SQLite.swift" */;
 			buildPhases = (
-				06CEE1C621616331A0DB74630FE065E7 /* Headers */,
-				D95F4751611D094FA9C88312421823EF /* Sources */,
-				3645C88E00DD66D1F863D8BCC5046CB5 /* Frameworks */,
-				570E9984E29B85A04738E1796C2EF463 /* Resources */,
+				27655956B487E2EDD80AC6AE6815411D /* Headers */,
+				281F18F36A4D4B1A40506DDCA53014C4 /* Sources */,
+				6FC6814DD38D2DDE879F69146F1E67D8 /* Frameworks */,
+				3ED9CC2BE5B01D2BB96974646F428507 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				102EED78A3684D6817FB2A8B24105E61 /* PBXTargetDependency */,
+			);
+			name = SQLite.swift;
+			productName = SQLite.swift;
+			productReference = 4318D6B79661F664FC93D79D188C2803 /* SQLite.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CB75E14866B7830484536F61D2D6174D /* SQLCipher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4908CD8A2AFF57E95084C01E7D6AE797 /* Build configuration list for PBXNativeTarget "SQLCipher" */;
+			buildPhases = (
+				D8BA5E093A0E966C87E6885D4BE6B279 /* Headers */,
+				129E4CECA14EB2FF3302C317A3317595 /* Sources */,
+				1EFC5A22CCD0F7AFA071F712DD82B0DF /* Frameworks */,
+				31A4EA2CBA6A0B74C539824282452A84 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -746,7 +518,28 @@
 			);
 			name = SQLCipher;
 			productName = SQLCipher;
-			productReference = 35EBECBDF12A5409E61027BE712AF166 /* SQLCipher.framework */;
+			productReference = 8612F915ECC75C8B8C5F6CC9A1F3EEC2 /* SQLCipher.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D77A020618D24133183E6021CE329984 /* Pods-Lafzi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D70A8C940B2217256FEF19A6512F839 /* Build configuration list for PBXNativeTarget "Pods-Lafzi" */;
+			buildPhases = (
+				484C496C7B3712D350021744B8AAD87A /* Headers */,
+				162EA937D802BE95912FB11DAB2D3600 /* Sources */,
+				B5273E6EC930254530A78F8E9DA3FA89 /* Frameworks */,
+				9CCD47920C0C7C1E97C4A87115E13B44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8B3B9890C7F6D6FC3CB8893BF9C0E82 /* PBXTargetDependency */,
+				C0B17DB83EB0C041F1EB18655AE86D31 /* PBXTargetDependency */,
+				BA3D8DAD3EAD12C30694342CFCADD484 /* PBXTargetDependency */,
+			);
+			name = "Pods-Lafzi";
+			productName = "Pods-Lafzi";
+			productReference = 58606A91CED38BF37F409B4918D5E034 /* Pods_Lafzi.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -766,49 +559,41 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 481FEFE319AB713B1EA976CCCBFBE06E /* Products */;
+			productRefGroup = 963FD5565CAB1A7740C862A5D63507AF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				978D35F2E84D7D745602FFB2E17B1021 /* NVActivityIndicatorView */,
-				710FEBE9EDA808264DD9886D3A32BB1B /* Pods-Lafzi */,
-				D60A14F606A4756B561ACDB1BCEB8CB6 /* QuickTableViewController */,
-				E0DBCD3D2CDA383F37235D44AA431D81 /* SQLCipher */,
-				BCF143AEBB56E7C1B40A32C885BB0EED /* SQLite.swift */,
+				D77A020618D24133183E6021CE329984 /* Pods-Lafzi */,
+				1D39CE1AE2D80EA36419C4FB8EFF2DD1 /* QuickTableViewController */,
+				CB75E14866B7830484536F61D2D6174D /* SQLCipher */,
+				206E531541A8E45EBB7BFA85C99FA4A5 /* SQLite.swift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0F53662B9CFA6869E1473B079BFEDFBD /* Resources */ = {
+		03D1321601597935DA1AA9C96B775C18 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		495958717733935CF0D2C54AE19B3C0B /* Resources */ = {
+		31A4EA2CBA6A0B74C539824282452A84 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		570E9984E29B85A04738E1796C2EF463 /* Resources */ = {
+		3ED9CC2BE5B01D2BB96974646F428507 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7CF383735C42B7E99271C7FC5262C163 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B909052E7D2A8F8243DDC340CF6235DD /* Resources */ = {
+		9CCD47920C0C7C1E97C4A87115E13B44 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -818,304 +603,109 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0DE529E8F8A3508582C5B5B603393596 /* Sources */ = {
+		129E4CECA14EB2FF3302C317A3317595 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1B60D804A5489F0C29ADC3326CA9BDB /* AggregateFunctions.swift in Sources */,
-				3522BC7C69F00F10342841DF0CDAEA1E /* Blob.swift in Sources */,
-				7D54F09FEC261EB342B55C728FC25ED9 /* Cipher.swift in Sources */,
-				C8E6629A04034F35C6F01284FA0C5D55 /* Coding.swift in Sources */,
-				5CD958C6565A19083410A4C29FF32321 /* Collation.swift in Sources */,
-				AEDB26A5D2DE553D54D57CA188BE3B2D /* Connection.swift in Sources */,
-				DD0F562EA8949F58F131013AD86C3288 /* CoreFunctions.swift in Sources */,
-				022F0C3E10E3629E6766A7CC59A3FD5E /* CustomFunctions.swift in Sources */,
-				D8252AB1F0D1794AE9BC435240A5DF74 /* DateAndTimeFunctions.swift in Sources */,
-				C3BC2CB5B7842193B816CA6AC1ED8FA7 /* Errors.swift in Sources */,
-				9CCBE42FC66A51836A60A67A6014F014 /* Expression.swift in Sources */,
-				CB2E3544F9A73558E44D3B4B646C3696 /* Foundation.swift in Sources */,
-				09202DD6207FFD4A3911A731A0FDF466 /* FTS4.swift in Sources */,
-				3B2E8C456190C7A4D5300C84F6772952 /* FTS5.swift in Sources */,
-				790BCC8760FCD846DFEF2EC66EC85E75 /* Helpers.swift in Sources */,
-				A5016561EEA4FAC6671BDD1AB3CDAE7D /* Operators.swift in Sources */,
-				EAC15F2BBFA279A2D318FB4902713C23 /* Query.swift in Sources */,
-				E9CB67B5AD88C75DBE5A8715AF6B3724 /* RTree.swift in Sources */,
-				1F1EAC1F28B6D3DE580E493B7BAB6400 /* Schema.swift in Sources */,
-				636FD788D3E070D369CB125EC82F5468 /* Setter.swift in Sources */,
-				08F190C6F757FEC825C52FA73545D18F /* SQLite-Bridging.m in Sources */,
-				60C69896A299BF6AC8EC3D9168F2C345 /* SQLite.swift-dummy.m in Sources */,
-				1022A0475E3861B45701C82F3AD1C261 /* Statement.swift in Sources */,
-				C43B055ECE5EF3F3151EFEFB4A1E5C27 /* Value.swift in Sources */,
+				D4416382216F2F9EFB52D7DD216DA8D3 /* SQLCipher-dummy.m in Sources */,
+				CC33C29BA1D25226F5FD9799571ECF59 /* sqlite3.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		17F0B75D9C6AB32108A23183DAC580E6 /* Sources */ = {
+		162EA937D802BE95912FB11DAB2D3600 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34235B434FCEF109B5F1962B6F9C35FE /* Configurable.swift in Sources */,
-				8643F6AD011DC4E855D7A0E7E08124F1 /* Icon.swift in Sources */,
-				F4097C869240FEC2FC9A4DE0EFB8301B /* NavigationRow.swift in Sources */,
-				A7041B76E0DCCF5CBD8A0689E90B4124 /* OptionRow.swift in Sources */,
-				A83589BB743A9EF404E24654E492047E /* QuickTableViewController-dummy.m in Sources */,
-				58AA79434C2ECF3D0CFC6EBB59204A84 /* QuickTableViewController.swift in Sources */,
-				08ECAD36654C12607BF3C7AECE6BF8D9 /* RadioSection.swift in Sources */,
-				EAA6C09B1CEE5A5FA225571BFE3571FB /* Reusable.swift in Sources */,
-				90DCA80E65CC4932599407747565C3AF /* Row.swift in Sources */,
-				C2D9CBD9B2BDA29A9334FA36DC02B38D /* RowCompatible.swift in Sources */,
-				0C5B11F6BECFF59F608F205D2DCC4D6C /* RowStyle.swift in Sources */,
-				A2360DFC37F514B6D10D401188EE7E83 /* Section.swift in Sources */,
-				21B5097249B5E7DB0CAD434DC79E94D8 /* Subtitle.swift in Sources */,
-				21165B0491B77C139618997C9104846B /* SwitchCell.swift in Sources */,
-				84A1AA5DCEA5ADFC1B069F06EA8CB87A /* SwitchRow.swift in Sources */,
-				0D7CB42FCFC469171329527B5087FFF9 /* TapActionCell.swift in Sources */,
-				983CAAF570E3B3A115AD9AB707EE2FF1 /* TapActionRow.swift in Sources */,
+				9FDBE4366FF4463303B29DBA61FD9627 /* Pods-Lafzi-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4995B2DA81EA4E67FD3F714F0C9D9B0A /* Sources */ = {
+		281F18F36A4D4B1A40506DDCA53014C4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADE58A9D48E9575808D085DD1BBCF489 /* NVActivityIndicatorAnimationAudioEqualizer.swift in Sources */,
-				4B56C8BCF59D41ACFA09CBA3D1508678 /* NVActivityIndicatorAnimationBallBeat.swift in Sources */,
-				85B9B06515A80E0EAEA674A9F39DDD97 /* NVActivityIndicatorAnimationBallClipRotate.swift in Sources */,
-				413C67DCC7C16CD3752647D9509E5E10 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift in Sources */,
-				7BE07E1ADAE87C3EEB4C50B2F248C237 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift in Sources */,
-				DFCA37589015B5A5F6A11E61360ED39A /* NVActivityIndicatorAnimationBallGridBeat.swift in Sources */,
-				5F9421A709A1D187E53E758C9677AC36 /* NVActivityIndicatorAnimationBallGridPulse.swift in Sources */,
-				A9CDC49BCA042677979B128247F3DE11 /* NVActivityIndicatorAnimationBallPulse.swift in Sources */,
-				76F10269ADEC41D420B047F727216846 /* NVActivityIndicatorAnimationBallPulseRise.swift in Sources */,
-				CADD3B9635076B07A7BF621E3CA992C7 /* NVActivityIndicatorAnimationBallPulseSync.swift in Sources */,
-				DDA00B6AB4E1C59251B98A712FC1FC39 /* NVActivityIndicatorAnimationBallRotate.swift in Sources */,
-				9CB8DCDF79110D54F47803718BFFBF36 /* NVActivityIndicatorAnimationBallRotateChase.swift in Sources */,
-				21DBD31E5E4D20CB5BC7EF7C58F37F07 /* NVActivityIndicatorAnimationBallScale.swift in Sources */,
-				2FB9E083FDBEC11ABBA21A7CE566D1F1 /* NVActivityIndicatorAnimationBallScaleMultiple.swift in Sources */,
-				9FC2CF984680C0C89CBBB9D1210A1AD5 /* NVActivityIndicatorAnimationBallScaleRipple.swift in Sources */,
-				9E8B683192D4428C9A572974FF08BFBD /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */,
-				1D3EFD7461E1E1971DEF846A978A471F /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift in Sources */,
-				1FE208F00C26A4029AE661E62271F565 /* NVActivityIndicatorAnimationBallTrianglePath.swift in Sources */,
-				BFF195916DC851D5A802701F952A21FA /* NVActivityIndicatorAnimationBallZigZag.swift in Sources */,
-				CF4532A6ADF8ACC2E8095BA4805CE268 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift in Sources */,
-				DE2F08C01A67FE0A8FD4FBD93B74AA0D /* NVActivityIndicatorAnimationBlank.swift in Sources */,
-				0E5D53D9B25F06D67C66AFC249217167 /* NVActivityIndicatorAnimationCircleStrokeSpin.swift in Sources */,
-				AA6E19FC964E3A8165409E4942DE5C8F /* NVActivityIndicatorAnimationCubeTransition.swift in Sources */,
-				EF558A1A772E92D1F926B2716891C0E1 /* NVActivityIndicatorAnimationDelegate.swift in Sources */,
-				84ED63C5A1DC2064BACCE6F212E1C77F /* NVActivityIndicatorAnimationLineScale.swift in Sources */,
-				0A139D4D427C48C794556CAC29B383A4 /* NVActivityIndicatorAnimationLineScaleParty.swift in Sources */,
-				EB7BFFA3716D6306AEB167A4573C89FB /* NVActivityIndicatorAnimationLineScalePulseOut.swift in Sources */,
-				452F8C79F4B72A53D1ADB433D9ECF898 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift in Sources */,
-				FBCBDF9643A7D34A27F68D2632329E65 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */,
-				AABF3BCE05B262749DC13C63BA01E735 /* NVActivityIndicatorAnimationOrbit.swift in Sources */,
-				1DF1E30A4692124856D09A72364D128B /* NVActivityIndicatorAnimationPacman.swift in Sources */,
-				865A28104453FBC6B46A470CBFDE67B7 /* NVActivityIndicatorAnimationSemiCircleSpin.swift in Sources */,
-				4D1152EBA45C12D8B6D34BB76468331F /* NVActivityIndicatorAnimationSquareSpin.swift in Sources */,
-				AE93265B07C7219AD96DDFE48492C24B /* NVActivityIndicatorAnimationTriangleSkewSpin.swift in Sources */,
-				4E22F2F1F4DD7F0EFB2CD093FBCAA884 /* NVActivityIndicatorPresenter.swift in Sources */,
-				57576563140BA1551FB009A758B44B2A /* NVActivityIndicatorShape.swift in Sources */,
-				6E50E42F7D3D0A40EB84A184EE89CAE5 /* NVActivityIndicatorView-dummy.m in Sources */,
-				7FDC64860FB6713E2983E827DB29F252 /* NVActivityIndicatorView.swift in Sources */,
-				F7C0529D2A2330B61948C0D0D67E56AB /* NVActivityIndicatorViewable.swift in Sources */,
+				10DCB1FA939617A79A0C87C410AC7A1C /* AggregateFunctions.swift in Sources */,
+				3562F3CA8927C81CE1A45F7D098073D5 /* Blob.swift in Sources */,
+				D18CBF6EC4DF333986B946C9A500A701 /* Cipher.swift in Sources */,
+				0C7DD5056B1D32E33ECD18D6F0269D1E /* Coding.swift in Sources */,
+				6B592EEC953116BDFD5D25428E93C99E /* Collation.swift in Sources */,
+				8B434A1C86AB8FAE8163B114D86C4587 /* Connection.swift in Sources */,
+				4D5C5126721CBA95251AB7DFAEDA0CBA /* CoreFunctions.swift in Sources */,
+				9D30D79A617AEF9E21B6895A7FEFF0C3 /* CustomFunctions.swift in Sources */,
+				666ED7677978C9BB9FAEBCC9522FB5F9 /* DateAndTimeFunctions.swift in Sources */,
+				124C860D82D0FA5547A31C7E12801ABA /* Errors.swift in Sources */,
+				629D1A2F2738EA5133E0B4A540CC4126 /* Expression.swift in Sources */,
+				57712A2357C2BEBAB54F905024137020 /* Foundation.swift in Sources */,
+				C5191625B0DAD6499644C02688560D76 /* FTS4.swift in Sources */,
+				34A44227E88F4315FF7FD4CC8EF631F8 /* FTS5.swift in Sources */,
+				E274FB6CCEAE0889CFC259FBD22620AE /* Helpers.swift in Sources */,
+				C76A5051406C96A7F2987C561B916971 /* Operators.swift in Sources */,
+				8EA36153704F801B98C95508D8C840BC /* Query.swift in Sources */,
+				BAF28BBE8D055D5D1C42B51A009551E2 /* RTree.swift in Sources */,
+				AB11A7F502F86FDE408ECB97CD2BB61C /* Schema.swift in Sources */,
+				1FFB1D9E53381FE36D61F6F8FEB0647D /* Setter.swift in Sources */,
+				DB43BDB89419E6C9AB074680424729C8 /* SQLite-Bridging.m in Sources */,
+				B6806D9F1AA4BC5EC3E9EE6CFDEF17A0 /* SQLite.swift-dummy.m in Sources */,
+				6498F584F13FFFEB2804074416B7AEFF /* Statement.swift in Sources */,
+				0F7D035257B660C67A15CEABC9E6B320 /* Value.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		60B68452A5A20BCEFED4C32429262105 /* Sources */ = {
+		D6411CAFFB40A894F6A88003BB4D2449 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCA600F173A19F8FEC26002E78DF78B8 /* Pods-Lafzi-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D95F4751611D094FA9C88312421823EF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				03C16216A83BF82B1F70DC6D44B68E34 /* SQLCipher-dummy.m in Sources */,
-				78DF41BFEEAA91E34A68468590318F94 /* sqlite3.c in Sources */,
+				4242EE389E33DC07EF9C67AA61820B9A /* Configurable.swift in Sources */,
+				23E64C311BBA45780C09789B80673E2E /* Icon.swift in Sources */,
+				E856B4DB4B0A2387ADCA18AA798A07F1 /* NavigationRow.swift in Sources */,
+				A18D7020B371D1C50E9D737AA22C0269 /* OptionRow.swift in Sources */,
+				E3B8152D6CBC8835A8AD21C57F0A10B1 /* QuickTableViewController-dummy.m in Sources */,
+				91AB40DC55C4DA7157C85AE69662F021 /* QuickTableViewController.swift in Sources */,
+				559B43E0521B6AF535104F518A813B73 /* RadioSection.swift in Sources */,
+				AB43ECFD4B711BA9A678315DD60FB5A2 /* Reusable.swift in Sources */,
+				802B58D5039FDE764BB89166999757EB /* Row.swift in Sources */,
+				0245BC7492BED0895DB3FC35919B9565 /* RowCompatible.swift in Sources */,
+				D376A9ABCAE378C97985B5FF22710DBD /* RowStyle.swift in Sources */,
+				3A76AF15CC4F2E4FBFFBF85E1E2E2877 /* Section.swift in Sources */,
+				C7EF3D54CDD42681C8E3DBEE06434B04 /* Subtitle.swift in Sources */,
+				E476E2FBF5D1CD419731F1DDFCF037FE /* SwitchCell.swift in Sources */,
+				FF548EE0CCC28F7C10FB2EFA50E1EECA /* SwitchRow.swift in Sources */,
+				D218C7BA2456397C0B51BC6CB86E6204 /* TapActionCell.swift in Sources */,
+				312147362AAAFDB53114178DDBB8157F /* TapActionRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		45A01BEEF22A4F4D6E26436A6FED5FD7 /* PBXTargetDependency */ = {
+		102EED78A3684D6817FB2A8B24105E61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SQLCipher;
+			target = CB75E14866B7830484536F61D2D6174D /* SQLCipher */;
+			targetProxy = 0B3638C25F58E2A00ACA6A1C336EF29F /* PBXContainerItemProxy */;
+		};
+		BA3D8DAD3EAD12C30694342CFCADD484 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SQLite.swift;
-			target = BCF143AEBB56E7C1B40A32C885BB0EED /* SQLite.swift */;
-			targetProxy = B3D0172481CC42769C4AD4689EC942EC /* PBXContainerItemProxy */;
+			target = 206E531541A8E45EBB7BFA85C99FA4A5 /* SQLite.swift */;
+			targetProxy = B41A4652F05FE4A7673F2916FFC16688 /* PBXContainerItemProxy */;
 		};
-		AB1DCC002B5B222E599982AF8188F7AA /* PBXTargetDependency */ = {
+		C0B17DB83EB0C041F1EB18655AE86D31 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SQLCipher;
-			target = E0DBCD3D2CDA383F37235D44AA431D81 /* SQLCipher */;
-			targetProxy = 9C0ABDA4F1433B1A9640802A39131F66 /* PBXContainerItemProxy */;
+			target = CB75E14866B7830484536F61D2D6174D /* SQLCipher */;
+			targetProxy = 481C9806219486CB219A0E436A3B9108 /* PBXContainerItemProxy */;
 		};
-		B159DC21AF75C030253370CE9EA4EB36 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = NVActivityIndicatorView;
-			target = 978D35F2E84D7D745602FFB2E17B1021 /* NVActivityIndicatorView */;
-			targetProxy = F49B334E3EB774BDCFC94327EF3298AA /* PBXContainerItemProxy */;
-		};
-		C4D9BAC240A2C23E33C4D1F951BDF01B /* PBXTargetDependency */ = {
+		E8B3B9890C7F6D6FC3CB8893BF9C0E82 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = QuickTableViewController;
-			target = D60A14F606A4756B561ACDB1BCEB8CB6 /* QuickTableViewController */;
-			targetProxy = 08BB94B1510B160AF3682107FB6783CD /* PBXContainerItemProxy */;
-		};
-		E0EAEE9F890B2C58927D2323B356B7B8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SQLCipher;
-			target = E0DBCD3D2CDA383F37235D44AA431D81 /* SQLCipher */;
-			targetProxy = BD76EF77446C6043BA8E6069EBF5E49C /* PBXContainerItemProxy */;
+			target = 1D39CE1AE2D80EA36419C4FB8EFF2DD1 /* QuickTableViewController */;
+			targetProxy = 5A807840AD95C404183AB3E2C9D6490C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		04F0D702A8646B8B055344344FC0DFFD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60CBF65FFEDEBE4715D83A03E14939F8 /* NVActivityIndicatorView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NVActivityIndicatorView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView.modulemap";
-				PRODUCT_MODULE_NAME = NVActivityIndicatorView;
-				PRODUCT_NAME = NVActivityIndicatorView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		0A5D6E4A41CD36AE431B7C64C58965B1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3B80359346F11EE5FCD8DD60D86C490 /* QuickTableViewController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/QuickTableViewController/QuickTableViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/QuickTableViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/QuickTableViewController/QuickTableViewController.modulemap";
-				PRODUCT_MODULE_NAME = QuickTableViewController;
-				PRODUCT_NAME = QuickTableViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3D24BEC5DA3FC425EA179F7B2EE00BBD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D21F3C5A3C9BDB7901E544C7FE590E9 /* SQLCipher.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SQLCipher/SQLCipher-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SQLCipher/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SQLCipher/SQLCipher.modulemap";
-				PRODUCT_MODULE_NAME = SQLCipher;
-				PRODUCT_NAME = SQLCipher;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4B0DFCB731681BF72F97CF02364D5E87 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4DD0CED361D51D11FA20D789CFD027A /* Pods-Lafzi.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Lafzi/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Lafzi/Pods-Lafzi.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5AF55D18B262851EF2A1DFAFA0F27A6A /* Release */ = {
+		1C076D57D67AFAE3CF8D47A12B26D91B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B62EAF269833C672348E3DE9C899F24F /* Pods-Lafzi.release.xcconfig */;
 			buildSettings = {
@@ -1152,6 +742,76 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		2798E6FCBCA4652693AFCF70F8C95A8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60357C6F7FF12DE5A12B8E687FCB1938 /* SQLite.swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
+				PRODUCT_MODULE_NAME = SQLite;
+				PRODUCT_NAME = SQLite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		494BE6388BF0D0FEA1349D94175EEBE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B2A48B258C0A25267424E011C3BF567 /* QuickTableViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/QuickTableViewController/QuickTableViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QuickTableViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/QuickTableViewController/QuickTableViewController.modulemap";
+				PRODUCT_MODULE_NAME = QuickTableViewController;
+				PRODUCT_NAME = QuickTableViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		5DE19CECB206ACCCACF04D62F93FFDA6 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1215,9 +875,45 @@
 			};
 			name = Release;
 		};
-		7FCCD1615084CCCC30802C344617ECAE /* Debug */ = {
+		730C77687EB7944EAE487A878ECC2D2F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E536B36ABF409A6F7A6BC9DCA56F1B2 /* SQLite.swift.xcconfig */;
+			baseConfigurationReference = 1B2A48B258C0A25267424E011C3BF567 /* QuickTableViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/QuickTableViewController/QuickTableViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QuickTableViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/QuickTableViewController/QuickTableViewController.modulemap";
+				PRODUCT_MODULE_NAME = QuickTableViewController;
+				PRODUCT_NAME = QuickTableViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		83E24150392F1BF15E2F436A98FE2D9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60357C6F7FF12DE5A12B8E687FCB1938 /* SQLite.swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1245,10 +941,11 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		858D01EEFE984249A9581D18DBEA53F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1316,9 +1013,46 @@
 			};
 			name = Debug;
 		};
-		A5FD5F37BDF94C14F58C13DA4AC0E92C /* Debug */ = {
+		945A8E7945D2D5E485CD05B787B18958 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D21F3C5A3C9BDB7901E544C7FE590E9 /* SQLCipher.xcconfig */;
+			baseConfigurationReference = B4DD0CED361D51D11FA20D789CFD027A /* Pods-Lafzi.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Lafzi/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Lafzi/Pods-Lafzi.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C0F4CC5B1E9968EB2A54BB05C8744D25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 956531053FE932DCDB4CC5FC2BBEDFEF /* SQLCipher.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1351,9 +1085,9 @@
 			};
 			name = Debug;
 		};
-		D5AE0EC9889DA03F354B619203E315A1 /* Release */ = {
+		C918775CDD1CACC9DB1CEB5E45FE00A3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3B80359346F11EE5FCD8DD60D86C490 /* QuickTableViewController.xcconfig */;
+			baseConfigurationReference = 956531053FE932DCDB4CC5FC2BBEDFEF /* SQLCipher.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1364,8 +1098,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/QuickTableViewController/QuickTableViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/QuickTableViewController/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SQLCipher/SQLCipher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLCipher/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1373,81 +1107,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/QuickTableViewController/QuickTableViewController.modulemap";
-				PRODUCT_MODULE_NAME = QuickTableViewController;
-				PRODUCT_NAME = QuickTableViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E58AEC08C59F71C367AF573086022690 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E536B36ABF409A6F7A6BC9DCA56F1B2 /* SQLite.swift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
-				PRODUCT_MODULE_NAME = SQLite;
-				PRODUCT_NAME = SQLite;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FFF77C236FC8706F3AA2313A8419E2DE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60CBF65FFEDEBE4715D83A03E14939F8 /* NVActivityIndicatorView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NVActivityIndicatorView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView.modulemap";
-				PRODUCT_MODULE_NAME = NVActivityIndicatorView;
-				PRODUCT_NAME = NVActivityIndicatorView;
+				MODULEMAP_FILE = "Target Support Files/SQLCipher/SQLCipher.modulemap";
+				PRODUCT_MODULE_NAME = SQLCipher;
+				PRODUCT_NAME = SQLCipher;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1462,24 +1124,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0220BD3B34735B647ACF5E785B137B58 /* Build configuration list for PBXNativeTarget "NVActivityIndicatorView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				04F0D702A8646B8B055344344FC0DFFD /* Debug */,
-				FFF77C236FC8706F3AA2313A8419E2DE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2219EA4EA9358B3FD09B8EF377CF61F6 /* Build configuration list for PBXNativeTarget "QuickTableViewController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0A5D6E4A41CD36AE431B7C64C58965B1 /* Debug */,
-				D5AE0EC9889DA03F354B619203E315A1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1489,29 +1133,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7F959897DB5A799EB9303D5C3DA4121B /* Build configuration list for PBXNativeTarget "Pods-Lafzi" */ = {
+		3E5722F83DC10F3CAEFD0858D2FBEE57 /* Build configuration list for PBXNativeTarget "SQLite.swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4B0DFCB731681BF72F97CF02364D5E87 /* Debug */,
-				5AF55D18B262851EF2A1DFAFA0F27A6A /* Release */,
+				2798E6FCBCA4652693AFCF70F8C95A8F /* Debug */,
+				83E24150392F1BF15E2F436A98FE2D9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DAF8625820CFA891FB5CC7D2CA16BD18 /* Build configuration list for PBXNativeTarget "SQLite.swift" */ = {
+		4908CD8A2AFF57E95084C01E7D6AE797 /* Build configuration list for PBXNativeTarget "SQLCipher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7FCCD1615084CCCC30802C344617ECAE /* Debug */,
-				E58AEC08C59F71C367AF573086022690 /* Release */,
+				C0F4CC5B1E9968EB2A54BB05C8744D25 /* Debug */,
+				C918775CDD1CACC9DB1CEB5E45FE00A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E0D94A6965FB9009899D27E5E6FE99CD /* Build configuration list for PBXNativeTarget "SQLCipher" */ = {
+		9D70A8C940B2217256FEF19A6512F839 /* Build configuration list for PBXNativeTarget "Pods-Lafzi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A5FD5F37BDF94C14F58C13DA4AC0E92C /* Debug */,
-				3D24BEC5DA3FC425EA179F7B2EE00BBD /* Release */,
+				945A8E7945D2D5E485CD05B787B18958 /* Debug */,
+				1C076D57D67AFAE3CF8D47A12B26D91B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EC6AB4ABC69440212D3106EE595C18D /* Build configuration list for PBXNativeTarget "QuickTableViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				494BE6388BF0D0FEA1349D94175EEBE2 /* Debug */,
+				730C77687EB7944EAE487A878ECC2D2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

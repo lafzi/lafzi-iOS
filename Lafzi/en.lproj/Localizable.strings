@@ -11,7 +11,7 @@
 body {
     font-family: 'SourceSansPro-Regular';
     padding: 0;
-    font-size: 35pt;
+    font-size: 2em;
     margin-left: 25pt;
     margin-right: 25pt;
 }
@@ -50,7 +50,7 @@ Anda dapat mencoba masukan yang lebih panjang.
 body {
     font-family: 'SourceSansPro-Regular';
     padding: 0;
-    font-size: 35pt;
+    font-size: 2em;
     margin-left: 25pt;
     margin-right: 25pt;
 }

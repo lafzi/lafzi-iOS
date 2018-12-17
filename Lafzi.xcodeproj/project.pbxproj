@@ -31,6 +31,8 @@
 		11DED52121B09C4400367545 /* AyatQuran.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DED52021B09C4400367545 /* AyatQuran.swift */; };
 		11DED52421B0A08E00367545 /* AyatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DED52321B0A08E00367545 /* AyatTableViewCell.swift */; };
 		11DED52721B36BCD00367545 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DED52621B36BCD00367545 /* DBHelper.swift */; };
+		11DF56A521C67A7A00B55E18 /* SlideController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DF56A421C67A7A00B55E18 /* SlideController.swift */; };
+		11DF56A721C67D5200B55E18 /* SingleAyatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DF56A621C67D5200B55E18 /* SingleAyatController.swift */; };
 		11F92FB021C28B7700B3C59A /* me_quran.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11F92FAE21C288B200B3C59A /* me_quran.ttf */; };
 		11F92FB321C2918D00B3C59A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11F92FB521C2918D00B3C59A /* Localizable.strings */; };
 		11F92FB921C3430B00B3C59A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F92FB821C3430B00B3C59A /* SettingsViewController.swift */; };
@@ -76,6 +78,8 @@
 		11DED52021B09C4400367545 /* AyatQuran.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyatQuran.swift; sourceTree = "<group>"; };
 		11DED52321B0A08E00367545 /* AyatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyatTableViewCell.swift; sourceTree = "<group>"; };
 		11DED52621B36BCD00367545 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		11DF56A421C67A7A00B55E18 /* SlideController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideController.swift; sourceTree = "<group>"; };
+		11DF56A621C67D5200B55E18 /* SingleAyatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAyatController.swift; sourceTree = "<group>"; };
 		11F92FAE21C288B200B3C59A /* me_quran.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = me_quran.ttf; sourceTree = "<group>"; };
 		11F92FB421C2918D00B3C59A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		11F92FB821C3430B00B3C59A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 				11C26F5721AE031900F6AF58 /* ViewController.swift */,
 				117CC31D21C1E96500EE594D /* BantuanViewController.swift */,
 				11F92FB821C3430B00B3C59A /* SettingsViewController.swift */,
+				11DF56A421C67A7A00B55E18 /* SlideController.swift */,
+				11DF56A621C67D5200B55E18 /* SingleAyatController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -344,7 +350,6 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Lafzi/Pods-Lafzi-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/QuickTableViewController/QuickTableViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/SQLCipher/SQLCipher.framework",
 				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
@@ -353,7 +358,6 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QuickTableViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLCipher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
@@ -397,6 +401,7 @@
 				110332C121B407D40093F729 /* FoundDocument.swift in Sources */,
 				110332C321B409270093F729 /* HighlightPosition.swift in Sources */,
 				113AAC4C21B5693600AA025C /* Index.swift in Sources */,
+				11DF56A721C67D5200B55E18 /* SingleAyatController.swift in Sources */,
 				11C26F5821AE031900F6AF58 /* ViewController.swift in Sources */,
 				117CC31B21C1496F00EE594D /* PopoverOptions.swift in Sources */,
 				11DED52721B36BCD00367545 /* DBHelper.swift in Sources */,
@@ -409,6 +414,7 @@
 				110332BD21B384220093F729 /* QueryHelper.swift in Sources */,
 				110332BF21B403120093F729 /* SearchHelper.swift in Sources */,
 				117CC31E21C1E96500EE594D /* BantuanViewController.swift in Sources */,
+				11DF56A521C67A7A00B55E18 /* SlideController.swift in Sources */,
 				117CC31721C13C7C00EE594D /* Popover.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

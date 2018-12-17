@@ -112,11 +112,75 @@
                         <outlet property="labelCounterContainer" destination="DI1-gJ-K1a" id="NUW-4p-zGi"/>
                         <outlet property="searchBar" destination="lhe-a9-hZo" id="xeE-rO-GgL"/>
                         <outlet property="stackView" destination="ppo-wm-tvG" id="et6-iV-Cib"/>
+                        <segue destination="giw-IH-gtD" kind="show" identifier="PageViewControllerSegue" id="pp8-rD-K1O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1069.5999999999999" y="790.25487256371821"/>
+        </scene>
+        <!--Slide Controller-->
+        <scene sceneID="S92-Ct-mR9">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="giw-IH-gtD" customClass="SlideController" customModule="Lafzi" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FvX-Gy-Igt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2053" y="1153"/>
+        </scene>
+        <!--Single Ayat Controller-->
+        <scene sceneID="wBt-HF-poA">
+            <objects>
+                <viewController storyboardIdentifier="SingleAyatController" id="LMA-9h-YlG" customClass="SingleAyatController" customModule="Lafzi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5BB-J3-icQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="KG8-dV-OYj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FdY-hh-v5L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jwy-F9-VsZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1d9-Fw-y0r">
+                                        <rect key="frame" x="8" y="8" width="42" height="61.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2X-ao-NFp">
+                                                <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tV-LR-Cv0">
+                                                <rect key="frame" x="0.0" y="20.5" width="42" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00n-Px-MVv">
+                                                <rect key="frame" x="0.0" y="41" width="42" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="ayatArabic" destination="1tV-LR-Cv0" id="uf7-SU-g66"/>
+                        <outlet property="ayatIndonesia" destination="00n-Px-MVv" id="mNh-Cu-5kJ"/>
+                        <outlet property="noSuratAyat" destination="k2X-ao-NFp" id="2BJ-wR-7hI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L7P-9I-Kvy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2824.8000000000002" y="1152.7736131934034"/>
         </scene>
         <!--Bantuan View Controller-->
         <scene sceneID="xdb-wo-9Rk">

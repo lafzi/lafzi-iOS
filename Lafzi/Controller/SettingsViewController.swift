@@ -16,8 +16,6 @@ class SettingsViewController: QuickTableViewController {
     static let SHOW_TRANSLATION = "showTranslation"
     
     override func viewDidLoad() {
-        defaults.register(defaults: [SettingsViewController.IS_VOCAL : true, SettingsViewController.SHOW_TRANSLATION : true])
-        
         super.viewDidLoad()
         tableContents = [
             Section(title: "Pengaturan", rows: [
