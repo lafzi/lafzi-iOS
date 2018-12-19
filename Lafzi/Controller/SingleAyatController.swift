@@ -17,7 +17,6 @@ class SingleAyatController: UIViewController {
     var currentAyat = 1
     
     override func viewDidLoad() {
-        print(currentAyat)
         let ayatQuran = DBHelper.getInstance().getAyatQuran(ayatId: currentAyat, isVocal: UserDefaults.standard.bool(forKey: SettingsViewController.IS_VOCAL))
         
         self.noSuratAyat.text = "Surat \(ayatQuran.surahName) (\(ayatQuran.surahNo)) Ayat \(ayatQuran.ayatNo)"

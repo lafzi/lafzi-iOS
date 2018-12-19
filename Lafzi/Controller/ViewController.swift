@@ -219,7 +219,7 @@ class ViewController:  UIViewController, UITableViewDelegate, UITableViewDataSou
         if segue.identifier == "PageViewControllerSegue" {
             let slideController = segue.destination as! SlideController
             let ayatId = self.ayatGlobalQurans[(self.ayatTable.indexPathForSelectedRow?.row)!].id
-            print("Ayat \(ayatId)")
+
             slideController.currentAyatId = ayatId
         }
     }

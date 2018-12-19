@@ -14,6 +14,12 @@
 		110332C321B409270093F729 /* HighlightPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110332C221B409270093F729 /* HighlightPosition.swift */; };
 		110332C521B4D4110093F729 /* FreqAndPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110332C421B4D4110093F729 /* FreqAndPosition.swift */; };
 		113AAC4C21B5693600AA025C /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113AAC4B21B5693600AA025C /* Index.swift */; };
+		115DD07621C9D72F00512F2B /* FloatyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115DD07021C9D72E00512F2B /* FloatyViewController.swift */; };
+		115DD07721C9D72F00512F2B /* FloatyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115DD07121C9D72E00512F2B /* FloatyManager.swift */; };
+		115DD07821C9D72F00512F2B /* FloatyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115DD07221C9D72E00512F2B /* FloatyDelegate.swift */; };
+		115DD07921C9D72F00512F2B /* FloatyWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115DD07321C9D72F00512F2B /* FloatyWindow.swift */; };
+		115DD07A21C9D72F00512F2B /* Floaty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115DD07421C9D72F00512F2B /* Floaty.swift */; };
+		115DD07B21C9D72F00512F2B /* FloatyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115DD07521C9D72F00512F2B /* FloatyItem.swift */; };
 		117CC31721C13C7C00EE594D /* Popover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117CC31621C13C7C00EE594D /* Popover.swift */; };
 		117CC31921C1424500EE594D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 117CC31821C1424500EE594D /* Assets.xcassets */; };
 		117CC31B21C1496F00EE594D /* PopoverOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117CC31A21C1496F00EE594D /* PopoverOptions.swift */; };
@@ -57,6 +63,12 @@
 		110332C221B409270093F729 /* HighlightPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightPosition.swift; sourceTree = "<group>"; };
 		110332C421B4D4110093F729 /* FreqAndPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreqAndPosition.swift; sourceTree = "<group>"; };
 		113AAC4B21B5693600AA025C /* Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Index.swift; sourceTree = "<group>"; };
+		115DD07021C9D72E00512F2B /* FloatyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatyViewController.swift; sourceTree = "<group>"; };
+		115DD07121C9D72E00512F2B /* FloatyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatyManager.swift; sourceTree = "<group>"; };
+		115DD07221C9D72E00512F2B /* FloatyDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatyDelegate.swift; sourceTree = "<group>"; };
+		115DD07321C9D72F00512F2B /* FloatyWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatyWindow.swift; sourceTree = "<group>"; };
+		115DD07421C9D72F00512F2B /* Floaty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Floaty.swift; sourceTree = "<group>"; };
+		115DD07521C9D72F00512F2B /* FloatyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatyItem.swift; sourceTree = "<group>"; };
 		117CC31621C13C7C00EE594D /* Popover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popover.swift; sourceTree = "<group>"; };
 		117CC31821C1424500EE594D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		117CC31A21C1496F00EE594D /* PopoverOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverOptions.swift; sourceTree = "<group>"; };
@@ -130,6 +142,12 @@
 		11BCE28921BB5D0F007CD641 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				115DD07421C9D72F00512F2B /* Floaty.swift */,
+				115DD07221C9D72E00512F2B /* FloatyDelegate.swift */,
+				115DD07521C9D72F00512F2B /* FloatyItem.swift */,
+				115DD07121C9D72E00512F2B /* FloatyManager.swift */,
+				115DD07021C9D72E00512F2B /* FloatyViewController.swift */,
+				115DD07321C9D72F00512F2B /* FloatyWindow.swift */,
 				11BCE28A21BB5D3A007CD641 /* EmptySearchView.xib */,
 				11BCE28C21BB5D57007CD641 /* EmptySearchView.swift */,
 				117CC31A21C1496F00EE594D /* PopoverOptions.swift */,
@@ -405,9 +423,14 @@
 				11C26F5821AE031900F6AF58 /* ViewController.swift in Sources */,
 				117CC31B21C1496F00EE594D /* PopoverOptions.swift in Sources */,
 				11DED52721B36BCD00367545 /* DBHelper.swift in Sources */,
+				115DD07B21C9D72F00512F2B /* FloatyItem.swift in Sources */,
 				119A01E621C3D93E00A93259 /* SearchHelperView.swift in Sources */,
+				115DD07721C9D72F00512F2B /* FloatyManager.swift in Sources */,
+				115DD07A21C9D72F00512F2B /* Floaty.swift in Sources */,
 				11BCE29021BB7E24007CD641 /* Util.swift in Sources */,
+				115DD07921C9D72F00512F2B /* FloatyWindow.swift in Sources */,
 				110332C521B4D4110093F729 /* FreqAndPosition.swift in Sources */,
+				115DD07821C9D72F00512F2B /* FloatyDelegate.swift in Sources */,
 				11DED52121B09C4400367545 /* AyatQuran.swift in Sources */,
 				11C26F5621AE031900F6AF58 /* AppDelegate.swift in Sources */,
 				11F92FB921C3430B00B3C59A /* SettingsViewController.swift in Sources */,
@@ -416,6 +439,7 @@
 				117CC31E21C1E96500EE594D /* BantuanViewController.swift in Sources */,
 				11DF56A521C67A7A00B55E18 /* SlideController.swift in Sources */,
 				117CC31721C13C7C00EE594D /* Popover.swift in Sources */,
+				115DD07621C9D72F00512F2B /* FloatyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
