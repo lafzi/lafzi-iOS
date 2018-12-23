@@ -42,6 +42,7 @@ class ViewController:  UIViewController, UITableViewDelegate, UITableViewDataSou
         let searchHelperView = SearchHelperView(controller: self)
         ayatTable.backgroundView = searchHelperView
         setupOptionsMenu()
+        self.searchBar.becomeFirstResponder()
     }
     
     override func viewWillAppear(_ animated: Bool) {

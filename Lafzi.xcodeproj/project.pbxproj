@@ -26,6 +26,9 @@
 		117CC31E21C1E96500EE594D /* BantuanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117CC31D21C1E96500EE594D /* BantuanViewController.swift */; };
 		119A01E421C3D91F00A93259 /* SearchHelperView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 119A01E321C3D91F00A93259 /* SearchHelperView.xib */; };
 		119A01E621C3D93E00A93259 /* SearchHelperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119A01E521C3D93E00A93259 /* SearchHelperView.swift */; };
+		11B99DFA21CEE89600EB4985 /* SharedScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B99DF921CEE89600EB4985 /* SharedScreenView.xib */; };
+		11B99DFC21CF1A7400EB4985 /* SharedScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B99DFB21CF1A7400EB4985 /* SharedScreenView.swift */; };
+		11B99DFE21CF225300EB4985 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B99DFD21CF225300EB4985 /* ImageHelper.swift */; };
 		11BCE28B21BB5D3A007CD641 /* EmptySearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11BCE28A21BB5D3A007CD641 /* EmptySearchView.xib */; };
 		11BCE28D21BB5D57007CD641 /* EmptySearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BCE28C21BB5D57007CD641 /* EmptySearchView.swift */; };
 		11BCE29021BB7E24007CD641 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BCE28F21BB7E24007CD641 /* Util.swift */; };
@@ -75,6 +78,9 @@
 		117CC31D21C1E96500EE594D /* BantuanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BantuanViewController.swift; sourceTree = "<group>"; };
 		119A01E321C3D91F00A93259 /* SearchHelperView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchHelperView.xib; sourceTree = "<group>"; };
 		119A01E521C3D93E00A93259 /* SearchHelperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHelperView.swift; sourceTree = "<group>"; };
+		11B99DF921CEE89600EB4985 /* SharedScreenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SharedScreenView.xib; sourceTree = "<group>"; };
+		11B99DFB21CF1A7400EB4985 /* SharedScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedScreenView.swift; sourceTree = "<group>"; };
+		11B99DFD21CF225300EB4985 /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		11BCE28A21BB5D3A007CD641 /* EmptySearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptySearchView.xib; sourceTree = "<group>"; };
 		11BCE28C21BB5D57007CD641 /* EmptySearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySearchView.swift; sourceTree = "<group>"; };
 		11BCE28F21BB7E24007CD641 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
@@ -122,6 +128,12 @@
 		117CC31521C13C5B00EE594D /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				115DD07421C9D72F00512F2B /* Floaty.swift */,
+				115DD07221C9D72E00512F2B /* FloatyDelegate.swift */,
+				115DD07521C9D72F00512F2B /* FloatyItem.swift */,
+				115DD07121C9D72E00512F2B /* FloatyManager.swift */,
+				115DD07021C9D72E00512F2B /* FloatyViewController.swift */,
+				115DD07321C9D72F00512F2B /* FloatyWindow.swift */,
 				117CC31621C13C7C00EE594D /* Popover.swift */,
 			);
 			path = Libs;
@@ -142,17 +154,14 @@
 		11BCE28921BB5D0F007CD641 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				115DD07421C9D72F00512F2B /* Floaty.swift */,
-				115DD07221C9D72E00512F2B /* FloatyDelegate.swift */,
-				115DD07521C9D72F00512F2B /* FloatyItem.swift */,
-				115DD07121C9D72E00512F2B /* FloatyManager.swift */,
-				115DD07021C9D72E00512F2B /* FloatyViewController.swift */,
-				115DD07321C9D72F00512F2B /* FloatyWindow.swift */,
+				11DED52321B0A08E00367545 /* AyatTableViewCell.swift */,
 				11BCE28A21BB5D3A007CD641 /* EmptySearchView.xib */,
 				11BCE28C21BB5D57007CD641 /* EmptySearchView.swift */,
 				117CC31A21C1496F00EE594D /* PopoverOptions.swift */,
 				119A01E321C3D91F00A93259 /* SearchHelperView.xib */,
 				119A01E521C3D93E00A93259 /* SearchHelperView.swift */,
+				11B99DF921CEE89600EB4985 /* SharedScreenView.xib */,
+				11B99DFB21CF1A7400EB4985 /* SharedScreenView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,7 +198,6 @@
 				11DED51F21B09C2800367545 /* Model */,
 				117CC31821C1424500EE594D /* Assets.xcassets */,
 				11C26F5521AE031900F6AF58 /* AppDelegate.swift */,
-				11DED52321B0A08E00367545 /* AyatTableViewCell.swift */,
 				11C26F5921AE031900F6AF58 /* Main.storyboard */,
 				11C26F5E21AE031A00F6AF58 /* LaunchScreen.storyboard */,
 				11C26F6121AE031A00F6AF58 /* Info.plist */,
@@ -226,6 +234,7 @@
 				110332BC21B384220093F729 /* QueryHelper.swift */,
 				110332BE21B403120093F729 /* SearchHelper.swift */,
 				11BCE28F21BB7E24007CD641 /* Util.swift */,
+				11B99DFD21CF225300EB4985 /* ImageHelper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -341,6 +350,7 @@
 				11F92FB021C28B7700B3C59A /* me_quran.ttf in Resources */,
 				11C26F6021AE031A00F6AF58 /* LaunchScreen.storyboard in Resources */,
 				110332BB21B370010093F729 /* lafzi.sqlite in Resources */,
+				11B99DFA21CEE89600EB4985 /* SharedScreenView.xib in Resources */,
 				11F92FB321C2918D00B3C59A /* Localizable.strings in Resources */,
 				11C26F5B21AE031900F6AF58 /* Main.storyboard in Resources */,
 				11BCE28B21BB5D3A007CD641 /* EmptySearchView.xib in Resources */,
@@ -417,6 +427,7 @@
 				11BCE28D21BB5D57007CD641 /* EmptySearchView.swift in Sources */,
 				11DED52421B0A08E00367545 /* AyatTableViewCell.swift in Sources */,
 				110332C121B407D40093F729 /* FoundDocument.swift in Sources */,
+				11B99DFC21CF1A7400EB4985 /* SharedScreenView.swift in Sources */,
 				110332C321B409270093F729 /* HighlightPosition.swift in Sources */,
 				113AAC4C21B5693600AA025C /* Index.swift in Sources */,
 				11DF56A721C67D5200B55E18 /* SingleAyatController.swift in Sources */,
@@ -440,6 +451,7 @@
 				11DF56A521C67A7A00B55E18 /* SlideController.swift in Sources */,
 				117CC31721C13C7C00EE594D /* Popover.swift in Sources */,
 				115DD07621C9D72F00512F2B /* FloatyViewController.swift in Sources */,
+				11B99DFE21CF225300EB4985 /* ImageHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,13 +21,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ketikkan lafadz Al-Quran yang ingin dicari. Perlu contoh? Cobalah:" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGV-HW-J0K">
-                    <rect key="frame" x="36" y="272" width="303" height="41"/>
+                    <rect key="frame" x="36" y="247" width="303" height="41"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRo-DF-r6f">
-                    <rect key="frame" x="166.5" y="323" width="42" height="21"/>
+                    <rect key="frame" x="166.5" y="308" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -36,8 +36,8 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="RRo-DF-r6f" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="04v-fS-MEl"/>
-                <constraint firstItem="RRo-DF-r6f" firstAttribute="top" secondItem="OGV-HW-J0K" secondAttribute="bottom" constant="10" id="6NI-bV-gka"/>
-                <constraint firstItem="RRo-DF-r6f" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="96Y-bQ-U3m"/>
+                <constraint firstItem="RRo-DF-r6f" firstAttribute="top" secondItem="OGV-HW-J0K" secondAttribute="bottom" constant="20" id="6NI-bV-gka"/>
+                <constraint firstItem="RRo-DF-r6f" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-15" id="96Y-bQ-U3m"/>
                 <constraint firstItem="OGV-HW-J0K" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" constant="20" id="QKC-hF-Vrl"/>
                 <constraint firstAttribute="trailingMargin" secondItem="OGV-HW-J0K" secondAttribute="trailing" constant="20" id="vKN-K3-b0d"/>
             </constraints>

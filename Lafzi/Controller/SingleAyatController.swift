@@ -26,18 +26,6 @@ class SingleAyatController: UIViewController {
         
         let ayat = ayatQuran.ayatMuqathaat.count < 1 ? ayatQuran.ayatArabic : ayatQuran.ayatMuqathaat
         let arabic = NSMutableAttributedString(string: ayat)
-        for pos in ayatQuran.highlightPos {
-            var start = pos.start
-            var end = pos.end
-            if start > arabic.length {
-                start = arabic.length - 1
-            }
-            if end > arabic.length {
-                end = arabic.length - 1
-            }
-            let range = NSRange(location: start, length: end - start + 1)
-            arabic.addAttribute(NSAttributedString.Key.backgroundColor, value: UIColor.yellow, range: range)
-        }
         
         self.ayatArabic.attributedText = arabic
         ayatArabic.font = UIFont(name: "me_quran", size: 22)

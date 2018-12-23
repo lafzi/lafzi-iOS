@@ -8,13 +8,15 @@
 
 import UIKit
 
-class SlideController: UIPageViewController, UIPageViewControllerDataSource {
+class SlideController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     
     var currentAyatId = 1
+    var lastPendingAyatId = 1
     var singleAyat = SingleAyatController()
     
     override func viewDidLoad() {
         self.dataSource = self
+        self.delegate = self
         setupFloatButton()
 
         self.singleAyat = (storyboard?.instantiateViewController(withIdentifier: "SingleAyatController") as? SingleAyatController)!
@@ -23,9 +25,8 @@ class SlideController: UIPageViewController, UIPageViewControllerDataSource {
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        let nextCtrl = viewController as? SingleAyatController
-        let nextAyatId = (nextCtrl?.currentAyat)! + 1
-        if nextAyatId >= 6236 {
+        let nextAyatId = self.currentAyatId + 1
+        if nextAyatId > 6236 {
             return nil
         }
         
@@ -35,9 +36,8 @@ class SlideController: UIPageViewController, UIPageViewControllerDataSource {
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        let prevCtrl = viewController as? SingleAyatController
-        let prevAyatId = (prevCtrl?.currentAyat)! - 1
-        if prevAyatId <= 0 {
+        let prevAyatId = self.currentAyatId - 1
+        if prevAyatId < 1 {
             return nil
         }
         
@@ -46,6 +46,17 @@ class SlideController: UIPageViewController, UIPageViewControllerDataSource {
         return singleAyatPrev
     }
     
+    func pageViewController(_ pageViewController: UIPageViewController, willTransitionTo pendingViewControllers: [UIViewController]) {
+        if let vc = pendingViewControllers[0] as? SingleAyatController {
+            self.lastPendingAyatId = vc.currentAyat
+        }
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        if completed {
+            self.currentAyatId = self.lastPendingAyatId
+        }
+    }
     
     func setupFloatButton() {
         let floaty = Floaty()
@@ -62,19 +73,41 @@ class SlideController: UIPageViewController, UIPageViewControllerDataSource {
         
         floaty.addItem(icon: UIImage(imageLiteralResourceName: "right-arrow"), handler: {item in
             let ctrl = self.pageViewController(self, viewControllerAfter: self.singleAyat)
-            self.singleAyat.currentAyat += 1
+            if self.currentAyatId + 1 > 6236 {
+                return
+            }
+            self.currentAyatId += 1
             self.setViewControllers([ctrl!], direction: .forward, animated: true, completion: nil)
         })
         floaty.addItem(icon: UIImage(imageLiteralResourceName: "left-arrow"), handler: {item in
             let ctrl = self.pageViewController(self, viewControllerBefore: self.singleAyat)
-            self.singleAyat.currentAyat -= 1
+            if self.currentAyatId - 1 < 1 {
+                return
+            }
+            self.currentAyatId -= 1
             self.setViewControllers([ctrl!], direction: .reverse, animated: true, completion: nil)
         })
         floaty.addItem(icon: UIImage(imageLiteralResourceName: "share"), handler: {item in
-            print("SHARE")
-
+            let alert = UIAlertController(title: "Bagikan Ayat", message: "Pilih jenis yang dibagikan", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Teks", style: .default, handler: {but in
+                let ctrl = self.viewControllers![0] as? SingleAyatController
+                let texts = "\(ctrl?.noSuratAyat.text ?? "")\n\n\(ctrl?.ayatArabic.text ?? "")\n\n\(ctrl?.ayatIndonesia.text ?? "")\n\n(Dibagikan dari aplikasi Lafzi)"
+                self.share(objects: [texts])
+            }))
+            alert.addAction(UIAlertAction(title: "Gambar", style: .default, handler: {but in
+                let ayatQuran = DBHelper.getInstance().getAyatQuran(ayatId: self.currentAyatId)
+                let ssView = SharedScreenView(frame: self.view.bounds, ayatQuran: ayatQuran)
+                let ss = ssView.asImage()
+                self.share(objects: [ss])
+            }))
+            self.present(alert, animated: true, completion: nil)
         })
         
         self.view.addSubview(floaty)
+    }
+    
+    private func share(objects: [Any]) {
+        let activityVC = UIActivityViewController(activityItems: objects, applicationActivities: nil)
+        self.present(activityVC, animated: true, completion: nil)
     }
 }
