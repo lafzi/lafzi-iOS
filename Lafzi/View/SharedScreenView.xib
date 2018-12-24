@@ -52,7 +52,7 @@
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="z6j-ye-jgv">
                             <rect key="frame" x="22" y="96.5" width="299" height="28.5"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="ybI-wB-Ygn">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-big" translatesAutoresizingMaskIntoConstraints="NO" id="ybI-wB-Ygn">
                                     <rect key="frame" x="0.0" y="0.0" width="70" height="28.5"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="70" id="8x7-Wh-thA"/>
@@ -90,6 +90,6 @@
         </view>
     </objects>
     <resources>
-        <image name="logo" width="80.512519836425781" height="32.750144958496094"/>
+        <image name="logo-big" width="281.5478515625" height="114.52545928955078"/>
     </resources>
 </document>

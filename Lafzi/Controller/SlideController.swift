@@ -92,13 +92,14 @@ class SlideController: UIPageViewController, UIPageViewControllerDataSource, UIP
             alert.addAction(UIAlertAction(title: "Teks", style: .default, handler: {but in
                 let ctrl = self.viewControllers![0] as? SingleAyatController
                 let texts = "\(ctrl?.noSuratAyat.text ?? "")\n\n\(ctrl?.ayatArabic.text ?? "")\n\n\(ctrl?.ayatIndonesia.text ?? "")\n\n(Dibagikan dari aplikasi Lafzi)"
-                self.share(objects: [texts])
+                self.share(objects: [texts], source: ctrl?.view)
             }))
             alert.addAction(UIAlertAction(title: "Gambar", style: .default, handler: {but in
                 let ayatQuran = DBHelper.getInstance().getAyatQuran(ayatId: self.currentAyatId)
                 let ssView = SharedScreenView(frame: self.view.bounds, ayatQuran: ayatQuran)
                 let ss = ssView.asImage()
-                self.share(objects: [ss])
+                let ctrl = self.viewControllers![0] as? SingleAyatController
+                self.share(objects: [ss], source: ctrl?.view)
             }))
             self.present(alert, animated: true, completion: nil)
         })
@@ -106,8 +107,9 @@ class SlideController: UIPageViewController, UIPageViewControllerDataSource, UIP
         self.view.addSubview(floaty)
     }
     
-    private func share(objects: [Any]) {
+    private func share(objects: [Any], source: UIView?) {
         let activityVC = UIActivityViewController(activityItems: objects, applicationActivities: nil)
+        activityVC.popoverPresentationController?.sourceView = source
         self.present(activityVC, animated: true, completion: nil)
     }
 }
