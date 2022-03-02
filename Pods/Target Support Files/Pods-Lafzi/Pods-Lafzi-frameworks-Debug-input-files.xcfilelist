@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-Lafzi/Pods-Lafzi-frameworks.sh
+${BUILT_PRODUCTS_DIR}/QuickTableViewController/QuickTableViewController.framework
+${BUILT_PRODUCTS_DIR}/SQLCipher/SQLCipher.framework
+${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework

@@ -1,28 +1,28 @@
 PODS:
   - QuickTableViewController (1.0.0)
-  - SQLCipher (4.0.0):
-    - SQLCipher/standard (= 4.0.0)
-  - SQLCipher/common (4.0.0)
-  - SQLCipher/standard (4.0.0):
+  - SQLCipher (4.5.0):
+    - SQLCipher/standard (= 4.5.0)
+  - SQLCipher/common (4.5.0)
+  - SQLCipher/standard (4.5.0):
     - SQLCipher/common
-  - SQLite.swift/SQLCipher (0.11.5):
-    - SQLCipher (>= 3.4.0)
+  - SQLite.swift/SQLCipher (0.13.2):
+    - SQLCipher (>= 4.0.0)
 
 DEPENDENCIES:
   - QuickTableViewController
-  - SQLite.swift/SQLCipher (~> 0.11.5)
+  - SQLite.swift/SQLCipher (~> 0.13.2)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - QuickTableViewController
     - SQLCipher
     - SQLite.swift
 
 SPEC CHECKSUMS:
   QuickTableViewController: a49fb6dc5623b9dbe301a03ac5c563099e234fbc
-  SQLCipher: 37c820e1ada7f2c2782ec6bfb6be9a9660209ff5
-  SQLite.swift: 6e5356850bb1791459f8c16d6ee9195b28714a2e
+  SQLCipher: 98dc22f27c0b1790d39e710d440f22a466ebdb59
+  SQLite.swift: 4fc2be46c36392e3b87afe6fe7f1801c1daa07ef
 
-PODFILE CHECKSUM: f5fad59229b51618fedbf859f5d4b511bd1f26d3
+PODFILE CHECKSUM: 6b12f4062821b5b60c58e0cf1d869a8e3504e67f
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.11.2
